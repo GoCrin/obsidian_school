@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"209a647685f38c9b","type":"file","file":"NWTI/Link Aggregation.png","x":180,"y":-160,"width":400,"height":202},
+		{"id":"9a597d094d3f49ae","type":"text","text":"Core-Switch\nSwitch1\nSwitch2\nSwitch3\nSwitch4\nSwitch5","x":-100,"y":-154,"width":250,"height":190}
+	],
+	"edges":[
+		{"id":"41359d68eeda9ae1","fromNode":"9a597d094d3f49ae","fromSide":"right","toNode":"209a647685f38c9b","toSide":"left"}
+	]
+}
