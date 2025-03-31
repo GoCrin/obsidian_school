@@ -7,3 +7,6 @@
 
 * lässt grundsätzlich nichts durch außer Listeneinträge
 
+## Blacklist
+
+
