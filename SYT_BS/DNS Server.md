@@ -22,7 +22,7 @@ Recursive lookup (Von root Server zu tatsächlichen namen)
 1 Wer ist zuständig für .at -> mehrere Server
 2 einen dieser .at server fragen wer für .htl-hl zuständig ab
 
-
+Records:
 
 NS -> löst namen auf
 A -> löst ipv4 auf
