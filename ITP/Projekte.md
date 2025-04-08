@@ -17,7 +17,7 @@ US & International
 
 Das Gegenteil eines Projekts ist: Prozesse/Tagesabläufe/Routinegeschäft
 
-![[Pasted image 20250321112515.png]]
+![[Pasted image 20250321112515 1.png]]
 
 **Zielvorgabe**
 z.B. nach SMART-Modell (Spezifisch, Messbar, Attraktiv/Akzeptiert, Realistisch und Terminiert)

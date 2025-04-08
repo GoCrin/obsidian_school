@@ -52,3 +52,46 @@ $G_1 = 20dB G_2 = -100dB G_3 = 80dB$
 
 
 Clipping: Signal ist lauter als obergrenze (digital)
+
+## Beispiele
+
+### 1.
+
+![[Pasted image 20250408105125.png]]
+* $G_3 = 40dB$
+* $L_{12} = 33dBm$ (m für Leistungspegel -> milli watt)
+* $L_{23} = -43dBm$
+* $L_{1E} = 0dBm$
+**Gesucht:** $G_1; G_2; L_{3A}$
+
+$G_1 = L_{12} - L_{1E} = 33dBm - 0dBm = 33dB$
+$mW : mW = 1$ (vor logarithmieren war Subtraktion, Division -> mW fällt weg)
+
+$G_2 = L_{23} - L_{12} = -43dBm - 33dBm = -76dB$
+
+$L_{3A} = G_3 + L_{23} = 40dB + (-43dBm) = -3dBm$
+$1 * mW = mW$
+
+### Boxen haben relative Pegel & Verbindungen haben absolute Pegel
+
+### 2.
+**A= 6dB / Abstandsverdoppelung**
+Nach 10m -> $80dB_{SPL}$ 
+Nach 20m -> $74dB_{SPL}$
+
+$Abstand * 2$ und $-6dB$
+
+### 3.
+**Angabe:**
+Auf einer großen Freifläche soll im Abstand von 100m vom Lautsprecher ein Schalldruckpegel von 76dB SPL erreicht werden.
+Berechnen Sie in welchem Abstand zum Lautsprecher die 100dB-Grenze überschritten wird.
+
+100m -> $76dB_{SPL}$
+?m -> $100dB_{SPL}$
+
+$100dB_{SPL} - 76dB_{SPL} = 24dB_{SPL}$
+
+24 / 6 = 4
+-> 4 mal halbieren
+$100m / 2^4 = 6.25$
+
