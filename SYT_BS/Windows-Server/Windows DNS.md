@@ -11,10 +11,11 @@ RMB -> neue Zone
 	zonenname: 3bhits.local
 	neue datei mit diesem namen erstellen
 	dynamische updates nicht zulassen
+	Soll dieser server weiterleiten? -> nein
+	
 
-Foward-Lookupzonen
-	3bhits.local
-	RMB -< neuer host
+Foward-Lookupzonen -> 3bhits.local
+	RMB -> neuer host
 	www
 	ipaddr: irgendwas (z.B 10.0.2.12)
 	hosthinzufügen
