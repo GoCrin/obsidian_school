@@ -12,19 +12,18 @@ Arbeitet typischer weiße auf OSI-Layer 5 aufwärts
 
 # Hardware Firewall
 
-Auch bekannt als: externe Firewall, vorgelagerte Firewall, dedizierte Firewall
+Auch bekannt als: externe Firewall, vorgelagerte Firewall, **dedizierte Firewall**
 
 Arbeitet typischer weiße auf OSI-Layer 3 und 4
 
 ## Was schaut die Firewall an?
 
 Meist wird nur der Header analysiert, da Daten meis    t verschlüsselt sind und sie so groß sind, dass es zu teuer (zeit intensiv) wäre um Daten sinnvoll zu analysieren.
-### stateful inspection
-
+### stateless inspection / packet filtering 
 Schaut jedes Paket ohne Kontext an
-### stateless inspection
-
+### stateful inspection
 kann Kontext, wie z.B. Antworten auf von innen gesendete Pakete, erkennen.
+
 ### deep packet inspection (Nutzdaten analyse)
 
 Analysiert nicht nur Header sondern auch Daten des Pakets.
