@@ -29,7 +29,7 @@ A -> löst ipv4 auf
 AAAA -> löst ipv6 auf
 CNAME -> löst namen in anderen namen auf
 MX -> mail exchanger
-PTR ->
+PTR -> Pointer Record
 TXT -> Plain text für z.B. für Zertifikate um zu beweisen, dass man der Besitzer ist
 
 
