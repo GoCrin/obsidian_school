@@ -133,3 +133,12 @@ Install-WindowsFeature DNS -IncludeManagementTools
 www (geht auf) -> 10.0.2.12
 
 im DHCP-Server muss nun der DNS-Server vergeben werden
+
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
+
