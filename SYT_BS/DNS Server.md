@@ -1,5 +1,3 @@
-apt install bind9
-
 13 root dns server (A-M)
 Hunderte Instanzen dieser Server über selben IPs (13 für 13 Server) mit anycast erreichbar
 
@@ -8,9 +6,10 @@ Jeder DNS-Server besitzt Root Hints ()
 ### Top level domains
 
 Verwaltet von root dns servern
-	Länder (.at, .de)
-	.com
-	.org
+* Länder (.at, .de)
+* .com
+* .org
+
 Weil root dns server von "usa" verwaltet wird und diese top level domains vergeben, kritisieren manche staaten diese, da sie keine top level domain bekommen. (nicht anerkannter Staat)
 
 ## Grober dns routing ablauf
@@ -22,16 +21,15 @@ Recursive lookup (Von root Server zu tatsächlichen namen)
 1 Wer ist zuständig für .at -> mehrere Server
 2 einen dieser .at server fragen wer für .htl-hl zuständig ab
 
-Records:
-
-NS -> löst namen auf
-A -> löst ipv4 auf
-AAAA -> löst ipv6 auf
-CNAME -> löst namen in anderen namen auf
-MX -> mail exchanger
-PTR -> Pointer Record
-TXT -> Plain text für z.B. für Zertifikate um zu beweisen, dass man der Besitzer ist
-
+| Record | Verwendung                                                                    |
+| ------ | ----------------------------------------------------------------------------- |
+| NS     | löst Namen auf                                                                |
+| A      | löst IPv4 auf                                                                 |
+| AAAA   | löst IPv6 auf                                                                 |
+| CNAME  | löst Namen in anderen Namen auf                                               |
+| MX     | mail exchanger                                                                |
+| PTR    | Pointer Record                                                                |
+| TXT    | Plain text für z.B. für Zertifikate um zu beweisen, dass man der Besitzer ist |
 
 193.170.204.18
 18.204.170.193.in-addr.arpa
@@ -48,27 +46,37 @@ Zonen Betreuer: liefern nur antworten für die
 
 ### Server auf Linux installieren
 
+
+```
 apt install bind9
+```
 
 aufgabe: welche files sind in /etc/bind dafür verantwortlich einen "gescheiten dns server" zu machen
 
+```
 cd /etc/bind
+```
 
 /etc/bind/named.conf.options
-`forwarders {
+```
+forwarders {
     8.8.8.8;
     8.8.4.4;
-};`
+};
+```
 
 /etc/bind/named.conf.local
+```
 zone "3bhits.local" {
 	type master;
 	file "/etc/bind/zones/db.3bhits.local";
 };
-
+```
+```
 cp db.local db.3bhits.local
-
+```
 /etc/bind/db.3bhits.local
+```
 $TTL    604800
 @       IN      SOA     3bhits.local. root.3bhits.local. (
                               2         ; Serial
@@ -79,10 +87,13 @@ $TTL    604800
 ;
 @       IN      NS      3bhits.local.     ; 
 @       IN      A       10.0.2.5             ; ip vom dhcp/dns server
-
+```
+```
 mkdir zones
 mv db.3bhits.local ./zones/db.3bhits.local
+```
 /etc/bind/zones/db.3bhits.local
+```
 $TTL    604800
 @       IN      SOA     ns.3bhits.local. admin.3bhits.local. (
                               2         ; Serial
@@ -95,3 +106,30 @@ $TTL    604800
 @       IN      A       10.0.2.5
 ns      IN      A       10.0.2.5
 www     IN      A       10.0.2.10
+```
+### Server auf Windows installieren
+
+```
+Install-WindowsFeature DNS -IncludeManagementTools
+```
+
+* tools -> DNS
+* DNS-Server konfigurieren
+* RMB -> neue Zone
+	* weiter
+	* primäre zone
+	* forward lookupzone
+	* zonenname: 3bhits.local
+	* neue datei mit diesem namen erstellen
+	* dynamische updates nicht zulassen
+	* Soll dieser server weiterleiten? -> nein
+
+* Foward-Lookupzonen -> 3bhits.local
+	* RMB -> neuer host
+	* www
+	* ipaddr: irgendwas (z.B 10.0.2.12)
+	* hosthinzufügen
+	
+www (geht auf) -> 10.0.2.12
+
+im DHCP-Server muss nun der DNS-Server vergeben werden

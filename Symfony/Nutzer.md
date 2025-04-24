@@ -18,7 +18,7 @@ Nun wurde eine Datei `/src/Entity/User.php` erstellt. Jedoch existiert noch kein
 
 ```
 php bin/console make:migration
-	php bin/console doctrine:migrations:migrate
+php bin/console doctrine:migrations:migrate
 ```
 
 ## Login- & Registrierseite generieren
