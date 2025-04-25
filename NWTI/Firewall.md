@@ -18,7 +18,7 @@ Arbeitet typischer weiße auf OSI-Layer 3 und 4
 
 ## Was schaut die Firewall an?
 
-Meist wird nur der Header analysiert, da Daten meis    t verschlüsselt sind und sie so groß sind, dass es zu teuer (zeit intensiv) wäre um Daten sinnvoll zu analysieren.
+Meist wird nur der Header analysiert, da Daten meist verschlüsselt sind und sie so groß sind, dass es zu teuer (zeit intensiv) wäre um Daten sinnvoll zu analysieren.
 ### stateless inspection / packet filtering 
 Schaut jedes Paket ohne Kontext an
 ### stateful inspection
