@@ -19,4 +19,15 @@ Beide schicken ihren öffentlichen "Schlüssel" (A und B) über das unsicher Med
 
 $$ K_{AB} = B^a \mod p $$
 $$ K_{AB} = A^b \mod p $$
+## Beweis
 
+$$K = B^a \mod p$$
+$$K = (g^b)^a\mod p$$
+$$K = A^b \mod p$$
+$$K = (g^a)^b\mod p$$
+$$g^{b * a} = g^{a * b}$$
+
+## Verwendung
+
+IPsec verwendet (welches wiederum bei [[VPN]]s verwendet wird)
+Https -> tls kann diffe-hellman verwenden

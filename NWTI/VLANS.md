@@ -20,11 +20,11 @@ VLAN-Tag wird der Frame angehängt
 
 
 
-![[Pasted image 20250307102318.png]]
+![[Pasted image 20250307102318 1.png]]
 Im Fall dieser Abbildung (Kreise = Endgeräte) gibt kein Standard für VLANs vor, eine VLAN_ID mit zuschicken. Paket von linken Switch ist im VLAN 1 und schickt Paket an Gerät an Port im VLAN 2.
 **IEEE 802.1Q** legt 
 
-![[Ethernet_802.1Q_Insert.svg]]
+![[Ethernet_802.1Q_Insert 1.svg]]
 
 Es gibt dynamische Methoden und es gibt Port basierte Methoden
 Einfachste Methode VLANs zu implementieren ist die Port-basierte Methode
