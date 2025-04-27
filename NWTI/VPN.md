@@ -14,5 +14,6 @@ VPN Anbieter
 Diese Werben damit über eine VPN-Verbindung Geoblockings zu umgehen. Teilweise werben Sie auch mit Sicherheit im Internet (weil Verbindung ist verschlüsselt)
 
 VPN Anbieter selber spielen
+(Links sind nicht Teil des Stoffes :) )
 https://www.wireguard.com/install/
 https://github.com/WeeJeWel/wg-easy
