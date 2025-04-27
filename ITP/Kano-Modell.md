@@ -15,7 +15,7 @@ X-Achse: Erfüllungsgrad
     negativ: wenig
 **Screenshoot**
 
-![[Pasted image 20250321110306 1.png]]
+![[Pasted image 20250321110306.png]]
 1. Basismerkmale (expected requirements)
 2. Leistungsmerkmale (normal requirements)
 3. Begeisterungsmerkmale (delightful requirements)
