@@ -43,4 +43,5 @@ XVI
 * Einschluss in Konklave
 * Wahlen (2 Vormittag, 2 Nachmittag)
 * geheim, laut ausgezählt
-* $\frac{2}{3}$ Mehrheit
+* $\frac{2}{3}$ Mehrheit damit endgültiges Ergebnis feststeht, sonst am darauffolgenden Tag neue Wahlen
+* Wahlzettel werden verbrannt. Es wird eine chemische Substanz hinzugefügt damit Rauch weiß (Wahl erfolgreich, Papst wird unter neuem Papstnamen am selben Tag vorgestellt) oder schwarz (Wahl nicht erfolgreich)
