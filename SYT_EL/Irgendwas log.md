@@ -19,6 +19,7 @@ $P = U^2 / R$
 An einem Widerstand hängen P und U, quadratisch zusammen
 
 $P_2 / P_1 = 10^{G/10}$
+$V_u = 10^{G/20}$
 
 G = 20 * lg(U2/U1)
 

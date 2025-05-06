@@ -23,3 +23,12 @@ show ip route (Routingtabelle anzeigen)
 write
 copy running-cofig startup-config
 ```
+
+### Verwendung von RIP
+```
+enable
+configure terminal
+router rip
+version 2
+network <Netz welches am Router angeschlossen ist(z.B.:192.168.0.0)>
+```
