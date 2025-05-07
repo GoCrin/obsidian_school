@@ -8,7 +8,7 @@ Reguläre Ausdrücke (engl. regular expressions) auch Regex genannt, sind Zeiche
 
 ## Notation
 
-| Ausdruck                       |                                    |
+| Ausdruck                       | Bedeutung                          |
 | ------------------------------ | ---------------------------------- |
 | s (Beliebiges Zeichen)         | Zeichen s (kein Spezialsymbol)     |
 | \s                             | Zeichen s                          |
@@ -26,3 +26,38 @@ Reguläre Ausdrücke (engl. regular expressions) auch Regex genannt, sind Zeiche
 | $r_1$$r_2$                     | $r_1$ gefolgt von $r_2$            |
 | $r_1$ \| $r_2$                 | $r_1$ oder $r_2$                   |
 | (r)                            | r (Gruppierung)                    |
+
+## Syntaxdiagramm
+[regulex](https://jex.im/regulex), [Regex Vis](https://regex-vis.com/)
+Ein regulärer Ausdruck kann auch als Syntaxdiagramm dargestellt werden. Das Syntaxdiagramm beschreibt den regulären Ausdruck, indem es in grafischer Form zeigt, welche Strings gebildet werden können.
+
+| Syntaxdiagramm                       |      |
+| ------------------------------------ | ---- |
+| ![[Pasted image 20250507081209.png]] | A    |
+| ![[Pasted image 20250507081242.png]] | \s   |
+| ![[Pasted image 20250507081424.png]] | A+   |
+| ![[Pasted image 20250507081609.png]] | A\*  |
+| ![[Pasted image 20250507081747.png]] | AB   |
+| ![[Pasted image 20250507081853.png]] | A\|B |
+| ![[Pasted image 20250507082218.png]] | A?   |
+
+Beispiel:
+![[Pasted image 20250507082426.png]]
+
+## Verwendung in Java
+
+```
+String regularExpression = "^[A-Za-z0-9%!=#]+$";
+String stringToValidate = "3BHITS";
+
+//1. Möglichkeit
+if (stringToValidate.matches(regularExpression)) {
+	System.out.printf("%s is valid.\n", stringToValidate);
+}
+
+//2. Möglichkeit
+Pattern pattern = Pattern.compile(regularExpression);
+if (pattern.matcher(stringToValidate).matches()) {
+	System.out.printf("%s is valid.\n", stringToValidate);
+}
+```
