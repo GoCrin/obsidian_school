@@ -5,7 +5,7 @@
 * jpackage (Integriert ab Java14)
 
 ## jpackage
-Gib
+Gibt
 * .MSI (über WiX 3.x aus)
 * .DEB
 
