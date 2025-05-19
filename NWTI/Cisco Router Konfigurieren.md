@@ -32,3 +32,5 @@ router rip
 version 2
 network <Netz welches am Router angeschlossen ist(z.B.:192.168.0.0)>
 ```
+
+### Verwendung von OSPF

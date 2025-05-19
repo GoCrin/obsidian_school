@@ -30,3 +30,5 @@ Einberufungen zur Wehrmacht hatten **Arbeitskräftemangel** zur folge. Dieser wu
 Heutige VOEST hat eine Ausstellung auf Basis von 38.000 Personalakten aus der NS-Zeit
 
 1998 wird Kunstrückgabegesetz eingeführt, welches verlangt Kunstgegenstände, Gemälde, Bücher und Möbel zurück zugeben.
+
+136 - 146
