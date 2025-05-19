@@ -17,7 +17,7 @@ _Hier kommt noch was..._
 	* [[VLANS]]
 	* [[VPN]] (Überblick)
 * ITP Test 23.5.2025
-	* **Feedback** geben (Stichwort Feedback Burger)
+	* **Feedback** geben (Stichwort [Feedback Burger](https://projekte-leicht-gemacht.de/blog/softskills/kommunikation/richtig-feedback-geben-der-feedback-burger/))
 	- **UML Diagramme**, Übersicht und Einteilung in Struktur- und Verhaltensdiagramme, Klassendiagramme (Klassen zeichnen, Assoziation, Aggregation, Komposition, Navigation, Mulitiplizität)
 	- [[Kano-Modell]] mit den 5 Merkmalen
 	- [[Projekte]] inkl. **Projektinstitutionen** und **Projektmerkmalen**
