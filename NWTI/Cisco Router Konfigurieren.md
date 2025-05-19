@@ -34,3 +34,16 @@ network <Netz welches am Router angeschlossen ist(z.B.:192.168.0.0)>
 ```
 
 ### Verwendung von OSPF
+```
+enable
+configure terminal
+router ospf <Prozess-ID>
+network <Netz welches am Router angeschlossen ist> <Wildcard-Mask> area <N>
+```
+Kosten können auf Interfaces gesetzt werden
+```
+enable
+configure terminal
+int <interfaces>
+ip ospf cost <Kosten-Zahl>
+```
