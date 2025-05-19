@@ -15,4 +15,4 @@ Viele Probleme in Projekten können mit diesem Dreieck beschrieben wie z.B.
 
 ![[magisches-dreieck-2.jpg]]
 
-Die 4. Dimension ist die Kundenzufriedenheit. Diese beschreibt die verschiedenen Interessen der Stakeholder.
+Die 4. Dimension ist die Kundenzufriedenheit. Diese beschreibt die verschiedenen Interessen der Stakeholder. Diese gilt es auch zu balancieren.
