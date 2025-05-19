@@ -1,3 +1,5 @@
+[Projekte leicht gemacht: Projekorganisation](https://projekte-leicht-gemacht.de/blog/methoden/projektorganisation/projektorganisationsformen)
+
 Hier wird zwischen 3 Projektorganisationsformen unterschieden wobei mit Stammorganisation die Aufbauorganisation ([[Unternehmensorganisationen]]) gemeint ist
 
 ## Stabsorganisation (Einflussorganisation)
@@ -5,7 +7,7 @@ Hier wird zwischen 3 Projektorganisationsformen unterschieden wobei mit Stammorg
 ![[stabsorganisation.jpg]]
 
 * Stabstelle: sehr nahe an der Geschäftsführung, Assistentinnen und Assistenten, Projektleiter ist in dieser Position
-* Projektleiter ist kein disziplinärer Vorgesetzter (kein Weisungsrecht) und keine fachliche Verantwortung. Er bekommt Auftrag direkt von Geschäftsführung. Er dient dazu Abteilungsübergreifende Änderungen durchzuführen
+* Projektleiter ist kein disziplinärer Vorgesetzter (kein Weisungsrecht) und hat keine fachliche Verantwortung. Er erhält Aufträge direkt von Geschäftsführung. Er dient dazu Abteilungsübergreifende Änderungen durchzuführen
 
 ## Autonome (Projekt) Organisation
 
@@ -14,7 +16,7 @@ Hier wird zwischen 3 Projektorganisationsformen unterschieden wobei mit Stammorg
 * reine Projektorganisation
 * Projektleiter hat volles Weisungsrecht
 * verwendetes Personal wird komplett aus Stammorganisation hinausgezogen, wodurch sie dort fehlen
-* Wiedereingliederung der Mitarbeiter kann schwer sein
+* Wiedereingliederung der Mitarbeiter, nach Abschluss des Projekts, kann schwer sein
 ## Matrixorganisation
 
 ![[matrixorganisation.jpg]]
