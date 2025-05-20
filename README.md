@@ -30,3 +30,4 @@ _Hier kommt noch was..._
 	- [[Magisches Projektdreieck]] (inkl. Erweiterung)
 	- [[Unternehmensorganisationen]] (grober Überblick mit den 2 Hauptorganisationen)
 	- [[Projektorganisation]] (3 Formen)
+* SYT-EL Test [[2025-05-27]]
