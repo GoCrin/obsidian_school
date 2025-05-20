@@ -44,13 +44,23 @@ $U_2 / U_1 = $
 | 10      | 10                | $\sqrt{10}$  |
 | 20      | 100               | 10           |
 | 40      | 10.000            | 100          |
-
+	
 ## 3. Relative Pegel
 
 $G_1 = 20dB G_2 = -100dB G_3 = 80dB$
 
 ## 4. Absolute Pegel
 
+### $dB\mu$
+
+$$L_{U/V_\mu} = 20 * lg(\frac{U}{1 \mu V}) dB (\mu V)$$
+
+### dBV
+
+$$L = 20 * lg(\frac{U}{1V}) dBV$$
+
+L/20 = lg(U/1V)
+	u = 10^L/20 * 1V
 
 Clipping: Signal ist lauter als obergrenze (digital)
 
