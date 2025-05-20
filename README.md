@@ -1,5 +1,11 @@
 # Wie verwend ich dieses Repository?
 
+## Online Ansicht
+
+Gehe auf [meine Github Page](https://gocrin.github.io/school/readme.html), wobei diese wahrscheinlich nicht sehr häufig aktualisiert wird. 
+
+## Lokaler Vault
+
 Clone das Repository
 ```
 git clone git@github.com:GoCrin/obsidian_school.git
