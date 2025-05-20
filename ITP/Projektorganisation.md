@@ -21,5 +21,5 @@ Hier wird zwischen 3 Projektorganisationsformen unterschieden wobei mit Stammorg
 
 ![[matrixorganisation.jpg]]
 
-* Mitarbeiter stehen nur zu einem prozentualen Teil ihrer Zeit dem Projektleiter zur Verfügung. Der Rest ihrer Zeit verbringen sie weiterhin in der Stammorganisation
+* Mitarbeiter stehen nur zu einem prozentualen Teil ihrer Zeit dem Projektleiter zur Verfügung. Den Rest ihrer Zeit verbringen sie weiterhin in der Stammorganisation.
 * Nachteil sind "2 Chefs"
