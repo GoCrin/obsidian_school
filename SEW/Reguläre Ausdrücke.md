@@ -61,3 +61,5 @@ if (pattern.matcher(stringToValidate).matches()) {
 	System.out.printf("%s is valid.\n", stringToValidate);
 }
 ```
+
+Die 1. Möglichkeit ist simpel und gut, aber wenn man immer wieder gegen das selbe Muster "matched" sollte man die 2. Möglichkeit verwenden.

@@ -10,7 +10,7 @@ $$x = \sqrt{10}$$
 
 Diese mal 2 kommen von $\sqrt[3]{10} \tilde= 2$ (dritte Wurzel 10)
 
-Was ist dezi?
+	Was ist dezi?
 	x10
 
 $10 * lg{P_2} / {P_1} * (U^2_2 / R) / (U^2_1 /R) = 10 * lg(U^2_2 * R) / (U^2_1 * R) = 20 * lg(U_2/U_1)$ 
