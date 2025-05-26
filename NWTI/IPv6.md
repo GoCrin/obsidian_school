@@ -17,3 +17,13 @@ IPv4 mit 32bit hat zu wenige IP's. Dieses Problem wurde mit öffentlichen und pr
 `194B:001C:0341:0000:0000:0FFF:0000:CB4F:10.14.7.199`
 
 **Killer Applikation** ist irgendwas was man will aber nur mit gewissen Eigenschaften (hier IPv6) nutzen kann. Diese fehlt bei IPv6 wodurch keiner umsteigt
+
+## dual stack
+
+volle ipv4 und parallel volle ipv6 Funktionalität, hardware kann sich aussuchen was es verwendet. Nachteil ist 
+
+## dual stack lite
+
+wie dual stack nur mit carrier-grade NAT (Home-Router hat keine öffentliche IP sondern eine aus dem privaten Netz des Anbieters) für IPv4
+
+IPv6 lässt einen Rechner mit mehreren Adressen zu
