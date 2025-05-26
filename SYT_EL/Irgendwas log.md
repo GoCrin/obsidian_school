@@ -106,3 +106,7 @@ $100dB_{SPL} - 76dB_{SPL} = 24dB_{SPL}$
 -> 4 mal halbieren
 $100m / 2^4 = 6.25$
 
+
+
+112dB 1m
+$$2^n * m => dB - 6dB * n$$
