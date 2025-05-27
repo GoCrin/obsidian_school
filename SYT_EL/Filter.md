@@ -1,3 +1,4 @@
+**Viele Informationen sind noch in [[Frequenz abhängigkeiten]]**
 ## Formeln
 Zeitkonstante $[\tau ] = s$
 $$\tau = R*C$$
