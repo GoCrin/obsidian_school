@@ -47,3 +47,8 @@ configure terminal
 int <interfaces>
 ip ospf cost <Kosten-Zahl>
 ```
+
+OPSF Routing-Einträge anzeigen
+```
+sh ip route ospf
+```
