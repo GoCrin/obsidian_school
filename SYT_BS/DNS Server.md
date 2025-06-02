@@ -1,3 +1,13 @@
+# Theorie (NWTI)
+
+DNS: Domain Name System
+
+## Vorgänger / Konkurrenten
+
+* (LM)Hosts: Handgeschriebene Dateien die wie dns Namen und IP's verbinden
+
+# Praxis
+
 13 root dns server (A-M)
 Hunderte Instanzen dieser Server über selben IPs (13 für 13 Server) mit anycast erreichbar
 
