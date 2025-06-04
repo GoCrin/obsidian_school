@@ -20,7 +20,7 @@ Verwaltet von root dns servern
 * .com
 * .org
 
-Weil root dns server von "usa" verwaltet wird und diese top level domains vergeben, kritisieren manche staaten diese, da sie keine top level domain bekommen. (nicht anerkannter Staat)
+Weil root dns server von "usa" verwaltet wird und diese top level domains vergeben, kritisieren manche Staaten diese, da sie keine top level domain bekommen. (nicht anerkannter Staat)
 
 ## Grober dns routing ablauf
 Tool: nslookup
