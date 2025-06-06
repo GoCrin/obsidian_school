@@ -26,3 +26,11 @@
 * Zusammenfassung
 * Stichhaltigkeit & Schlüssigkeit
 * Hintergrundwissen einbringen
+ 
+von call enable_cctb auf call disable_cctv
+
+key var auf key ändern
+
+-> dach irgendwas ist richtig
+
+
