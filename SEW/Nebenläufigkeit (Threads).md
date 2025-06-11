@@ -11,3 +11,7 @@ public class BackgroundRunnable implements Runnable {
 	}
 }
 ```
+
+## Zugriff auf UI (JavaFX) Komponenten aus einem Thread
+
+JavaFX (und viele andere UI-Frameworks) verwenden einen Thread (Java application thread) um die UI-Komponenten (Buttons, Labels, ...) zu rendern und zu aktualisieren. Von einem anderen Thread darf nicht direkt auf UI-Komponenten zugegriffen werden.

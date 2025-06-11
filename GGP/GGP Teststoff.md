@@ -31,7 +31,7 @@ Seite 202 - 216 (türkises Buch)
 * Sozialgesetzgebung
 
 
-antikirchliche Gesetzgebung führt zu Rechtsschwenk. darauf folgte
+**antikirchliche Gesetzgebung führt zu Rechtsruck**. darauf folgte
 
 * Rücknahme der Reformen
 * Spanischer Bürgerkrieg 1935 - 1939
