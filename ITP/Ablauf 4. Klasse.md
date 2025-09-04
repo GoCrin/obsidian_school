@@ -58,8 +58,17 @@ Praxis 2/3
 ## Vorbereitung
 ### RAH
 
-* 
+* [React](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3DHZsEkW7bNgw&ved=2ahUKEwjG4-SW9b6PAxUVSPEDHd8fMbMQwqsBegQINRAG&usg=AOvVaw2UfeAr8_pzP01F7DrILCAE) & Javascript
+* Protokoll schreiben als team (Problem -> Skizzen -> Lösung -> **DAS IN WORD**)
+* 2er und 3er Teams
+* Projektziele (Featuredemos)
+* WebStorm / VSCode / [Codepen](https://codepen.io/), NodeJS
 
+Tage
+1. JS für React: Vorbereitung zusammenfassen, **Quiz Nr. 1**
+2. React First-Steps: Projekt erstellen, Konzepte
+3. React Next-Level: Eigenständige Aufgabenstellungen zum Verständnis von React, **Quiz Nr. 2**
+4. React Projekt Abschluss: Einfache React App (2er 3er Teams), Teambesprechung, Gesamtpunkte
 ### ZOG
 
 * 
@@ -69,6 +78,9 @@ Praxis 2/3
 * 
 
 ### HOEF
+
+* 
+
 ### WIH
 ### STO
 
