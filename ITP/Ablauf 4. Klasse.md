@@ -71,7 +71,32 @@ Tage
 4. React Projekt Abschluss: Einfache React App (2er 3er Teams), Teambesprechung, Gesamtpunkte
 ### ZOG
 
-* 
+* (Git), Python -> **PyCharm**, [Opencv](https://opencv.org/)
+* HSV (= hue saturation value)
+* Farben clustern
+* Objekte erkennen
+* OCR (optical character recognition) Schrift erkennen
+* AI: Schlapfen, Banknoten, Getränkeetiketten
+* 2er und 3er Teams
+
+Tage
+1. Analysieren: Grundlagen, Demo Projekte, Projekt anlegen, erste Schritte, Ziele skizzieren
+2. Entwerfen: Ziel definieren, Aufgabenanalyse, Design, Aufgabenteilung, Codieren und Testen
+3. Realisieren: Codieren, Integrieren und Testen
+4. Validieren: Testen, Bugs fixen, Abnahme, Review, Demo, Lessons-Learned
+
+Beurteilung: Engagement (wenn wenig -> Wiederholung)
+
+Aufgabenstellungen
+* Flaggen darstellen/erkennen, Alphabet
+* Mit Fingern = Farbstift zeichnen
+* Bild/Schrift auf Betrachter ausgerichtet
+
+Python
+* `x, y, z = 5, 3, "A"` ist möglich
+* variablen können mit `global` auch in Methoden global sein
+* `str = "Hallo Welt!"` -> `str2 = str[1:4]` gibt Bereich
+* `list = [5, 4.6, "AB"]` in Listen darf alles
 
 ### GEI
 
