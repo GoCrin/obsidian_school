@@ -100,14 +100,52 @@ Python
 
 ### GEI
 
-* 
+* Java, ART (Android Runtime) / Dalvik VM
+* Just in Time -> Zum Start wird alles in Maschinen code übersetzt
+* 3er und 4er Teams
+
+Arten der Android Applikationen
+* Activity: Hat Nutzeroberfläche
+* Service: Hintergrundprozesse
+* Content Provider: Verwaltet Daten
+* Broadcast Receiver
+
+Tage
+1. Android-Studio, Kotlin for Android
+2. Eingangswiederholung, Jetpack Compose, Projektideen
+3. Jetpack Compose next Level, Projekt
+4. Projekt Abschlusspräsentation
+
+Voraussetzungen
+* Android Studio
+* Android Virtual Device
+* Kopfhörer (optional wenn man Videotutorials schaut)
 
 ### HOEF
 
-* 
+* Gamedev mit Godot / Unity
+* Jetbrains Rider
+* Unity Hub / Editor oder Godot
+
+Tage
+1. Einführung in C#, Vektor-Rechnung
+2. Core-Logic für das Spiel
+3. Core-Logic für das Spiel
+4. Core-Logic für das Spiel
 
 ### WIH
 ### STO
+
+## Voraussetzungen
+
+| Lehrer | Voraussetzungen                                                         |
+| ------ | ----------------------------------------------------------------------- |
+| RAH    | WebStorm /  VSCode, NodeJS, Wissen welches Thema man recherchieren will |
+| ZOG    | PyCharm                                                                 |
+| GEI    | Android Studio, Android Virtual Device, (optional Kopfhörer)            |
+| HOEF   |                                                                         |
+| WIH    |                                                                         |
+| STO    |                                                                         |
 
 # ITP-Theorie
 
