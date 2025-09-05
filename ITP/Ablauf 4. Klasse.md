@@ -143,7 +143,7 @@ Tage
 | RAH    | WebStorm /  VSCode, NodeJS, Wissen welches Thema man recherchieren will |
 | ZOG    | PyCharm                                                                 |
 | GEI    | Android Studio, Android Virtual Device, (optional Kopfhörer)            |
-| HOEF   |                                                                         |
+| HOEF   | Unity Hub & Editor oder Godot, Jetbrains Rider                          |
 | WIH    |                                                                         |
 | STO    |                                                                         |
 
@@ -158,3 +158,8 @@ Tage
 6. Qualitätsmanagement
 
 1 Test pro Semester
+
+
+4: 10er team -> ca. 2 Wochen WIH
+5: rest -> hat WIH nicht
+6: Ich -> ca. 2 Wochen WIH
