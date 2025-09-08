@@ -36,3 +36,4 @@ Kombination aus Klassischer und Agiler Vorgehensweise
 
 # Welche Projektmanagement-Methode ist die richtige
 
+## Cynefin-Framework
