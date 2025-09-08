@@ -18,4 +18,8 @@ classDiagram
 
 Problem: was macht `draw()` bei nicht konkreten Figur.
 
-Man könnte eine leere Methode einfügen dies führt zu der Problematik, dass die Klasse instanziierbar ist, obwohl es nicht sinnvoll ist da die geometrische Form nicht festgelegt ist. Genau für solche Fälle eigenen sich abstrakte Basisklassen. Diese erlauben es, Methoden vorzugeben die von Subklassen zu implementieren sin.
+Man könnte eine leere Methode einfügen dies führt zu der Problematik, dass die Klasse instanzierbar ist, obwohl es nicht sinnvoll ist da die geometrische Form nicht festgelegt ist. Genau für solche Fälle eigenen sich abstrakte Basisklassen. Diese erlauben es, Methoden vorzugeben die von Subklassen zu implementieren sin.
+
+```Java
+abstract int foo(String input);
+```
