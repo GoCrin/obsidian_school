@@ -34,6 +34,14 @@ Kombination aus Klassischer und Agiler Vorgehensweise
 * Präsentieren und Moderieren
 * Kreativitätsmethoden
 
-# Welche Projektmanagement-Methode ist die richtige
+# Welches Projektmanagement-Vorgehensmodell ist die richtige
 
-## Cynefin-Framework
+## [Cynefin-Framework](https://projekte-leicht-gemacht.de/blog/projektmanagement/cynefin-framework/)
+
+![[Pasted image 20250909102235.png]]
+![[Pasted image 20250909103153.png]]
+
+# Arten von (IT) Projekten
+* Neuentwicklungsprojekt
+* Konzeptionsprojekt -> Durchführungsprojekt
+* Wartungsprojekt (meisten Projekte)

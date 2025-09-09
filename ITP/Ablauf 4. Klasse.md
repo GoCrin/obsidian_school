@@ -22,14 +22,15 @@ ein team hat WIH nicht (Betreuung aber nicht nachholen) -> Schüler arbeiten sel
 
 Teamnummer von oben (1. Durchlauf) bis unten (letzter Durchlauf)
 
-| ZOG | HOEF | GEI | WIH | STO | RAH |
-| --- | ---- | --- | --- | --- | --- |
-| 1   | 2    | 3   | 4   | 5   | 6   |
-| 2   | 3    | 4   | 5   | 6   | 1   |
-| 3   | 4    | 5   | 6   | 1   | 2   |
-| 4   | 5    | 6   | 1   | 2   | 3   |
-| 5   | 6    | 1   | 2   | 3   | 4   |
-| 6   | 1    | 2   | 3   | 4   | 5   |
+| ZOG    | HOEF | GEI | WIH | STO  | RAH    |
+| ------ | ---- | --- | --- | ---- | ------ |
+| 4AHITS | EDV8 | DIC | DIC | DEV9 | 4BHITS |
+| 1      | 2    | 3   | 4   | 5    | 6      |
+| 2      | 3    | 4   | 5   | 6    | 1      |
+| 3      | 4    | 5   | 6   | 1    | 2      |
+| 4      | 5    | 6   | 1   | 2    | 3      |
+| 5      | 6    | 1   | 2   | 3    | 4      |
+| 6      | 1    | 2   | 3   | 4    | 5      |
 
 Wenn Nachträge notwendig sind (nicht abgeschlossenes Thema)
 
