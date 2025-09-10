@@ -3,6 +3,8 @@ Eines der Kernprinzipien der objektorientierten Programmierung, die Vererbung, e
 
 In Java kann eine Klasse nur von **einer** Oberklasse aberben (einfache Vererbung)
 
+## Keyword super
+
 Zum Ausführen der ursprünglichen Methode in der abgeleiteten Klasse wird in der überschriebenen Methode das Schlüsselwort `super` verwendet.
 
 ```Java

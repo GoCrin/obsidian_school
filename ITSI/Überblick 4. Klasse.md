@@ -19,4 +19,3 @@
 	* VPN Tunnel / IPSec
 	* Firewall (umgehen & Schutzmaßnahmen)
 	* Intrusion Detection
-*
