@@ -135,18 +135,23 @@ Tage
 4. Core-Logic für das Spiel
 
 ### WIH
+**Smart devices**
+* IoT
+* Narrowband IoT / LoRaWAN
+* Smart devices mit cpp ansteuern 
+
 ### STO
 
 ## Voraussetzungen
 
-| Lehrer | Voraussetzungen                                                         |
-| ------ | ----------------------------------------------------------------------- |
-| RAH    | WebStorm /  VSCode, NodeJS, Wissen welches Thema man recherchieren will |
-| ZOG    | PyCharm                                                                 |
-| GEI    | Android Studio, Android Virtual Device, (optional Kopfhörer)            |
-| HOEF   | Unity Hub & Editor oder Godot, Jetbrains Rider                          |
-| WIH    |                                                                         |
-| STO    |                                                                         |
+| Lehrer | Voraussetzungen                                                                                                                            |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| RAH    | WebStorm /  VSCode, NodeJS, Wissen welches Thema man recherchieren will                                                                    |
+| ZOG    | PyCharm                                                                                                                                    |
+| GEI    | Android Studio, Android Virtual Device, (optional Kopfhörer)                                                                               |
+| HOEF   | Unity Hub & Editor oder Godot, Jetbrains Rider                                                                                             |
+| WIH    | Wissen (Java, JS, TCP/IP), IntelliJ IDEA, Java Azul Zulu 21, MQTT Client / MQTT Explorer, Software zum Zugriff auf serielle Schnittstellen |
+| STO    |                                                                                                                                            |
 
 # ITP-Theorie
 
