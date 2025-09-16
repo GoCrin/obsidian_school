@@ -24,7 +24,7 @@ Teamnummer von oben (1. Durchlauf) bis unten (letzter Durchlauf)
 
 | ZOG    | HOEF | GEI | WIH | STO  | RAH    |
 | ------ | ---- | --- | --- | ---- | ------ |
-| 4AHITS | EDV8 | DIC | DIC | DEV9 | 4BHITS |
+| 4AHITS | EDV8 | DIC | DIC | EDV9 | 4BHITS |
 | 1      | 2    | 3   | 4   | 5    | 6      |
 | 2      | 3    | 4   | 5   | 6    | 1      |
 | 3      | 4    | 5   | 6   | 1    | 2      |
