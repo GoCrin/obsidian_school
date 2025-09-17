@@ -64,3 +64,29 @@ Signieren sich selbst
 4. CA prüft das CSR -> stellt sicher, dass Subject richtig ist
 5. Erstellen (Schreibt sich als Issuer, stellt Validity aus) und signieren (mit $K_{PrivCA}$) des Zertifikats
 6. CA Schicken CERT zurück
+
+# acme.sh
+
+```Bash
+su -
+curl https://get.acme.sh | sh -s email=my@example.com
+```
+
+Macht einen crontab
+```Bash
+crontab -l
+```
+
+alias für acme.sh
+```Bash
+alias acme.sh='/root/'
+```
+
+Im webroot -> zu finden unter /etc/apache2/sites-available
+
+```Bash
+acme.sh --issue -d guebe.moo.com -w /var/www/vps-28535c5d.vps.ovh.net
+```
+Das script macht:
+* keypair
+* macht csr mit angegebenen daten
