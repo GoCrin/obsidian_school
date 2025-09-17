@@ -34,9 +34,41 @@ createuser --interactive
 * name of role -> root
 * is superuser -> y
 
-### DB erstellen
+# Nutzung
+## Postgresql starten
 
+```Bash
+sudo systemctl start postgresql
+```
 
+## Auf postgres user wechseln
+
+```Bash
+sudo su - postgres
+```
+
+## Datenbank erstellen
+
+Als `postgres` user
 ```Bash
 createdb myDatabaseName
 ```
+
+## Mit Datenbank verbinden
+
+Als `postgres` user
+```Bash
+psql -d myDatabaseName -h <hostname> -U <User>
+```
+`-U` ist im lokalen Linux betrieb sinnlos
+
+## häufige Datenbank aufgaben
+
+Diese werden innerhalb der `psql` shell ausgeführt
+
+| Beschreibung                       | Befehl          |
+| ---------------------------------- | --------------- |
+| Liste der Datenbanken              | `\l`            |
+| Mit Datenbank verbinden            | `\c <database>` |
+| Tabellen Info                      | `\dt`           |
+| Nutzer mit Berechtigungen anzeigen | `\du`           |

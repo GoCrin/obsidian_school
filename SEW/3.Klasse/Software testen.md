@@ -1,6 +1,6 @@
 Um eine hohe Qualität der auszuliefernden Software sicherzustellen ist es notwendig diese intensiv zu testen
-#### White-Box-Test vs. Black-Box-Test
-##### White-Box
+## White-Box-Test vs. Black-Box-Test
+### White-Box
 ![[Pasted image 20250219084106.png]]
 Das Testen erfolgt mit Blick auf die implementierte Logik.
 <u>Vorteile</u>:
@@ -9,7 +9,14 @@ Das Testen erfolgt mit Blick auf die implementierte Logik.
 <u>Nachteile</u>:
 * Eventuell Testen um "Fehler herum"
 * Erfüllung der gesamten Spezifikation wird nicht überprüft.
-##### Black-Box
+
+#### Junit Annotation
+
+@test
+@beforAll
+
+
+### Black-Box
 ![[Pasted image 20250219084243.png]]
 Nur nach außen sichtbares Verhalten fließt in den Test ein.
 <u>Vorteile</u>:
@@ -18,3 +25,7 @@ Nur nach außen sichtbares Verhalten fließt in den Test ein.
 <u>Nachteile</u>:
 * Neuer Code wird nur durch Zufall geteilt
 * Schlecht / Schwer automatisierbar
+
+## Bananen Software
+
+Wie eine Banane reift die Software beim Kunden -> kommt mit Fehlern auf die der Kunde hinweisen muss damit sie behoben werden.

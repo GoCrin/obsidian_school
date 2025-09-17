@@ -1,6 +1,8 @@
 Ist ein Standard für Zertifikate
 Zertifikat issuer signiert Subject & Public key -> stellt sicher, dass Webpage ist wer sie vorgibt zu sein, in dem Signatur garantiert, dass Private- / Public key wirklich der richtigen "Person" gehört
 
+Beim Signieren wird nicht das gesamte Dokument signiert sondern der Hash
+
 # HTTPS
 
 * Secure http -> tls verschlüsselt
@@ -21,22 +23,28 @@ Zertifikat issuer signiert Subject & Public key -> stellt sicher, dass Webpage i
 
 # PKI (Public-Key-Infrastruktur)
 
-Chain of trust:
+full Chain / Chain of trust:
 
 * Certificate
 	* Subject: htl-hl.ac.at
 	* Issuer: ZeroSSL
-* CA
+	* Erzeugt mit -> $K_{PrivCA}$
+	* Geprüft mit -> $K_{PubCA}$
+* CA (Certificate Authority)
 	* Subject: ZeroSSL
 	* Issuer: UserTrust
+	* Erzeugt mit -> $K_{PrivROOT}$
+	* Geprüft mit -> $K_{PubROOT}$
 * Root CA
 	* Subject: UserTrust
 	* Issuer: UserTrust
+	*  Erzeugt mit -> $K_{PrivROOT}$
+	* Geprüft mit -> $K_{PubROOT}$
 
 Browser bekommen die gaze chain
 * Schaut Subject an
 * Sucht CA Subject der gleich ist wie Issuer vom 1. CA -> Prüft mit PK von 2. CA die Signatur vom 1. CA
-* Dieser Vorgang wird bis zu einem Root CA wiederholt
+* Dieser Vorgang wird bis zu einem Root CA wiederholt -> Weil diese **Self signed** sind
 
 Manche mobile Apps überprüfen Chains of trust nicht gut / vollständig
 ## Intermediate CA
@@ -51,6 +59,8 @@ Signieren sich selbst
 
 # Beantragen
 1. Public / Private Key-Pair erstellen
-2. CSR (Certificate signing request): Subject + Public key
-3. schicken an CA: signieren das Zertifikat
-4. CA Schicken C zurück
+2. CSR (Certificate signing request): **Subject, Public key**, Key usage
+3. schicken an CA
+4. CA prüft das CSR -> stellt sicher, dass Subject richtig ist
+5. Erstellen (Schreibt sich als Issuer, stellt Validity aus) und signieren (mit $K_{PrivCA}$) des Zertifikats
+6. CA Schicken CERT zurück
