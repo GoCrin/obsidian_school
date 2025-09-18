@@ -9,7 +9,7 @@ Es ergibt sich für die ersten n folgender Werteverlauf
 | fib(n) | 1   | 1   | 2   | 3   | 5   | 8   | 13  | 21  |
 Berechnet die Fibonacci Stelle n:
 
-```
+```Java
 public int fib(int n) {
 	if (n == 1) {
 		return 1;
