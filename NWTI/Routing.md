@@ -88,4 +88,4 @@ Deshalb gibt es zusätzliche Spalten in der Tabelle
 | ------------- | ------------- | -------- | ----------------- | ------------------- |
 | 192.168.10.10 | 91.114.39.20  | 443      | 41316             | 55689               |
 | 192.168.10.20 | 91.114.39.20  | 443      | 41316             | 53244               |
-Der Router macht jetzt nicht nur NAT sondern auch PAT
+Der Router macht jetzt nicht nur NAT sondern auch PAT2

@@ -12,6 +12,7 @@
 | ------------------- | --------------------------- |
 | $f(x) = ln(x)$      | $f'(x) = \frac{1}{x}$       |
 | $f(x) = log_{n}(x)$ | $f'(x) = \frac{1}{x*ln(n)}$ |
+|                     |                             |
 
 * **Kreis Funktionen**
 
@@ -53,3 +54,6 @@ $y = f(u)$ & $u = g(x)$
 also: $f(g(x))$
 dann gilt:
 $y' = f'(u) * g'(x)$
+
+
+$\int \frac{2 - t}{t^2} \,dt$
