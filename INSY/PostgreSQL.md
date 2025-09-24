@@ -72,3 +72,18 @@ Diese werden innerhalb der `psql` shell ausgeführt
 | Mit Datenbank verbinden            | `\c <database>` |
 | Tabellen Info                      | `\dt`           |
 | Nutzer mit Berechtigungen anzeigen | `\du`           |
+
+# Aufgaben
+
+## Administration
+
+### Schema anlegen
+### Tabellen im Schema anlegen
+### Rollen definieren
+<u>Rolle für Schreiben</u>
+<u>Rolle für Lesen</u>
+### Berechtigungen für die Rollen im Schema auf die Tabellen verbergen
+### Benutzer anlegen und den Rollen zuweisen
+### Testen der User
+
+![[nachweis_image.png]]

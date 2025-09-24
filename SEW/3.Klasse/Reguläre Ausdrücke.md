@@ -46,7 +46,7 @@ Beispiel:
 
 ## Verwendung in Java
 
-```
+```Java
 String regularExpression = "^[A-Za-z0-9%!=#]+$";
 String stringToValidate = "3BHITS";
 

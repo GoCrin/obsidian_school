@@ -18,3 +18,5 @@ sind "klassische" Datenbanken
 ### BASE
 
 ## newSQL
+
+$\lambda$ 

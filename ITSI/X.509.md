@@ -1,3 +1,10 @@
+# Fragen
+
+* Welche Felder sind in einem Zertifikat
+* Wofür ist ein Zertifikat
+* "Wie ist das mit der Signatur"
+
+
 Ist ein Standard für Zertifikate
 Zertifikat issuer signiert Subject & Public key -> stellt sicher, dass Webpage ist wer sie vorgibt zu sein, in dem Signatur garantiert, dass Private- / Public key wirklich der richtigen "Person" gehört
 
@@ -60,7 +67,7 @@ Signieren sich selbst
 # Beantragen
 1. Public / Private Key-Pair erstellen
 2. CSR (Certificate signing request): **Subject, Public key**, Key usage
-3. schicken an CA
+3. schicken an CA (in X.509 Format)
 4. CA prüft das CSR -> stellt sicher, dass Subject richtig ist
 5. Erstellen (Schreibt sich als Issuer, stellt Validity aus) und signieren (mit $K_{PrivCA}$) des Zertifikats
 6. CA Schicken CERT zurück
