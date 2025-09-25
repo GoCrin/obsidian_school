@@ -21,11 +21,12 @@ oder (für Windows)
 route print
 ```
 
-* Dest-Addresse
+* Dest-Network
 	* Meist Subnetze
 	* 0.0.0.0/0 -> Default Route auf vielen Endgeräten
-* Next hop / Gateway
+* Next hop / Gateway (oder Device / Interface, wenn direkt verbunden) 
 	* Wem gibt man das IP-Paket
+	* ether2
 * Metrik
 	* Kosten / Bewertung für Routen
 
@@ -33,6 +34,28 @@ route print
 
 `192.168.10.0/24 dev LAN1 src 192.168.10.10`
 Sind im selben Layer 2 Segment (Gateway wird nicht benötigt), arp kann direkt ausgeführt werden
+
+### Aufgaben
+
+**1. Aufgabe**
+
+\<Diagramm von Fischer hier\>
+
+Routingtabelle:
+
+| Router  | Dest. Network   | Next Hop / Interface |
+| ------- | --------------- | -------------------- |
+| Router1 | 192.168.0.0/24  | direct br            |
+|         | 10.0.0.0/30     | direct ether1        |
+|         | 10.0.0.4/30     | direct ether2        |
+|         | 172.16.10.0/24  | 10.0.0.6             |
+|         | 192.168.10.0/24 | 10.0.0.1             |
+|         | 192.168.20.0/24 | 10.0.0.1             |
+|         | 10.0.0.8/30     | 10.0.0.1             |
+|         | 192.168.30.0/30 | 10.0.0.1             |
+|         | 192.168.0.0/16  | 10.0.0.1             |
+
+
 ### Wählen eines Routingeintrags
 
 Longest prefix match -> der spezifischste Eintrag (Meisten Net-bit)

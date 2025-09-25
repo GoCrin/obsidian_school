@@ -1,6 +1,7 @@
 * EN: Enable -> wenn betätigt -> Reset
 * Boot: Wenn beim Starten gedrückt -> Ändern des Boot-Modus (Download / Flashing Mode)
 * GPIO: General Purpose Input / Output
+* 
 
 ## Digital vs Analog
 
