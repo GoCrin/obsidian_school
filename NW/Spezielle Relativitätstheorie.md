@@ -1,3 +1,13 @@
+
+# Einstein Sätze
+
+1. Die Physikalischen Gesetze sind in allen Bezugs(/Inertial)-Systemen
+2. Die Lichtgeschwindigkeit c ist in allen Bezugssytemen gleich und die maximale Geschwindigkeit
+
+
+
+2)
+
 # Bewegung
 ## Was ist Bewegung
 Änderung des Ortes bezogen auf einen Ruhepunkt
@@ -108,11 +118,47 @@ $v = 0,94 * c$
 
 ## Längenkontraktion
 
+Bewegte Objekte schrumpfen in Richtung der Bewegung
+
 $l_E = \frac{l_R}{\gamma}$
 
-## Geschwindigkeits-Addition
 
 
+## Relativistische Massenzunahme
 
-### Relativistische Masse
 
+$P_A$ = Impuls gemessen von A
+$P_B$ = Impuls gemessen von B
+
+$v_{Anna} = \frac{s_Y}{t_A}$
+$v_{Ben} = \frac{s_y}{t_B}$
+
+$v_{Anna} \neq v_{Ben}$
+
+
+$$P_A = P_B$$
+$$m * v_A \neq m * v_B$$
+$$m_A * v_A = m_B * v_B$$
+
+$m_B = \gamma * m_A = \gamma * m_0$
+$m_A$ ist hier die Ruhemasse
+
+## Relative Geschwindigkeits-Addition 
+
+Formel:
+$$u = \frac{u' + v}{1 + \frac{u'v}{c^2}}$$
+
+$u$ ... Geschwindigkeit gemessen von externen Beobachter
+$v$ ... Geschwindigkeit des bewegten Systems
+$u'$ ... Geschwindigkeit innerhalb des bewegten Systems
+
+### Beispiel
+
+Kanone schießt mit $\frac{c}{2}$ in Rakete die sich mit $\frac{c}{2}$ bewegt
+
+$$u = \frac{\frac{c}{2} + \frac{c}{2}}{1 + \frac{\frac{c}{2} * \frac{c}{2}}{c^2}} = \frac{c}{1 + \frac{1}{4}} = \frac{c}{1,25}$$
+
+Zug bewegt sich mit $30 m/s$, Person im Zug geht mit $1 m/s$
+
+$$u_{klassisch} = 30 + 1 = 31 m/s$$
+$$u_{REL} = \frac{31 m/s}{1 + \frac{30 * 1}{(3 * 10^8)^2}} = \frac{31 m/s}{1 + \frac{1}{3 * 10^{15}}}$$
