@@ -74,17 +74,18 @@ Signieren sich selbst
 
 # acme.sh
 
+zum Installieren
 ```Bash
 su -
 curl https://get.acme.sh | sh -s email=my@example.com
 ```
 
-Macht einen crontab
+acme.sh macht einen crontab, diesen sieht man mit:
 ```Bash
 crontab -l
 ```
 
-alias für acme.sh
+alias für acme.sh (befehl nicht vollständig)
 ```Bash
 alias acme.sh='/root/'
 ```
