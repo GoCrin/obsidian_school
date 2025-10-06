@@ -16,6 +16,9 @@ git clone git@github.com:GoCrin/obsidian_school.git
 _Hier kommt noch was..._
 
 # TERMINE
+
+## 3. Klasse
+
 * Abgabe INSY Projekt: **22.5.2025**
 	* Git Beschreibung (screenshoots) Präsentieren
 * NWTI Test 28. 4. 2025
@@ -31,3 +34,7 @@ _Hier kommt noch was..._
 	- [[Unternehmensorganisationen]] (grober Überblick mit den 2 Hauptorganisationen)
 	- [[Projektorganisation]] (3 Formen)
 * SYT-EL Test [[2025-05-27]]
+
+## 4. Klasse
+
+* ITSI 

@@ -98,3 +98,7 @@ acme.sh --issue -d guebe.moo.com -w /var/www/vps-28535c5d.vps.ovh.net
 Das script macht:
 * keypair
 * macht csr mit angegebenen daten
+
+
+
+67 867967 \* 73 176001

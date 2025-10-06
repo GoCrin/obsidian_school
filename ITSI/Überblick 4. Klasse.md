@@ -19,3 +19,22 @@
 	* VPN Tunnel / IPSec
 	* Firewall (umgehen & Schutzmaßnahmen)
 	* Intrusion Detection
+
+# 1. Test (8. 10. 2025)
+
+* Zertifikate
+* X.509
+* Chain of trust
+* acme.sh
+* Arten von Zertifikaten
+
+# Fragen
+
+* Erklären sie chain of trust
+* zeichnen sie den inhalt eines fullchain zertifikat files
+* wie sind die zertifikate verbunden
+* Welche eigenschaften hat ein leaf zertifikat
+* Welche eigenschaften hat ein csr files
+* wie gehen sie vor um ein zertifikat zu erstellen
+* was macht acme.sh im hintergrund um ein zertifikat zu erstellen
+* Was macht der Browser mit der fullchain
