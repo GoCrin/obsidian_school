@@ -32,5 +32,42 @@ Die **fachliche** Spalte kann als Input für die **Risiko-analyse** und zum anle
 * Netzplan:
 	* Vorgänge(Vorgangsknoten) -> kasterl, Abhängigkeiten(anordnungsbeziehungen) -> orthogonale pfeile, ablauf
 	* Was kommt nach was (keine echte Zeitachse -> kann noch nicht)
-	* Dauer der vorgägne schätzen -> Erstellen einer Zeitachse / Terminplan
+	* Dauer der vorgägne schätzen (-> Erstellen einer Zeitachse / Terminplan)
 	* 3x3 Zellen -> Nr (0,0)
+
+
+| NR (Vorgangsnummer)          |                    | D (Vorgangsdauer)            |
+| ---------------------------- | ------------------ | ---------------------------- |
+| FAZ (Frühester Anfangspunkt) | GP (Gesamtpuffer)  | FEZ (Frühester Endzeitpunkt) |
+| SAZ (Spätester Anfangspunkt) | FP (Freier Puffer) | SEZ (Spätester Endzeitpunkt) |
+
+Netzplan liefert:
+
+1. Ester Wurf Ablaufplan
+2. Verschoben werden kann
+3. Zeitkritische Vorgägne
+4. Kalibrierung
+
+
+* Gantt
+	* jede Zeile -> Vorgang als balken
+	* Rauten -> milestones
+	* Einfach ersichtliche puffer
+
+
+Wichtig:
+
+* Netzplan
+	* Abhängigkeiten der Vorgänge
+	* Berechnung der:
+		* frühesten und spätesten Zeitpunkte (Für start/ende der Vorgänge)
+		* Puffer (sind Verzögerungen möglich)
+		* Projektdauer (in Tagen, Wochen)
+		* Bestimmung des kritischen Pfads
+* Gantt-Diagramm
+	* Abhängigkeiten der Vorgänge
+	* Darstellung:
+		* von Ablauf- und Terminplanung (Datum)
+		* des Projektstandes
+		* von Planänderungen
+

@@ -152,7 +152,9 @@ $u$ ... Geschwindigkeit gemessen von externen Beobachter
 $v$ ... Geschwindigkeit des bewegten Systems
 $u'$ ... Geschwindigkeit innerhalb des bewegten Systems
 
-### Beispiel
+### Beispiele
+
+**1. Beispiel**
 
 Kanone schießt mit $\frac{c}{2}$ in Rakete die sich mit $\frac{c}{2}$ bewegt
 
@@ -162,3 +164,31 @@ Zug bewegt sich mit $30 m/s$, Person im Zug geht mit $1 m/s$
 
 $$u_{klassisch} = 30 + 1 = 31 m/s$$
 $$u_{REL} = \frac{31 m/s}{1 + \frac{30 * 1}{(3 * 10^8)^2}} = \frac{31 m/s}{1 + \frac{1}{3 * 10^{15}}}$$
+
+**2. Beispiel**
+
+Raumschiff fliegt mit $v_R = 0,9 c$ und schießt eine Sonde mit $v_S = 0,8 c$ in Flugrichtung aus. Wie groß ist die beobachtete Geschwindigkeit $u'$ der Sonde.
+
+$$u' = \frac{v_R + v_S}{1 + \frac{v_R * v_S}{c^2}}$$
+$$u' = \frac{1,7 c}{1,72} = 0,988 c$$
+
+**3. Beispiel**
+
+In dem Raumschiff von Beispiel 2 sitzt eine Person mit Laserpointer (der in Flugrichtung zeigt). Wie schnell ist das Licht des Laserpointers
+
+$$u' = \frac{v_R + c}{1 + \frac{v_R * c}{c^2}}$$
+$$u' = \frac{1,9 c}{1 + \frac{0,9 c^2}{c^2}} = c$$
+
+**4. Beispiel**
+
+Ein Pirat mit $v_P = 0,9 c$ fliegt einem Frachtschiff ($v_F = 0,7 c$) um einen Planeten hinterher und schießt einen Torpedo ($v_T = 0,5 c$)
+
+Mit welcher Geschwindigkeit nähert sich der Pirat aus Sicht des Frachtschiffes?
+
+klassisch: $v_P - v_F = 0,2c$
+
+$$u' = \frac{v_P - v_F}{1 - \frac{v_P * v_F}{c^2}} = \frac{0,2c}{1 - \frac{0,63c^2}{c^2}} = 0,54c$$
+
+Mit welcher Geschwindigkeit fliegt der Torpedo aus "Sicht des Planeten"?
+
+$$u' = \frac{v_P - v_F}{1 - \frac{v_P * v_F}{c^2}}$$
