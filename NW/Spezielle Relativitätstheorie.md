@@ -12,7 +12,7 @@
 ## Was ist Bewegung
 Änderung des Ortes bezogen auf einen Ruhepunkt
 
-## Inertialsysteme
+## Inertial- / Bezugssysteme
 Es kommt keine Beschleunigung vor -> Trägheitsgesetz gilt
 
 # Das Relativitätsprinzip

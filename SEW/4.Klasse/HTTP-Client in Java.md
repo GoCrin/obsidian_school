@@ -15,4 +15,6 @@ Diese Klasse repräsentiert die Antwort des Servers. Sie bietet viele hilfreiche
 * `statusCode()`: Liefert den Status-Code der Antwort
 * `body()`: Liefert die Daten der Anfrage
 
+---
+
 Weitere Infos, siehe [baeldung.com](https://www.baeldung.com/java-9-http-client) sowie [Java API-Doc](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html)
