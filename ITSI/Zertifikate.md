@@ -1,6 +1,6 @@
 # Felder in einem Zertifikat
 
-| Feld                | Bedeutung                                                              | Bespiel            |
+| Feld                | Bedeutung                                                              | Beispiel           |
 | ------------------- | ---------------------------------------------------------------------- | ------------------ |
 | Subject             | (Domain) Name des Zertifikatbesitzers (z.B. htl)                       | htl-hl.ac.at       |
 | Public key          | Public key des Zertifikatbesitzers                                     |                    |
@@ -22,7 +22,7 @@ Das "Subject" Feld darf Wildcards enthalten. z.B.:
 
 ## Selbst signierte Zertifikate
 
-Das sind Zertifikate die nicht von einer anderen CA (Certificate Authority) signiert sind, sondern von mit dem eigenen private key signiert sind. Diese Art von Zertifikat ist quasi nur bei Root CA's sinnvoll.
+Das sind Zertifikate die nicht von einer anderen CA (Certificate Authority) signiert sind, sondern mit dem eigenen private key signiert sind. Diese Art von Zertifikat ist quasi nur bei Root CA's sinnvoll.
 
 # X.509
 
@@ -30,7 +30,7 @@ Ist ein Standard für die Erstellung von Zertifikaten, bei der eine Certificate 
 
 # Chain of Trust
 
-Ist eine Kette von einer vom Browser vertrauten Root CA bis zu einem Leaf Zertifikat. Diese Kette wird gebildet in dem jedes Zertifikat (diese enthalten den Public Key des Besitzers) von der nächst höheren CA bis zur Root CA signiert wird. Die Root CA darf sich selbst signieren, da der Browser direkt dieser CA vertraut.
+Ist eine Kette von einer vom Browser vertrauten Root CA bis zu einem Leaf Zertifikat. Diese Kette wird gebildet in dem jedes Zertifikat (diese enthalten den Public Key des Besitzers) von der nächst höheren CA bis zur Root CA signiert wird. Die Root CA darf sich selbst signieren, da der Browser dieser CA direkt vertraut.
 
 ## Leaf Zertifikat 
 

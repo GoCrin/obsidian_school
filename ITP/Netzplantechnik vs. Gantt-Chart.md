@@ -3,7 +3,7 @@
 * Berechnungen
 * welche Vorgänge in welcher Reihenfolge (Vorgänge, die aneinander geknüpft werden)
 
-## Vorwärtsrechnung
+
 
 | Nr. | Vorgänger | Dauer in Tagen | Bezeichung           |
 | --- | --------- | -------------- | -------------------- |
@@ -16,14 +16,8 @@
 | 7   | 5,6       | 5              |                      |
 | 8   | 7         | 2              |                      |
 
-Aus der Tabelle soll ein Netzplan werden. Die knoten schauen so aus:
 
-| NR (Vorgangsnummer)          |                    | D (Vorgangsdauer)            |
-| ---------------------------- | ------------------ | ---------------------------- |
-| FAZ (Frühester Anfangspunkt) | GP (Gesamtpuffer)  | FEZ (Frühester Endzeitpunkt) |
-| SAZ (Spätester Anfangspunkt) | FP (Freier Puffer) | SEZ (Spätester Endzeitpunkt) |
-
-Aus der gegebenen Tabelle ergeben sich diese 8 Knoten
+Aus der Tabelle soll ein Netzplan werden. Die Knoten schauen so aus (Normalfolge -> Ende-Anfang EA):
 
 ```mermaid
 flowchart LR
@@ -51,6 +45,22 @@ node_six --> node_seven
 
 node_seven --> node_eight
 ```
+
+
+## Vorwärtsrechnung
+
+Zeigt wann das Projekt endet wenn alles ohne Verzögerung abläuft.
+FEZ = FAZ + Dauer
+
+Bei unserem Beispiel: FEZ = 3+ 10 + 10 +5 + 2 = 30 (FAZ = 0 weil kein Projekt davor ist)
+
+| NR (Vorgangsnummer)          |                    | D (Vorgangsdauer)            |
+| ---------------------------- | ------------------ | ---------------------------- |
+| FAZ (Frühester Anfangspunkt) | GP (Gesamtpuffer)  | FEZ (Frühester Endzeitpunkt) |
+| SAZ (Spätester Anfangspunkt) | FP (Freier Puffer) | SEZ (Spätester Endzeitpunkt) |
+
+Aus der gegebenen Tabelle ergeben sich diese 8 Knoten
+
 
 ### Vorgang 1
 
