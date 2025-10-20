@@ -18,3 +18,17 @@ Dazwischen (Verbotene Zone) -> zufällig High oder Low
 
 ## Diode
 
+# Input
+
+```cpp
+void setup() {
+	pinMode(32, INPUT);
+	pinMode(14, OUTPUT);
+}
+
+void loop() {
+	if () {
+	} else {
+	}
+}
+```
