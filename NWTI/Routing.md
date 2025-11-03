@@ -142,3 +142,8 @@ Deshalb gibt es zusätzliche Spalten in der Tabelle
 | 192.168.10.10 | 91.114.39.20  | 443      | 41316             | 55689               |
 | 192.168.10.20 | 91.114.39.20  | 443      | 41316             | 53244               |
 Der Router macht jetzt nicht nur NAT sondern auch PAT2
+
+# Wählen einer Route, bei redundanten Einträgen
+
+Mikrotik wählt eine Route (zufällig) aus und verwendet diese bis sie ausfällt.
+In Cisco lässt sich durch die Metrik einer Route steuern wie gut diese ist (Weg mit der kleinsten Metrik wird gewählt). In Mikrotik heißt diese Zahl "Distance".

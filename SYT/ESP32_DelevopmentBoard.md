@@ -32,3 +32,34 @@ void loop() {
 	}
 }
 ```
+
+# LED dimmen durch PWM (Pulsweitenmodulation)
+
+![[Pasted image 20251023081057.png]]
+Tastgrad / Duty cycle = $\frac{Impulsdauer}{Periodendauer}$
+
+Auflösung
+
+```cpp
+#include <Arduino.h>
+
+#define led 25
+
+void setup() {
+	pinMode(led, OUTPUT);
+	ledcSetup(0,100,8);
+	ledcAttachPin(led, 0);
+}
+
+void loop() {
+	for(int i = 0; i <= 10; i++) {
+		ledcWrite(0, i*25);
+		delay(500);
+	}
+
+	for(int i = 10; i >= 0; i--) {
+		ledcWrite(0, i*25);
+		delay(500);
+	}
+}
+```

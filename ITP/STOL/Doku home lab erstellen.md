@@ -65,9 +65,11 @@ In diesem Kapitel beschreibst du deinen persönlichen Beitrag zum Projekt. Jedes
 
 👉 Ziel ist, dass deutlich wird, welche Arbeit du selbst übernommen hast und wie deine Lösung aussieht.
 
-### 4.1 \<Schüerin/Schüler 1\>
+### 4.1 Linus Lichtenwallner
 
 **4.1.1 Individuelle Aufgaben**
+
+* Herunterladen der 3 VM's (Kali-Linux, Metaspliotable)
 
 **4.1.2 Lösungsbeschreibung**
 
@@ -91,7 +93,7 @@ In diesem Kapitel dokumentierst du, wo deine Arbeit abgelegt ist und welche Quel
 
 👉 Ziel ist, dass man deine Arbeit nachvollziehen und deine Quellen korrekt nachschlagen kann.
 
-https://www.youtube.com/watch?v=SXMkY-u8Vhk
+[How to Build Your Own Virtual Lab to Practice Penetration Testing - Nielsen Networking (23.10.2025)](https://www.youtube.com/watch?v=SXMkY-u8Vhk)
 
 ## 6 Ausblick
 

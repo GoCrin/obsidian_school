@@ -3,8 +3,10 @@ Was ist eine Abhängigkeit?
 Klasse A hat eine Abhängigkeit zu Klasse B wenn es in irgendeiner Form mit dieser interagiert.
 
 ```mermaid
-classDiagramm
-KlasseA --> KlasseB
+classDiagram
+    class KlasseA
+    class KlasseB
+    KlasseA <|-- KlasseB
 ```
 
 z.B. Klasse A instanziert Klasse B selbst: 

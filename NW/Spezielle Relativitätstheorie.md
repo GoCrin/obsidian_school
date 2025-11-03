@@ -5,15 +5,13 @@
 2. Die Lichtgeschwindigkeit c ist in allen Bezugssytemen gleich und die maximale Geschwindigkeit
 
 
-
-2)
-
 # Bewegung
 ## Was ist Bewegung
 Änderung des Ortes bezogen auf einen Ruhepunkt
 
 ## Inertial- / Bezugssysteme
 Es kommt keine Beschleunigung vor -> Trägheitsgesetz gilt
+Von einem Inertialsystem ins andere kommt man über die Lorentz-Transformation
 
 # Das Relativitätsprinzip
 
@@ -27,7 +25,7 @@ $t = \frac{2x}{c}$
 $t_{bewegt} = \frac{2z}{c}$
 $z^2 = x^2 + y^2$
 $t_{bewegt} = \gamma * t$
-$\gamma$ ... lorentz Faktor
+$\gamma$ ... Lorentz Faktor
 $\gamma = \frac{1}{\sqrt{1- \frac{v^2}{c^2}}}$
 
 ### Beispiele

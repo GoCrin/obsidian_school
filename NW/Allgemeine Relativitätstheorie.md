@@ -21,3 +21,33 @@ $$\frac{\Delta f}{f} = \frac{g*h}{c^2} = \frac{9,81 \frac{m}{s^2} * 252 m}{(3 * 
 $V_{esc}$ ... Fluchtgeschwindigkeit
 $V_{esc_{Erde}} = \sqrt{\frac{2 * G * M}{R}} = 11,2 \frac{km}{s}$
 \[$G$\] = $6,67 * 10^{-11} \frac{m^3}{kg^2}$
+
+# Perihel Drehung: des Merkur
+$$\Delta \Phi = \frac{6 * \pi * G * M}{c^2 a (1 - e^2)}$$
+$G$ ... Gravitationskonstante: $6,7 * 10^{-11}$
+$M$ ... Sonnenmasse: ~ $2 * 10^{30}kg$
+$e$ ... exzentrizität: $0,2056$
+$T$ ... Umlaufzeit: $88$ ... $0,241 a$
+$1\ arcsec$ ... $1/20625\ rad$
+($1° = 60\ archmin = 360\ arcsec$)
+$a$ ... Mittlere Halbachse Merkur: $5,79 * 10^{10}m$
+
+$$\Delta \Phi = 504,85 * 10^{-9} \frac{rad}{Umlauf}$$
+$$\Delta \Phi_{arcsec} = 0,1034\ arcsec/Umlauf$$
+$$404\ Umläufe$$
+$e = \sqrt{1 - \frac{b^2}{a^2}}$ ... exzentrizität einer Ellipse (gilt für $a > b$) 
+
+# GPS
+Braucht 3 Satelliten. 
+$R_E = 6371km$
+$M_E = 5,97 * 10^{24}kg$
+$G = 6,67 * 10^{-11} \frac{m^3}{kg^2}$
+$t = 86400s$
+$v_{SAT} = 14000km/h = 3870m/s$
+$h = 20000km$
+$$\Delta t_{SRT} =- t \frac{v^2}{2c^2} = 86400 * \frac{(3870m/s)^2}{2(3*10^8 m/s)} = - 7,2 \mu s$$
+Spezielle Theorie Effekt (SRT)
+
+Allgemeine Relativitätstheorie (ART)
+$$\Delta t_{ART}\ \tilde =\ t * \frac{G * M_E}{c^2} * (\frac{1}{R_E} - \frac{1}{R_E + h}) = 45,7 \mu s$$
+$$\Delta t_{ges} = \Delta t_{SRT} + \Delta t_{ART} = 38,5 \mu s$$
