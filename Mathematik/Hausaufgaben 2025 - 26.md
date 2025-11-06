@@ -46,9 +46,10 @@ NS durch Geogebra
 ![[Pasted image 20251103183250.png]]
 $$x = 3,76$$
 $$f'(3,76) = 3,19$$
-$$\alpha = arctan(3,19) = 72,59°$$
+$$\beta = arctan(3,19) = 72,59°$$
+$$\alpha = 180° - \beta = 107,4°$$
 ### 2)
 ![[Pasted image 20251103184925.png]]
 $A = 18,05$
 
-Es fließen $21,66 m^3 / s$ 
+Es fließen $21,66 m^3 / s$

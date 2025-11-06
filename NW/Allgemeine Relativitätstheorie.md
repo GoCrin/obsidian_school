@@ -51,3 +51,29 @@ Spezielle Theorie Effekt (SRT)
 Allgemeine Relativitätstheorie (ART)
 $$\Delta t_{ART}\ \tilde =\ t * \frac{G * M_E}{c^2} * (\frac{1}{R_E} - \frac{1}{R_E + h}) = 45,7 \mu s$$
 $$\Delta t_{ges} = \Delta t_{SRT} + \Delta t_{ART} = 38,5 \mu s$$
+
+Teststoff alles bis jetzt und einführung quantentheorie
+
+# Rechenbeispiel Doppelspalt experiment
+
+Laser schießt grünes ($\lambda = 550 n m$) Licht durch einen Doppelspalt. Abstand der Spalte beträgt $100 \mu m$. $L = 2m$, $d = 100 \mu m$
+$$d * sin(\alpha) = m * \lambda$$
+$$d * \frac{y_m}{L} = m * \lambda$$
+$m$ ... gibt an welches Maximum
+für kleine $\alpha$:
+$$tan(\alpha) = sin(\alpha) = \alpha$$
+ges: $y_1$
+
+$$y_1 = 1 * \lambda * L * \frac{1}{d}$$
+
+# Photoeffekt
+
+$h = 6,63 * 10^{-34} Js$
+$W_{Zn} = 7*10^{-19} J$ ... Austrittsarbeit von Zink
+$E = h *f$
+$f = \frac{c}{\lambda}$
+$$E_{550nm} = \frac{h * c}{\lambda} = \frac{6,63 * 10^{-34} * 3 * 10^8 Jm}{550 * 10^{-9}}= 3,6 * 10^{-19} J < W_{Zn}$$
+$$E_{250nm} = \frac{h * c}{250 * 10^{-9}} = 7,956 * 10^{-19} J > W_{Zn}$$
+Austrittsarbeit ist wichtig für PV (soll minimiert werden)
+$E_{KIN_E} = E_{\lambda} - W$ ... für $E_{\lambda} >= W$
+$E_{KIN_E} = 0$
