@@ -77,3 +77,11 @@ $$E_{250nm} = \frac{h * c}{250 * 10^{-9}} = 7,956 * 10^{-19} J > W_{Zn}$$
 Austrittsarbeit ist wichtig für PV (soll minimiert werden)
 $E_{KIN_E} = E_{\lambda} - W$ ... für $E_{\lambda} >= W$
 $E_{KIN_E} = 0$
+
+# Welle - Teilchen  Dualismus
+$v=44,72km/h=12.42m/s$
+$m=94kg$
+$$\lambda=\frac{h}{m*v}=\frac{h}{P}$$
+Energie \* Zeit = Wirkung 
+$h$ ... Plancksche Wirkungsquantum
+$$\lambda=\frac{6,63*10^{-34}Js}{1167,48kgm/s}=5,68*10^{-37}$$

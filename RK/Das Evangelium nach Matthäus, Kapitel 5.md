@@ -11,3 +11,4 @@ Ein guter Christ ist jemand, der...
 - der gute Absichten hat und ohne Hintergedanken handelt;
 - der sich um Gerechtigkeit, Verständnis und Zufriedenheit müht;
 - der sich für seinen Glauben einsetzt und dafür auch Nachteile in Kauf nimmt.
+

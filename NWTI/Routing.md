@@ -147,3 +147,46 @@ Der Router macht jetzt nicht nur NAT sondern auch PAT2
 
 Mikrotik wählt eine Route (zufällig) aus und verwendet diese bis sie ausfällt.
 In Cisco lässt sich durch die Metrik einer Route steuern wie gut diese ist (Weg mit der kleinsten Metrik wird gewählt). In Mikrotik heißt diese Zahl "Distance".
+
+# Routingprotokolle
+Man kann diese Protokolle wie folgt unterscheiden
+* linkstate und distance vektor
+* interior gateway protocol und extrior gateway protocol
+
+## OSPF
+
+Bei OSPF kennt der Router jeden anderen Router im Netz (nicht gut für Internet). Man kann OSPF durch Arears in bis zu 1.000 Router große Bereiche geteilt werden.
+
+![[Pasted image 20251106101612.png]]
+
+V={A,B,C,D}
+E={AB,AC,AD,BC,BD}
+d(AB)=2
+d(AC)=40
+d(AD)=30
+d(BC)=5
+d(BD)=10
+
+S = A ... Startknoten
+U = {A,B,C,D}
+
+|     |             | select A | select B |
+| --- | ----------- | -------- | -------- |
+| A   | \_,0        | \_,0     |          |
+| B   | \_,$\infty$ | A,2      |          |
+| C   | \_,$\infty$ | A,40     | B,7      |
+| D   | \_,$\infty$ | A,30     | B,12     |
+* den Startknoten S wählen (in dem Fall: S = A)
+* Gewicht von S auf 0 setzten
+* alle anderen Gewichte auf $\infty$
+* solange es unbesuchte Knoten (gespeichert in U) gibt:
+	* Wählen den Knoten mit kleinstem Gewicht aus U (A)
+	* für alle Kanten von Gewähltem Knoten (A) zu unbesuchten Knoten
+		* addieren von Gewicht von A mit Kanten Gewicht von Zielknoten
+		* wenn der Wert kleiner als der aktuelle Wert ist, überschreibt man diesen.
+	* Gewählten Knoten (A) aus U entfernen.
+
+
+
+Wählen den Knoten mit kleinstem Gewicht aus V (A)
+"gehen nach" B, addieren von Gewicht von A und Kanten Gewicht (2), wenn der Wert (0+2) kleiner als der aktuelle Wert ($\infty$) ist, überschreibt man diesen. Gewählten Knoten (A) aus U entfernen (jetzt: {B,C,D}).
