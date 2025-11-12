@@ -2,7 +2,7 @@ Java besitzt seit der Version 11 ein modernes HTTP Client API. Dieses ersetzt di
 
 ## HTTPRequest
 
-Mit dieser Klasse ist es möglich, vollständige HTTP-Methodenaufrufe (`GET`, `POST`, ...) inkl. URL und Daten - zu erstellen. Dabei nutzt die Klasse das Builder-Pattern (Pattern = Entwurfsmuster)
+Mit dieser Klasse ist es möglich, vollständige HTTP-Methodenaufrufe (`GET`, `POST`, ...) inkl. URL und Daten - zu erstellen. Dabei nutzt die Klasse das [[Builder Pattern]] (Pattern = Entwurfsmuster)
 
 ## HTTPClient
 
