@@ -42,3 +42,4 @@ A0 ... A15 sind die 16 Byte.
 
 **Byte-Substitution**
 Jedes Element der Eingangsmenge muss genau einem Element der Ausgangsmenge zugeordnet werden (**bijection oder Bijektive Funktion**).
+Verwendet eine Tabelle (S-Box) mit 256 oder 16\*16 Elementen. 2 
