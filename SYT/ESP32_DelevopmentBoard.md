@@ -130,3 +130,44 @@ void loop() {
 	delay(200);
 }
 ```
+
+# Timer
+```cpp
+// Interrupt-Service-Routine (ISR)
+void IRAM_ATTR onTimer() {
+	if (timerFlag == false) {
+		timerFlag = true;
+	}
+}
+
+//Setup...
+timer = timerBegin(1000000); // Zeit in mikrosekunden
+timerAttachInterrupt(timer, &onTimer, true);
+timerAlarm(timer, 50000, true);
+```
+
+Fertiges Programm (lässt led im Sekundentakt ein und aus gehen)
+```cpp
+#include <Arduino.h>
+
+#define output_diode 17
+
+hw_timer_t *timer = NULL;
+
+bool ledShouldGlow = false;
+
+void onTimer() {
+	ledShouldGlow = !ledShouldGlow;
+	digitalWrite(output_diode, ledShouldGlow);
+}
+
+void setup() {
+	pinMode(output_diode, OUTPUT);
+	timer = timerBegin(0,80,true); // Zeit in mikrosekunden
+	timerAttachInterrupt(timer, &onTimer, true);
+	timerAlarmWrite(timer, 1000000, true); // entspricht 1s
+	timerAlarmEnable(timer);
+}
+
+void loop() {}
+```
