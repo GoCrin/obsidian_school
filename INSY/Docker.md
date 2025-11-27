@@ -19,3 +19,25 @@ docker run postgresql -p 5432:3232
 | `docker images` / `docker image ls` | anzeigen alle heruntergeladenen Images                                                                                                |
 | `docker run [--name]`               | Aus Image einen rennenden Container machen (ausführen). `--name` um einen namen zu setzen                                             |
 | `docker start`                      | Bereits erstellten container ausführen                                                                                                |
+# Docker image erstellen
+
+Baut ein Docker-Image
+
+```bash
+docker build -f Dockerfile -t cool-debian:latest .
+```
+
+Dieses Image brauch ein Ausgangs-Image, dies gibt man mit `FROM` an
+
+```Dockerfile
+FROM [Image]:[tag]
+RUN apt-get update
+RUN apt-get install -y libpq-dev
+COPY [source] [target]
+
+# Ausführbare Datei
+CMD ["executable", "param1", "param2"]
+
+# Command in einer shell ausführen - /bin/sh -c
+CMD command param1 param2
+```

@@ -22,3 +22,5 @@ Tragweite (TW €) und Eintrittswahrscheinlichkeit (EW %)
 
 # Definition Risiko
 Ereignis oder Umstand, das / der nicht sicher, sondern in einer gewissen **Wahrscheinlichkeit** eintritt und negative **Auswirkungen** (oder Schaden, Tragweite) verursacht.
+
+DSGVO (en. GDPR)

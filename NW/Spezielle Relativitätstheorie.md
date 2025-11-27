@@ -20,13 +20,14 @@ Von einem Inertialsystem ins andere kommt man über die Lorentz-Transformation
 2. Die Vakuum-Lichtgeschwindigkeit ist unabhängig von der relativen Bewegung der
 Lichtquelle und des Beobachters
 
+## Lorentz Faktor
+
+$$\gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}$$
 ## Zeitdilatation
-$t = \frac{2x}{c}$
-$t_{bewegt} = \frac{2z}{c}$
-$z^2 = x^2 + y^2$
-$t_{bewegt} = \gamma * t$
-$\gamma$ ... Lorentz Faktor
-$\gamma = \frac{1}{\sqrt{1- \frac{v^2}{c^2}}}$
+
+Bewegte Uhren gehen langsamer.
+$$t_{Ruhe} = t_{Bewegt} * \gamma$$
+$t_{Ruhe}$ \> $t_{Bewegt}$
 
 ### Beispiele
 
@@ -118,12 +119,13 @@ $v = 0,94 * c$
 
 Bewegte Objekte schrumpfen in Richtung der Bewegung
 
-$l_E = \frac{l_R}{\gamma}$
+$$l_E = \frac{l_R}{\gamma}$$
 
 
 
 ## Relativistische Massenzunahme
 
+$$m_{Bewegt} = m_{Ruhe} * \gamma$$
 
 $P_A$ = Impuls gemessen von A
 $P_B$ = Impuls gemessen von B
@@ -143,7 +145,7 @@ $m_A$ ist hier die Ruhemasse
 
 ## Relative Geschwindigkeits-Addition 
 
-Formel:
+Lorentz Transformation:
 $$u = \frac{u' + v}{1 + \frac{u'v}{c^2}}$$
 
 $u$ ... Geschwindigkeit gemessen von externen Beobachter

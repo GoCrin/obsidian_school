@@ -163,11 +163,136 @@ void onTimer() {
 
 void setup() {
 	pinMode(output_diode, OUTPUT);
-	timer = timerBegin(0,80,true); // Zeit in mikrosekunden
+	timer = timerBegin(0,80,true);
 	timerAttachInterrupt(timer, &onTimer, true);
 	timerAlarmWrite(timer, 1000000, true); // entspricht 1s
 	timerAlarmEnable(timer);
 }
 
 void loop() {}
+```
+
+# Rising- und Falling-Edge Erkennung
+
+Für rising-edge
+```cpp
+#include <Arduino.h>
+
+#define input_pin 17
+
+int counted_rising_edges = 0;
+int old_counted_rising_edges = 0;
+
+void IRAM_ATTR onRisingEdge() {
+	counted_rising_edges++;
+}
+
+void setup() {
+	Serial.begin(9600);
+	pinMode(input_pin, INPUT_PULLDOWN);
+	attachInterrupt(digitalPinToInterrupt(input_pin), &onRisingEdge, RISING);
+}
+
+void loop() {
+	if (counted_rising_edges != old_counted_rising_edges) {
+		old_counted_rising_edges = counted_rising_edges;
+		Serial.printf("Times the ESP edged: [%d]\n", counted_rising_edges);
+	}
+}
+```
+
+
+Für falling-edge
+
+# Kommunikation via Wifi
+
+Zuerst braucht der ESP eine WLAN-Verbindung, welche in diesem Fall kein Passwort braucht, da das WLAN `HTLIoT` die MAC-Adresse der Geräte kennt und diese sich so "authentifizieren".
+```cpp
+#include <Arduino.h>
+#include <WiFi.h>
+
+#define SSID "HTLIoT"
+#define PSK "hollabrunn" //Preshared key
+
+void setup() {
+	WiFi.setHostname("ESP-IT-07");
+	WiFi.begin(SSID,PSK);
+	while (!WiFi.isConnected()) {
+		delay(200);
+	}
+	WiFi.localIP();
+}
+```
+
+
+Der MikroController startet hier einen Webserver.
+```cpp
+```
+Dieser Webserver hat Schnittpunkte welche wenn sie aufgerufen werden, eine Funktion ausführen. Durch diese Funktionen kann eine LED ein und ausgeschaltet werden.
+```
+```
+
+
+```cpp
+#include <Arduino.h>
+#include <WiFi.h>
+#include <WebServer.h>
+#include <HTTPClient.h>
+
+// IO
+#define OUTPUT_PIN 17
+
+// Wifi
+#define SSID "HTLIoT"
+#define PSK "hollabrunn" //Preshared key
+
+
+String PAIRED_ESP_URL = "http://172.168.10.10";
+String TURN_ON_PATH = "/turn/on";
+String TURN_OFF_PATH = "/turn/off";
+
+WebServer ws(80);
+HTTPClient client;
+
+void turnOn();
+void turnOff();
+
+void setup() {
+	Serial.begin(9600);
+
+	pinMode(OUTPUT_PIN, OUTPUT);
+
+	Serial.print("Begin connecting to Wifi\n");
+	WiFi.setHostname("ESP-IT-07");
+	WiFi.begin(SSID,PSK);
+	while (!WiFi.isConnected()) {
+		delay(200);
+		Serial.print(".");
+	}
+	Serial.print(WiFi.localIP());
+	Serial.print("Starting Webserver\n");
+	ws.on(TURN_ON_PATH, turnOn); //wenn /turn/on aufgerufen wird für Funktion "turnOn" aus
+	ws.on(TURN_OFF_PATH, turnOff);
+	ws.begin();
+
+	//Begin client
+	client.begin((PAIRED_ESP_URL + TURN_ON_PATH).c_str());
+}
+
+void loop() {
+	ws.handleClient();
+	//client.setURL("url string");
+	//client.GET();
+	delay(200);
+}
+
+void turnOn() {
+	digitalWrite(OUTPUT_PIN, HIGH);
+	ws.send(200, "text/json", "{\"status\": \"On\"}");
+}
+
+void turnOff() {
+	digitalWrite(OUTPUT_PIN, LOW);
+	ws.send(200, "text/json", "{\"status\": \"Off\"}");
+}
 ```
