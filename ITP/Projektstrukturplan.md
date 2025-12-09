@@ -2,7 +2,7 @@
 
 3:53 Video
 
-Projekt -> Teilprojekt -> Arbeitspakete
+Projekt -> Teilprojekt -> Teilaufgaben -> Arbeitspakete
 
 Arbeitspakete sind abgeschlossene und delegierbare Aufgaben
 

@@ -95,3 +95,26 @@ $$500ml = \pi \int_0^b f(x)^2 \,dx = 10,99$$
 1: $4,98s$
 2: $199,6$
 3: Dies ist die zurückgelegte Distanz des Autos in Metern in den ersten 10 Sekunden
+
+# 10. Hausübung, am 9.12.2025
+## 3.8
+1. wahr
+2. falsch
+3. wahr
+4. wahr
+5. wahr
+
+## 1
+
+$2 = (2x)^2$ f.A.
+$cos(x) = (sin(x))^2$ f.A.
+$e^x = e^{x2}$ f.A.
+Daher muss e) richtig sein.
+
+## 3.10 b)
+$y' + x + 2 = 0$
+$y = -\frac{1}{2}x^2 - 2 x$
+
+## 3.12 b)
+$y' + x^2 = x + 1$; $y(6) = 0$
+$y = -\frac{1}{3}x^3 + \frac{1}{2}x^2 + x + 6$

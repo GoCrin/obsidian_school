@@ -1,4 +1,4 @@
-# Projektinitiierung (von der Projektidee zum Projektauftrag)
+# (von der Projektidee zum Projektauftrag)
 
 ![[Pasted image 20251003125327.png]]
 

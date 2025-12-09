@@ -17,7 +17,23 @@ EXPOSE 5432
 CMD ["/init-postgres.sh"]
 ```
 
+```sh
+#!/bin/sh
+set -e
 
+postgres -D "$PGDATA" &
+pid=$!
+
+until pg_isready; do
+  sleep 1
+done
+
+psql -U postgres <<EOF
+CREATE DATABASE mydatabase;
+EOF
+
+wait $pid
+```
 
 
 ```Bash

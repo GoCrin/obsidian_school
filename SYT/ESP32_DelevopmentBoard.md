@@ -296,3 +296,13 @@ void turnOff() {
 	ws.send(200, "text/json", "{\"status\": \"Off\"}");
 }
 ```
+
+# Kommunikation über Wifi mit MQTT Protokoll
+
+Alle Schalter sollen alle Boards ein und ausschalten können.
+
+```Bash
+mosquitto_pub --cafile <file> - t 4xhits2526/test -m "Hello" -u 4xhits2526 -P 4xhits2526 -h mqtt.htl-hl.ac.at
+```
+
+Im Projekt muss die library `PubSubClient` eingebunden werden

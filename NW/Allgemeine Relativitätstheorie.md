@@ -66,17 +66,6 @@ ges: $y_1$
 
 $$y_1 = 1 * \lambda * L * \frac{1}{d}$$
 
-# Photoeffekt
-
-$h = 6,63 * 10^{-34} Js$
-$W_{Zn} = 7*10^{-19} J$ ... Austrittsarbeit von Zink
-$E = h *f$
-$f = \frac{c}{\lambda}$
-$$E_{550nm} = \frac{h * c}{\lambda} = \frac{6,63 * 10^{-34} * 3 * 10^8 Jm}{550 * 10^{-9}}= 3,6 * 10^{-19} J < W_{Zn}$$
-$$E_{250nm} = \frac{h * c}{250 * 10^{-9}} = 7,956 * 10^{-19} J > W_{Zn}$$
-Austrittsarbeit ist wichtig für PV (soll minimiert werden)
-$E_{KIN_E} = E_{\lambda} - W$ ... für $E_{\lambda} >= W$
-$E_{KIN_E} = 0$
 
 # Welle - Teilchen  Dualismus
 $v=44,72km/h=12.42m/s$
