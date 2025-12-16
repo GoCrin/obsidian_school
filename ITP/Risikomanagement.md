@@ -1,6 +1,6 @@
 
 
-1. Risiko identifizieren
+1. Risiken identifizieren
 	1. Brainstorming, Kreativitätstechniken, Erfahrung
 2. Risiken bewerten
 	1. Durch 2 Dimensionen: Tragweite / €, Eintrittswahrscheinlichkeit

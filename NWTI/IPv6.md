@@ -1,7 +1,8 @@
-## Warum?
+[IPv6 cheat sheet](https://www.roesen.org/files/ipv6_cheat_sheet.pdf)
+# Warum?
 IPv4 mit 32bit hat zu wenige IP's. Dieses Problem wurde mit öffentlichen und privaten IP-Adressen umgangen (NAT und PAT). Heutzutage wäre ein Umstieg auf IPv6 theoretisch möglich und wird teilweise gemacht, aber IPv6 ist noch lange nicht überall im Einsatz. Wurde Ende der 90er Jahre eingeführt
 
-## Aufbau
+# Aufbau
 * Länge: 128bit
 * (übliche) Schreibweise: x:x:x:x:x:x:x:x (mit x = 2Byte = 16bit in hexadezimal) z.B.: 
 * `fe80::d55f:5687:435a:d2cf`
@@ -18,12 +19,26 @@ IPv4 mit 32bit hat zu wenige IP's. Dieses Problem wurde mit öffentlichen und pr
 
 **Killer Applikation** ist irgendwas was man will aber nur mit gewissen Eigenschaften (hier IPv6) nutzen kann. Diese fehlt bei IPv6 wodurch keiner umsteigt
 
-## dual stack
+# dual stack
 
-volle ipv4 und parallel volle ipv6 Funktionalität, hardware kann sich aussuchen was es verwendet. Nachteil ist 
+volle ipv4 und parallel volle ipv6 Funktionalität, hardware kann sich aussuchen was es verwendet.
 
-## dual stack lite
+# dual stack lite
 
 wie dual stack nur mit carrier-grade NAT (Home-Router hat keine öffentliche IP sondern eine aus dem privaten Netz des Anbieters) für IPv4
 
 IPv6 lässt einen Rechner mit mehreren Adressen zu
+
+# Subneting
+
+Das kleinste mögliche Subnetz ist `/64`
+
+# Scopes
+
+Gewisse Adressbereiche sind für bestimmte Verwendungszwecke reserviert
+
+* Link local scope -> alle Geräte die man ohne Router erreichen kann (in einem Layer 2 segment)
+
+# Prefix
+
+Bei IP-Adressen (seit IPv6) nennt man den Netzanteil, Prefix. z.B. bei `/24` sind die ersten 24 Bit der Adresse der Prefix

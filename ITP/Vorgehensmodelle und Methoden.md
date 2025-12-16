@@ -9,7 +9,9 @@ Kombination aus Klassischer und Agiler Vorgehensweise
 * Spiralmodell
 
 ## Methoden
-* Gantt-Chart
+* Erstellung eines Gantt-Chart
+* Netzplantechnik
+* Projektstrukturplanung
 
 # Agiles Projektmanagement
 ## Vorgehensmodelle
@@ -18,6 +20,11 @@ Kombination aus Klassischer und Agiler Vorgehensweise
 * Extreme Programming (XP) -> Pair-Programming (Auf einem Bildschirm / PC arbeiten 2 Personen. Einer tippt, der andere schaut zu. Gründe dafür: 1. Qualitätssicherung 2. Know-How Transfer. Kosten sind hoch)
 
 ## Methoden
+
+* Daily Scrum
+* Sprint Review
+* Backlog-Management
+* Kanban-Board
 
 # Übergreifende Projektmanagement-Methoden
  * Risiken identifizieren
@@ -41,8 +48,3 @@ Kombination aus Klassischer und Agiler Vorgehensweise
 
 ![[Pasted image 20250909102235.png]]
 ![[Pasted image 20250909103153.png]]
-
-# Arten von (IT) Projekten
-* Neuentwicklungsprojekt
-* Konzeptionsprojekt -> Durchführungsprojekt
-* Wartungsprojekt (meisten Projekte)

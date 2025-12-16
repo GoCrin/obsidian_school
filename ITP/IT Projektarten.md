@@ -1,16 +1,23 @@
 # 1. Entwicklungsprojekte
+
+So noch nicht existierende Software entwickeln
+
 # 2. Enführungsprojekte
 
 * Standardsoftware (Von riesen Konzernen) zu integrieren
 * Oracle, SAP -> ERP (Enterprise ressource planning)
 
 # 3. Weiterentwicklungs- und Wartungsprojekte
+
+Vorhandene Software um Funktionalität erweitern oder vorhandenes verbessern (Geschwindigkeit, Leistung, etc.)
+
 # 4. Sanierungsprojekte
+
+Alte (potentiell unsichere) Software auf neueren Stand bringen
+
 # 5. Reengineeringprojekte (Ich)
 
-* Auch Re-Engineeringprojekte, sind Projekte welche ein vorhandenes System (oder Applikation) drastisch abändert oder komplett neu erschafft.
-* Dies passiert meist zur Kennzahlerhöhung, wie Senkung von Kosten oder Erhöhung der Leistung
-* Erfassung des Ist-Zustands
+Veraltete Software, bei der Sourcecode vielleicht unbekannt ist, Reverse-Engineeren und erneuern. (Leistung, Geschwindigkeit, Kosten, ... können dabei auch verbessert werden)
 
 # 6. Vorprojekte
 

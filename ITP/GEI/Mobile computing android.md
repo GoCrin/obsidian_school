@@ -1,0 +1,1 @@
+Lebenszyklus einer activity ist für die Wiederholung nicht zu Lernen.

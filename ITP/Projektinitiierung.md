@@ -4,9 +4,9 @@
 
 ## Umfeld-analyse
 
-unter [projekte-leicht-gemacht: Umfeldanalyse](https://projekte-leicht-gemacht.de/blog/methoden/projektstart/die-umfeldanalyse-einfach-erklaert/)
+unter [Projekte leicht gemacht: Umfeldanalyse](https://projekte-leicht-gemacht.de/blog/methoden/projektstart/die-umfeldanalyse-einfach-erklaert/)
 
-|        | fachlich                                     | sozial                   |
+|        | sachlich                                     | sozial                   |
 | ------ | -------------------------------------------- | ------------------------ |
 | intern | interne Richtlinien                          | Mitarbeiter              |
 |        | Vorhandene Technik                           | Betriebsrat              |
@@ -45,7 +45,7 @@ Netzplan liefert:
 
 1. Ester Wurf Ablaufplan
 2. Verschoben werden kann
-3. Zeitkritische Vorgägne
+3. Zeitkritische Vorgänge
 4. Kalibrierung
 
 

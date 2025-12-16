@@ -302,7 +302,7 @@ void turnOff() {
 Alle Schalter sollen alle Boards ein und ausschalten können.
 
 ```Bash
-mosquitto_pub --cafile <file> - t 4xhits2526/test -m "Hello" -u 4xhits2526 -P 4xhits2526 -h mqtt.htl-hl.ac.at
+mosquitto_pub --cafile ~/Downloads/ca.cer -t 4xhits2526/test -m "on" -u 4xhits2526 -P 4xhits2526 -h mqtt.htl-hl.ac.at
 ```
 
 Im Projekt muss die library `PubSubClient` eingebunden werden

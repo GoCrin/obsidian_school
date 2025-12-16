@@ -46,6 +46,22 @@ Um zu messen wie weit der Fortschritt gibt es mehrere Methoden
 Varianz ... Abweichung absolut in €
 Performance-Index (oder. Indikatoren) sind Verhältniszahl in Prozent
 
+### Formelsammlung
+
+| Wert                                      | Formel                     |
+| ----------------------------------------- | -------------------------- |
+| Geplante Gesamtkosten $= GK_{Plan}$       | -                          |
+| Fertigstellungsgrad Plan $= FstGr_{Plan}$ | -                          |
+| Earned Value Plan $= EV_{Plan}$           | $GK_{Plan} * FstGr_{Plan}$ |
+| Fertigstellungsgrad Ist $= FstGr_{Ist}$   | durch Gantt oder PSP       |
+| Earned Value Ist $= EV_{Ist}$             | $GK_{Plan} * FstGr_{Ist}$  |
+| Ist-Kosten $= IK$                         | durch ERP                  |
+| Kostenvarianz                             | $EV_{Ist} - IK$            |
+| Terminvarianz                             | $EV_{Ist} - EV_{Plan}$     |
+| Kosten-Performance-Index $= KPI$          | $EV_{Ist} / IK$            |
+| Termin-Performance-Index $= TPI$          | $EV_{Ist} / EV_{Plan}$     |
+| Critical Ratio                            | $KPI * TPI$                |
+
 ## Excel Aufgabe
 Fertigstellungswerte
 EV_Plan = GK_Plan \* FertigstellungsGrad_Plan

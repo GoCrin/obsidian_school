@@ -96,7 +96,7 @@ $$500ml = \pi \int_0^b f(x)^2 \,dx = 10,99$$
 2: $199,6$
 3: Dies ist die zurückgelegte Distanz des Autos in Metern in den ersten 10 Sekunden
 
-# 10. Hausübung, am 9.12.2025
+# 10. Hausübung, am 8.12.2025
 ## 3.8
 1. wahr
 2. falsch
@@ -118,3 +118,34 @@ $y = -\frac{1}{2}x^2 - 2 x$
 ## 3.12 b)
 $y' + x^2 = x + 1$; $y(6) = 0$
 $y = -\frac{1}{3}x^3 + \frac{1}{2}x^2 + x + 6$
+
+# 11. Hausübung, am 10.12.2025
+## 3.16
+### a)
+$$h'(t) = -gt + C_1$$
+### b)
+$v_0 = 20m/s$ ... Anfangsgeschwindigkeit
+$H = 2m$ ... Wurfhöhe
+$$h(t) = - \frac{g}{2}t^2 + C_1 t + C_2$$
+$$h(t) = - \frac{g}{2}t^2 + v_0 t + H$$
+### c)
+![[Pasted image 20251210190536.png]]
+Punkt C aus GeoGebra: Nach 2 Sekunden erreicht der Ball seine höchste Flughöhe.
+### d)
+Punkt B aus GeoGebra: Nach 4.1 Sekunden landet der Ball am Boden.
+## 3.17
+### a)
+$$s'(t) = -8t + \frac{90}{3,6}$$
+$$s(t) = -4t^2 + 25t + C$$
+### b)
+Als $C$ die Distanz die der Fahrer in der Schrecksekunde fährt
+$$s(t) = -4t^2 + 25t + 25$$
+### c)
+![[Pasted image 20251210192403.png]]
+Da durch der Punkt mit der Steigung 0 bei y 64,06 liegt und dieser der ist bei dem das Auto steht. Trifft der Fahrer das Reh nicht.
+## 3.18 a)
+$$y' = x^2 - x + C_1$$
+$$y = \frac{1}{3}x^3 - \frac{1}{2}x^2 + C_1 x + C_2$$
+$y(0) = 1$ -> $C_2 = 1$
+![[Pasted image 20251210194344.png]]
+$$C_1 = -9$$
