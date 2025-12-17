@@ -113,7 +113,7 @@ Daher muss e) richtig sein.
 
 ## 3.10 b)
 $y' + x + 2 = 0$
-$y = -\frac{1}{2}x^2 - 2 x$
+$y = -\frac{1}{2}x^2 - 2 x + C$
 
 ## 3.12 b)
 $y' + x^2 = x + 1$; $y(6) = 0$

@@ -76,3 +76,5 @@ x=0; x=L ... V = $\infty$ Teilchen ist gefunden
 
 n darf nicht 0 sein sondern fängt bei 1 an, da $\Delta v$ nicht 0 sein darf (wegen Unschärfe).
 n ... Quantenzahl $\in$ Natürlichen Zahlen > 0; 1,2,3,4,5,... 
+
+$$E_n = \frac{n^2 * h^2}{8m_eL^2}$$
