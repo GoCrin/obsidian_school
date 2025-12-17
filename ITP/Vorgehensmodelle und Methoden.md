@@ -1,4 +1,4 @@
-[pm methoden]([https://projekte-leicht-gemacht.de/pm-methoden/](https://projekte-leicht-gemacht.de/pm-methoden/ "https://projekte-leicht-gemacht.de/pm-methoden/"))
+[pm methoden](https://projekte-leicht-gemacht.de/pm-methoden/)
 # Hybride Vorgehensmodelle
 Kombination aus Klassischer und Agiler Vorgehensweise
 
