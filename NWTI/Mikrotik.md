@@ -45,3 +45,13 @@ add name=backbone instance=ospf_instance
 /routing/ospf/interface-template
 add area=backbone interfaces=ether1 cost=5
 ```
+# IPv6 Routing
+```routeros
+/ipv6 address
+add address=fda2::1 interface=ether3
+add address=fd00::2 advertise=no interface=ether1
+add address=fd01::1 advertise=no interface=ether2
+/ipv6 route
+add dst-address=fda1::/64 gateway=fd01::2
+add dst-address=fda0::/64 gateway=fd00::1
+```

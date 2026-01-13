@@ -18,6 +18,7 @@
 ## Umgang mit Risiken
 [Projekte leicht gemacht: Strategien zum Umgang mit Risiken](https://projekte-leicht-gemacht.de/blog/methoden/projektrisiken/strategien-zum-umgang-mit-risiken/)
 
+
 ![[Pasted image 20251118101404.png]]
 
 Tragweite (TW €) von 1 - 10 und Eintrittswahrscheinlichkeit (EW %) zwischen 0 - 100%

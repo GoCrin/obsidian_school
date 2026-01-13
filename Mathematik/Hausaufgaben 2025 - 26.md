@@ -149,3 +149,26 @@ $$y = \frac{1}{3}x^3 - \frac{1}{2}x^2 + C_1 x + C_2$$
 $y(0) = 1$ -> $C_2 = 1$
 ![[Pasted image 20251210194344.png]]
 $$C_1 = -9$$
+
+# 12. Hausübung, am 7.1.2026
+## 3.21
+### a)
+$$y(L)=0$$
+$$y'(L)=0$$
+### b)
+$$y''(x) = \frac{F}{E*I} x$$
+$$y'(x) = \frac{F}{2 * E * I} x^2 + C_1$$
+$$y(x) = \frac{F}{6 * E * I} x^3 + C_1 * x + C_2$$
+Konstanten:
+$$0 = \frac{F}{2 * E * I} L^2 + C_1$$
+$$C_1 = - \frac{F L^2}{2 E I}$$
+$$0 = \frac{F}{6 * E * I} L^3 - \frac{F}{2 * E * I} L^3 + C_2$$
+$$C_2 =\frac{F * L^3}{E * I} * (\frac{1}{2} - \frac{1}{6})$$
+$$C_2 = \frac{ F L^3}{3 E I}$$
+Lösung:
+$$y(x) = \frac{F}{6 E I} x^3 - \frac{F L^2}{2 E I}  x + \frac{ F L^3}{3 E I}$$
+$$y(x) = \frac{F}{6 E I} (x^3 - 3 L^2 x + 2 L^3)$$
+### c)
+$$y(0) = \frac{L^3 F}{3 E I} = \frac{64m^3 * 10kN}{24 * 10^6 Nm^2} = 0,02\dot6 m$$
+### d)
+Bei einer Verdoppelung von $L$ ist die Lösung für $y(0)$ gleich $0,21\dot3$, was einer Verachtfachung entspricht  

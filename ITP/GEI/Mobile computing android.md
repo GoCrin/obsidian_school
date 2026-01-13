@@ -5,7 +5,7 @@ Lebenszyklus einer activity ist für die Wiederholung nicht zu Lernen.
 # Gründe für Verwendung
 * Open-Source
 * Viele Geräte Hersteller
-* Wird viel verwendet
+* Wird oft verwendet
 
 # Android Stack (100% im Test)
 

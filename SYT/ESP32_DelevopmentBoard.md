@@ -17,6 +17,11 @@ Dazwischen (Verbotene Zone) -> zufällig High oder Low
 
 # Output
 
+## Vorwiderstand berechnen
+![[Pasted image 20260108084202.png]]
+$$R = \frac{U_R}{I_R} = \frac{3,3V - 1,5V}{20mA} = \frac{1,8V}{20mA} = 90 \ohm$$
+
+
 Bringt eine LED zum leuchten
 
 ```cpp

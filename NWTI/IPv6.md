@@ -3,7 +3,7 @@
 IPv4 mit 32bit hat zu wenige IP's. Dieses Problem wurde mit öffentlichen und privaten IP-Adressen umgangen (NAT und PAT). Heutzutage wäre ein Umstieg auf IPv6 theoretisch möglich und wird teilweise gemacht, aber IPv6 ist noch lange nicht überall im Einsatz. Wurde Ende der 90er Jahre eingeführt
 
 # Aufbau
-* Länge: 128bit
+* Länge: 128bit (16 Byte)
 * (übliche) Schreibweise: x:x:x:x:x:x:x:x (mit x = 2Byte = 16bit in hexadezimal) z.B.: 
 * `fe80::d55f:5687:435a:d2cf`
 * Man darf einmal pro Adresse einen oder mehr "Nullerblöcke" (`:0000:`) mit `::` ersetzen
@@ -38,7 +38,16 @@ Das kleinste mögliche Subnetz ist `/64`
 Gewisse Adressbereiche sind für bestimmte Verwendungszwecke reserviert
 
 * Link local scope -> alle Geräte die man ohne Router erreichen kann (in einem Layer 2 segment)
+	* IP's starten mit `fe80:`
 
 # Prefix
 
 Bei IP-Adressen (seit IPv6) nennt man den Netzanteil, Prefix. z.B. bei `/24` sind die ersten 24 Bit der Adresse der Prefix
+
+# Scopes & co
+
+Bei multicasts muss udp verwendet werden, da ein Verbindungsaufbau (wie bei tcp) immer nur unicast sein kann
+
+Bei IPv6 gibt es keine Broadcasts, dafür aber viele Mutlicast Adressen.
+
+Interface ID: letzten Byte -> wie viele Geräte / Hosts im Netzwerk sein können
