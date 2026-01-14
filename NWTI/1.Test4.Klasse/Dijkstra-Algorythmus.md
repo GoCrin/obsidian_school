@@ -8,22 +8,22 @@
 4. Solange es unbesuchte Knoten gibt:
 	1. Den Knoten mit den kleinsten Kosten aus der Liste der unbesuchten Knoten nehmen
 	2. für alle Kanten die mit dem Knoten verbunden sind:
-		1. Das Gewicht vom Knoten und das des anderen addieren
-		2. wenn diese Summe kleine als die Aktuellen kosten zum anderen Knoten sind wird dieser Wert mit der Summer ersetzt
+		1. Die Kosten vom gewählten Knoten mit den Kosten der Kante addieren
+		2. wenn diese Summe kleiner als die Aktuellen Kosten des anderen Knoten ist, wird dieser Wert mit der Summer ersetzt
 	3. Den gewählten Knoten aus der Liste der unbesuchten Knoten entfernen
 
+Dieser pseudo code, ist der im Unterricht implementierte. Er liefert nur die Kosten zu jedem Knoten vom Startknoten aus. Der Weg zu jedem Knoten ist nicht bekannt.
 
-* den Startknoten S wählen (in dem Fall: S = A)
-* Gewicht von S auf 0 setzten
-* alle anderen Gewichte auf $\infty$
-* solange es unbesuchte Knoten (gespeichert in U) gibt:
-	* Wählen den Knoten mit kleinstem Gewicht aus U (A)
-	* für alle Kanten von Gewähltem Knoten (A) zu unbesuchten Knoten
-		* addieren von Gewicht von A mit Kanten Gewicht von Zielknoten
-		* wenn der Wert kleiner als der aktuelle Wert ist, überschreibt man diesen.
-	* Gewählten Knoten (A) aus U entfernen.
+# Übung
 
-
-
-Wählen den Knoten mit kleinstem Gewicht aus V (A)
-"gehen nach" B, addieren von Gewicht von A und Kanten Gewicht (2), wenn der Wert (0+2) kleiner als der aktuelle Wert ($\infty$) ist, überschreibt man diesen. Gewählten Knoten (A) aus U entfernen (jetzt: {B,C,D}).
+| Knoten | Init | Runde 1 | Runde 2 | Runde 3 | Runde 4 | Runde 5 | Runde 6 | Runde 7 | Vorgänger |
+| ------ | ---- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | --------- |
+| a      |      |         |         |         |         |         |         |         |           |
+| b      |      |         |         |         |         |         |         |         |           |
+| c      |      |         |         |         |         |         |         |         |           |
+| d      |      |         |         |         |         |         |         |         |           |
+| e      |      |         |         |         |         |         |         |         |           |
+| f      |      |         |         |         |         |         |         |         |           |
+| g      |      |         |         |         |         |         |         |         |           |
+| h      |      |         |         |         |         |         |         |         |           |
+| i      |      |         |         |         |         |         |         |         |           |

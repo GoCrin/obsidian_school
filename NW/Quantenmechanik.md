@@ -54,11 +54,27 @@ Ort genau, Impuls unbekannt
 ![[Pasted image 20251209150611.png]]
 Kompromiss ungenau in Ort und Impuls
 $$\Delta x * \Delta p >= \frac{h}{4\pi}$$
+$x$ ... Ort -> $\Delta x$ ... unschärfe
+$p$ ... Impuls
+
 $\Psi(x)$ ... Wellenfunktion
 $|\Psi (x)|^2$: Aufenthaltswahrscheinlichkeit
 
 # Zeitunabhängige Schrödingergleichung
 $$-\frac{\hbar^2}{2 m} * \psi''(x) + V(x) * \psi(x) = E * \psi(x)$$
+$$E \psi = H \psi$$
+$$\psi_{nlms} = \psi_n * Y_{lms}$$
+$Y_{lms}$ ... Kugelflächenfunktionen -> geben an welche Form der Atomorbitale.
+
+Quantenzahlen:
+* $n$ Hauptquantenzahl (n=1,2,3,...)
+* $l$ Bahndrehimpuls Quantenzahl (Neben Quantenzahl)
+* $m$ Magnet Quantenzahl ($-l$ bis $l$)
+* $s$ Spin Quantenzahl ($\frac{-1}{2}$ oder $\frac{1}{2}$, spin up oder spin down)
+
+
+
+
 $\hbar = \frac{h}{2\pi}$ ... reduzierte Planck konstante
 $\psi''$ ... zweite örtliche Ableitung
 $V(x)$ ... Potential
@@ -78,3 +94,10 @@ n darf nicht 0 sein sondern fängt bei 1 an, da $\Delta v$ nicht 0 sein darf (we
 n ... Quantenzahl $\in$ Natürlichen Zahlen > 0; 1,2,3,4,5,... 
 
 $$E_n = \frac{n^2 * h^2}{8m_eL^2}$$
+
+Bohr: $2 \pi r = n \lambda$
+$$E_n = \frac{-13,6 eV}{n^2}$$
+$E_1 = -13,6 eV$
+$E_2 = -3,4 eV$
+$$\Delta E = E_{hoch} - E_{tief} = \frac{h*c}{\lambda} = h*f$$
+

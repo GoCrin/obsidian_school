@@ -25,7 +25,6 @@ Zeigt alle OSPF-Nachbarn
 /routing/ospf/instance/print
 /routing/ospf/area/print
 /routing/ospf/interface-template/print
-
 ```
 Für router 3
 ```routeros
