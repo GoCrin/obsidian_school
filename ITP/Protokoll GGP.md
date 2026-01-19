@@ -3,7 +3,7 @@
 4BHITS + Toschner
 
 ## Haben
-4BHITS - Laich + Toschner
+4BHITS - Laich - Falkner+ Toschner
 
 # Agenda
 * Test Rückgabe

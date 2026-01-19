@@ -171,4 +171,41 @@ $$y(x) = \frac{F}{6 E I} (x^3 - 3 L^2 x + 2 L^3)$$
 ### c)
 $$y(0) = \frac{L^3 F}{3 E I} = \frac{64m^3 * 10kN}{24 * 10^6 Nm^2} = 0,02\dot6 m$$
 ### d)
-Bei einer Verdoppelung von $L$ ist die Lösung für $y(0)$ gleich $0,21\dot3$, was einer Verachtfachung entspricht  
+Bei einer Verdoppelung von $L$ ist die Lösung für $y(0)$ gleich $0,21\dot3$, was einer Verachtfachung entspricht
+# 13. Hausübung, am 19. 1. 2026
+## 3.30 a)
+![[Pasted image 20260119195847.png]]
+## 3.31 a)
+$y' = y -4$ mit $y(0) = 1$
+$$\frac{dy}{dx} = 1 * (y-4)$$
+$$\int\frac{1}{y - 4} \,dy = \int 1\,dx$$
+$$ln|y-4| + c_1 = x + c_2$$
+$$y-4 = e^x * c$$
+$$y = e^x * c + 4$$
+$$1 = e^0 * c + 4$$
+$$-3 = c$$
+$$y = -3 e^x + 4$$
+## 3.31 b)
+$y' = -x * y$ mit $y(0) = 1$
+$$\int \frac{1}{y} \,dy = - \int x \,dx$$
+$$ln|y| + c_1 = -\frac{1}{2}x^2 + c_2$$
+$$ln|y| = \frac{1}{2}x^2 + c$$
+$$y = e^{\frac{1}{2}x^2} * c$$
+$$c = 1$$
+$$y = e^{\frac{1}{2}x^2}$$
+
+## 3.32 f)
+$y' * cos\,x + y * sin\,x = 0$
+$$y' = - y * tan\,x$$
+$$\frac{dy}{dx} = -y * tan\,x$$
+$$- \frac{1}{y}\,dy = tan\,x\,dx$$
+$$-ln|y| = -ln|cos(x)| + c$$
+$$y = cos(x) + c$$
+
+## 3.33 b)
+$y' + y = 1$; $y(0) = 3$
+$$- ln|1-y| = x + c$$
+$$y =1 - e^{-x} * c$$
+$$3 = 1 - c$$
+$$c = -2$$
+$$y = 1 + 2 e^{-x}$$
