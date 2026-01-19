@@ -53,4 +53,6 @@ add address=fd01::1 advertise=no interface=ether2
 /ipv6 route
 add dst-address=fda1::/64 gateway=fd01::2
 add dst-address=fda0::/64 gateway=fd00::1
+
+/ipv6/nd/set disabled=no numbers=0
 ```
