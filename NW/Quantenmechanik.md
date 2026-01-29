@@ -67,13 +67,18 @@ $$\psi_{nlms} = \psi_n * Y_{lms}$$
 $Y_{lms}$ ... Kugelflächenfunktionen -> geben an welche Form der Atomorbitale.
 
 Quantenzahlen:
-* $n$ Hauptquantenzahl (n=1,2,3,...)
-* $l$ Bahndrehimpuls Quantenzahl (Neben Quantenzahl)
+* $n$ Hauptquantenzahl (n=1,2,3,...), gibt Energie des Elektrons an
+* $l$ Bahndrehimpuls Quantenzahl (Neben Quantenzahl von 0 bis n-1)
+	* $l = 0$ -> s-Orbital (Kugel)
+	* $l = 1$ -> p-Orbital (Hantel)
 * $m$ Magnet Quantenzahl ($-l$ bis $l$)
 * $s$ Spin Quantenzahl ($\frac{-1}{2}$ oder $\frac{1}{2}$, spin up oder spin down)
 
+![[Pasted image 20260120114714.png]]
 
+Hauptquantenzahl n kann nicht 0 sein, weil die Unschärfe es verhindert. ($\Delta x * \Delta p >= \frac{h}{4 \pi}$)
 
+Pauliprinzip: Es gibt immer genau 2 Elektronen in einer Schale / Orbital
 
 $\hbar = \frac{h}{2\pi}$ ... reduzierte Planck konstante
 $\psi''$ ... zweite örtliche Ableitung
@@ -97,6 +102,8 @@ $$E_n = \frac{n^2 * h^2}{8m_eL^2}$$
 
 Bohr: $2 \pi r = n \lambda$
 $$E_n = \frac{-13,6 eV}{n^2}$$
+Wie stark Elektronen gebunden sind. 
+
 $E_1 = -13,6 eV$
 $E_2 = -3,4 eV$
 $$\Delta E = E_{hoch} - E_{tief} = \frac{h*c}{\lambda} = h*f$$

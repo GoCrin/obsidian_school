@@ -25,7 +25,7 @@ Eintritt in den Raum: 10:38
 	2. Land ist auf Karte zu zeigen und Hauptstadt zu nennen.
 6. Terminfindung Test 2. Semester
 	1. 2x 18 Punkte Test. Wunsch im Februar. 23. 2. -> 1. 18P Test. Fehlen am ende Des Jahres. 20. oder 27. 4. -> 2. 18P Test 27. 4.
-	2. 2x 7P Test. Afrika & Asien und. Afrika & Asien -> 26. 1. Nord- & Südamerika -> Noch kein Datum ausgemacht.
+	2. 2x 7P Test. Afrika & Australien und. Afrika & Asien -> 26. 1. Nord- & Südamerika -> Noch kein Datum ausgemacht.
 7. Eintragen des Teststoffes für den test am 23. 2. V. & Karikartur (zum stoff des bisher erlernten des Schuljahres), geteilt sind die 2 Punkte 50:50
 8. Weiter Ausarbeiten der Zettel zum neo liberalismus
 	1. Kritik
