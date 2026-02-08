@@ -210,4 +210,53 @@ $$3 = 1 - c$$
 $$c = -2$$
 $$y = 1 + 2 e^{-x}$$
 
-# 
+# 14. Hausübung, am 8. 2. 2026
+## 3.36
+### a)
+$$y' = e^x$$
+$$e^x = 1$$
+$$x = 0$$
+$$f(x) = x + 1$$
+### b)
+$$y' = 0,4x + 1 = -0,6$$
+$$x = -4$$
+$$y(-4) = \frac{6}{5}$$
+$$f(x) = -\frac{3}{5} x + \frac{6}{5}$$
+## 3.38
+$$f(x) = \frac{1}{10}x + 20$$
+$$h'(x) = \frac{2}{1000}x - \frac{75}{1000} = \frac{1}{10}$$
+$$x = 87,5$$
+$$f(87,5) = 28.75$$
+$$h(87,5) = 21.1$$
+$$d = 7,66m$$
+
+## 3.41
+![[Pasted image 20260208195356.png]]
+## 3.42
+### a)
+$$\dot{s}(t) = v_0 + at = v(t)$$
+### b)
+$$v(3) = 24,5m/s$$
+![[Pasted image 20260208195722.png]]
+
+* Gilt die Lösung für den fallenden Körper? A: Nein
+* Was ändert sich beim fallenden Körper nach Höhepunkt? v(t) wird negativ
+* Vergleiche etwas? (Weiß nicht was)
+
+## SRDP B_674 c
+### 1
+1. A
+2. C
+
+### 2
+$$\frac{8,2 - 10}{70 - 25} = -0,04kW/°C$$
+## SRDP B_627 c
+$$\dot{u}(t) = k * (U_0 - u)$$
+
+## SRDP B_566 d
+### 1
+$$\dot{f}(t) = k * (G - f)$$
+### 2
+$$f(0) = 1000 - 900*e^{-k*0} = 1002$$
+### 3
+Da $e^{-kt}$ für $t$ -> $\infty$ gegen $0$ geht, geht der rechte Term verloren und es bleibt der linke Term: $1000$.
