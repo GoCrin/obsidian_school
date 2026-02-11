@@ -1,3 +1,206 @@
+# 1. Hausübung am 15. September 2025
+## 1) Paradoxon von Zenon (Achilles und die Schildkröte)
+Berechne nach welcher Strecke Achilles die Schildkröte einholen wird, wenn die Schildkröte mit 30m Vorsprung startet und Achilles 4 mal so schnell wie die Schildkröte läuft.
+
+geg:
+* $v_a = 4 v_s$
+* $s_a = v_a * t$
+* $s_s = v_s * t + 30$
+* $s_a = s_s$ am Treffpunkt
+
+ges:
+* zurückgelegte Meter bis zum Treffpunkt
+
+$$s_a = s_s$$
+$$ v_a * t = v_s * t + 30 $$
+$$ 4 v_s * t = v_s * t + 30 $$
+$$ 4 v_s * t = v_s * t + 30 $$
+$$ 4 v_s * t - v_s * t = + 30 $$
+$$ t * (4 v_s - v_s) = 30 $$
+$$ 3 v_s * t = 30 $$
+$$ t = 10 / v_s $$
+$$ s_a = v_a * \frac{ 10 }{ v_s } $$
+$$ s_a = v_a * \frac{ 10 }{ \frac{ v_a }{ 4 } } $$
+$$ s_a = v_a * \frac{ 40 }{ v_a } $$
+$$ s_a = 40 $$
+
+A: Achilles holt die Schildkröte nach 40 Metern ein.
+
+## 2)
+Die elektrische Stromstärke $i(t)$ bei einem Wechselstromverbraucher kann durch eine Sinusfunktion beschrieben werden: $i(t) = 2 sin(10t + 30°)$, $t$…. Zeit in sec,$i(t)$ …. Stromstärke zur Zeit $t$ in A. Berechne die zeitliche Änderungsrate des Stromes für t = 5 s!
+
+$$ i'(t) = 20 cos(10t + 30°) $$
+
+$$ i'(5s) = 20 cos(80) $$
+$$ i'(5s) = -2.21 A $$
+
+
+## 3)
+geg:
+* $f(x) = a * x^2 + b * x$
+* $P = (200|0)$
+* $f'(0) = \frac{1}{10}$
+
+
+ges:
+* a, b
+* Achsen bei funktion $g(x) = a * x^2$
+
+### 3.1)
+
+$$ f'(x) = 2ax + b $$
+
+Gleichungssystem:
+$$ 0 = 40000a + 200b $$
+$$ b = \frac{1}{10} $$
+$$ a = - \frac{1}{2000} $$
+
+### 3.2)
+
+![[15092025_coords.png]]
+
+# 2. Hausübung am 17 September 2025
+
+\bigskip
+
+4.59)
+
+ges
+\begin{itemize}
+  \item \( f_1 \)
+  \item \( f_1 \)
+\end{itemize}
+
+\$$ f_1'(0)= 0 \$$
+\$$ f_1'(0,5)= 0,5 \$$
+\$$ f_1(0)= 1 \$$
+
+\bigskip
+
+\$$ b = 0 \$$
+\$$ c = 1 \$$
+\$$ 0,5 = a (0,5)^2 + 0,5b + c \$$
+\$$ 0,5 = a 0,25 + 1 \$$
+\$$ a = -2 \$$
+\$$ f_1(x) = -2x^2 + 1 \$$
+
+\bigskip
+
+\$$ f_2'(1)= 0 \$$
+\$$ f_2'(0,5)= 0,5 \$$
+\$$ f_2(1)= 0 \$$
+
+\bigskip
+
+\$$ 0 = 2a + b \$$
+\$$ 0,5 = (0,5)^2 a + 0,5 b + c \$$
+\$$ 0 = a + b + c \$$
+
+\bigskip
+
+\( a = 2 \), \( b = -4 \), \( c = 2 \)
+
+\bigskip
+
+\$$ f_2(x) = 2 x^2 -4 x + 2 \$$
+
+\bigskip
+\bigskip
+
+1)
+
+geg: \( \int \frac{\frac{3}{7} sin x}{2} \,dx \)
+
+\$$ \frac{3}{14} \int sin x \,dx \$$
+\$$ - \frac{3}{14} cos x + c \$$
+
+\bigskip
+
+2)
+
+geg: \( \int \frac{2 - t}{t^2} \,dt \)
+
+Verwendet wird dieser "Trick": \( \int u * v' = u * v - \int u' * v \)
+
+\$$ (2 - t) * (- \frac{1}{t}) - \int t^{-1} \,dt \$$
+\$$ - \frac{2}{t} - ln|t| + c \$$
+
+\bigskip
+
+3)
+
+geg: \( \int (\frac{x}{2} - 2)^2 \,dx \)
+
+\$$ \int \frac{x^2}{4} - 4 \frac{x}{2} + 4 \,dx \$$
+\$$ \frac{1}{4} \int x^2 - 2 \int x \,dx + 4 \$$
+\$$ \frac{1}{12} x^3 - x^2 + c \$$
+
+\bigskip
+
+4)
+
+geg: \( \int ( 2a - x )^2 \,dx \)
+
+\$$ 4a^2 - 4a \int x + \int x^2 \,dx \$$
+\$$ \frac{1}{3} x^3 - 2ax^2 + c \$$
+
+\bigskip
+
+5)
+
+geg: \( \int \frac{a - 2}{b^2 + c * t} \,dt \)
+
+\$$ (a - 2) \int (b^2 + c * t)^{-1} \,dt \$$
+
+Einsatz von "Trick": Integration durch Substitution
+
+\( u = b^2 + c * t \) -$>$ \( \frac{du}{dt} = c \) -$>$ \( dt = \frac{du}{c} \)
+
+\$$ (a - 2) \int u^{-1} \frac{1}{c} \,du \$$
+\$$ \frac{1}{c} (a - 2) ln|u| + c \$$
+\$$ \frac{1}{c} (a - 2) ln|b^2 + c * t| + c \$$
+
+\bigskip
+
+6)
+
+geg: \( \int 2 x^2 * \sqrt$$5$${x^3 - 1} \,dx \)
+
+\( u = x^3 - 1 \) -$>$ \( \frac{du}{dx} = 3 x^2 \) -$>$ \( dx = - \frac{du}{3 x^2} \)
+
+\$$ 2 \int x^2 u^{1/5} \frac{1}{3 x^2} \,du \$$
+\$$ \frac{2}{3} \int u^{1/5} \,du \$$
+\$$ \frac{2}{3} \frac{u^{6/5}}{\frac{6}{5}} + c \$$
+\$$ \frac{10}{18} (x^3 - 1)^{\frac{6}{5}} + c \$$
+
+\bigskip
+
+7)
+
+geg: \( \int 3 - 2e^{k * t} \,dt \)
+
+\( u = -kt \)
+
+\$$ 3 - 2 \int e^u (-\frac{1}{k}) \,du  \$$
+\$$ 3 + \frac{2}{k} e^u + c \$$
+\$$ \frac{2}{k} e^{-kt} + c \$$
+
+\bigskip
+
+8)
+
+geg: \( \int 2 sin(2x) * e^{cos(2x)} \,dx \)
+
+\( u = cos(2x) \) -$>$ \( \frac{du}{dx} = -2 sin(2x) \) -$>$ \( dx = - \frac{du}{2 sin(2x)} \)
+
+\$$ 2 \int e^u * sin(2x) * \frac{1}{2 sin(2x)} \,du \$$
+\$$ \int e^u \,du \$$
+\$$ e^u + c \$$
+\$$ e^{cos(2x)} + c \$$
+
+
+\end{document}
+
 # 7. Hausübung, am 21.10.2025
 ## 7.61
 ### a)
@@ -213,35 +416,78 @@ $$y = 1 + 2 e^{-x}$$
 # 14. Hausübung, am 8. 2. 2026
 ## 3.36
 ### a)
-$$y' = e^x$$
-$$e^x = 1$$
-$$x = 0$$
-$$f(x) = x + 1$$
+Die Änderungsrate ist negativ, da Zerfall eine Minderung der Anzahl zu Folge hat.
 ### b)
-$$y' = 0,4x + 1 = -0,6$$
-$$x = -4$$
-$$y(-4) = \frac{6}{5}$$
-$$f(x) = -\frac{3}{5} x + \frac{6}{5}$$
+$$\int\frac{1}{N}\,dN = - \lambda \int \,dt$$
+$$ln|N| = -\lambda * t + c_1$$
+$$N(t) = e^{-\lambda t}*c$$
+$$N(0) = N_0 = e^{-\lambda t}*c$$
+$$c = \frac{N_0}{e^0} = N_0$$
+$$N(t) =N_0 * e^{-\lambda t}$$
 ## 3.38
-$$f(x) = \frac{1}{10}x + 20$$
-$$h'(x) = \frac{2}{1000}x - \frac{75}{1000} = \frac{1}{10}$$
-$$x = 87,5$$
-$$f(87,5) = 28.75$$
-$$h(87,5) = 21.1$$
-$$d = 7,66m$$
+### a)
+Weil der Luftdruck mit steigender höhe geringer wird.
+### b)
+$$\int \frac{1}{p} \,dp=-k \int \,dh$$
+$$ln|p| = -k * h + c_1$$
+$$p(h) = e^{-k h} * c$$
+$$p(0) = 1013hPa = e^{-k h} * c$$
+$$c = 1013hPa$$
+$$p(h) =1013 * e^{-k h}$$
+### c)
+$$\frac{p(h_{1/2})}{p_0} = \frac{1}{2} = e^{-k*h_{1/2}}$$
+$$h_{1/2} = \frac{ln(2)}{k} = 5,54km$$
+### d)
+$$0,4 = e^{-k * h}$$
+$$h = \frac{ln(\frac{5}{2})}{k} = 7,32km$$
+### e)
+
+
+| Höhe      | International | Barometrisch |
+| --------- | ------------- | ------------ |
+| $h=3km$   | $701hPa$      | $695hPa$     |
+| $h = 8km$ | $356hPa$      | $372hPa$     |
 
 ## 3.41
-![[Pasted image 20260208195356.png]]
+### a)
+
+$$V = \pi R^2 h$$
+$$\frac{\pi R^2 dh}{dt} = -\mu A_0 \sqrt{2g*h(t)}$$
+$$\int \frac{1}{\sqrt{h}}\,dh=-\frac{\mu r^2 \sqrt{2g}}{R^2} \int\,dt$$
+$$2\sqrt{h} = -\frac{\mu r^2 \sqrt{2g}}{R^2} * t + c_1$$
+$$h_a(t) = (-\frac{2\mu r^2 \sqrt{2g}}{R^2} * t + c)^2$$
+$$h(0) = H = c^2$$
+$$c = \sqrt{2}$$
+$$h_s(t) = (\sqrt{2} -\frac{2\mu r^2 \sqrt{2g}}{R^2} * t)^2$$
+![[Pasted image 20260210193235.png]]
+### b)
+![[Pasted image 20260210193531.png]]
+### c)
+![[Pasted image 20260210193651.png]]
 ## 3.42
 ### a)
-$$\dot{s}(t) = v_0 + at = v(t)$$
-### b)
-$$v(3) = 24,5m/s$$
-![[Pasted image 20260208195722.png]]
 
-* Gilt die Lösung für den fallenden Körper? A: Nein
-* Was ändert sich beim fallenden Körper nach Höhepunkt? v(t) wird negativ
-* Vergleiche etwas? (Weiß nicht was)
+$$\frac{dv}{dt} = -g  -\frac{k}{m}v^2$$
+$$\int\frac{1}{g+\frac{k}{m}v^2}\,dv = -\int\,dt$$
+Geogebra:
+![[Pasted image 20260211075657.png]]
+$$2m*\frac{tan^{-1}(k*\frac{v}{\sqrt{gkm}})}{2*\sqrt{gmk}} = -t + c_2$$
+![[Pasted image 20260211080854.png]]
+$$v(t)_a = -30 * tan(\frac{c}{3}+\frac{t}{3})$$
+$$30 = -30 * tan(\frac{c}{3})$$
+$$-1 = tan(\frac{c}{3})$$
+$$c = \frac{3 \pi}{4}$$
+$$v(t)_s = -30 * tan(\frac{\pi}{4}+\frac{t}{3})$$
+Irgendwo ist ein Fehler passiert. Lösung ist gespiegelt:
+$$v(t)_s = 30 * tan(\frac{\pi}{4}-\frac{t}{3})$$
+### b)
+$$v(t_{max}) = 0$$
+$$30*tan(\frac{\pi}{4} -\frac{t}{3}) = 0$$
+$$t_{max} = \frac{3 \pi}{4} = 2.36s$$
+
+### c)
+![[Pasted image 20260210202641.png]]
+
 
 ## SRDP B_674 c
 ### 1

