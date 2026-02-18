@@ -42,8 +42,28 @@ capitalCities.put("England", "London");
 ```
 
 ### Queue
-z.B.:
+Realisierung von FIFO (First in - First out) und  LIFO (Last in - First out) Speichern.
+
+# Konzepte
+
+
+| Konzept          | -------    | Interface  | ------- | ------- |
+| ---------------- | ---------- | ---------- | ------- | ------- |
+|                  | List       | Queue      | Set     | Map     |
+| Arrays           | ArrayList  |            |         |         |
+| Verkettete Liste | LinkedList | LinkedList |         |         |
+| Bäume            |            |            | TreeSet | TreeMap |
+| Hash             |            |            | HashSet | HashMap |
+
+Man sieht hier wie die Klassen in Java heißen, die ein Interface implementieren und einem Konzept folgen.
 
 ```Java
-//soon
+// LinkedList implementiert Queue und List
+Queue<String> q = new LinkedList<>();
+List<String> l = new LinkedList<>();
 ```
+
+
+## Verkettete Liste
+
+Eine verkettete Liste ist eine dynamische Datenstruktur, in der Datenelemente geordnet gespeichert sind

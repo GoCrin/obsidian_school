@@ -506,3 +506,57 @@ $$\dot{f}(t) = k * (G - f)$$
 $$f(0) = 1000 - 900*e^{-k*0} = 1002$$
 ### 3
 Da $e^{-kt}$ für $t$ -> $\infty$ gegen $0$ geht, geht der rechte Term verloren und es bleibt der linke Term: $1000$.
+
+# 15. Hausübung am 15. 2. 2025
+
+## 3.10 f
+
+$$\frac{dy'}{x} = 4 x - 12 x^2$$
+$$y' + c_1 = 2x^2 - 4 x^3 + c_2$$
+![[Pasted image 20260216180935.png]]
+$$y = \int 2x^2 - 4x^3 + c_3 \,dx$$
+$$y(x)_a = \frac{2}{3} x^3 - x^4 + c_3 x + c_4$$
+## 3.12 d
+
+$$y' = \int 1- x - 6x^2 \,dx$$
+![[Pasted image 20260216181332.png]]
+$$y' = -2x^3 - \frac{1}{2} x^2 + x + c_1$$
+$$y(x)_a = - \frac{1}{2} x^4 - \frac{1}{6} x^3 + \frac{1}{2} x^2 + c_1 x + c_2$$
+$$2 = c_2$$
+$$5 = c_1$$
+$$y(x)_a = - \frac{1}{2} x^4 - \frac{1}{6} x^3 + \frac{1}{2} x^2 + 5 x + 2$$
+
+## 3.32 d
+
+$$\frac{dy}{dx} = -x * y^2$$
+$$\int \frac{1}{y^2} \,dy =- \int x \,dx$$
+$$- \frac{1}{y} + c_1 = \frac{1}{2} x^2 + c_2$$
+$$y = - \frac{1}{\frac{1}{2} x^2 + c_3}$$
+
+## 1)
+
+$$f'(x) = \frac{1}{x}$$
+$$P = (1; 2)$$
+$$f(x) = ln|x| + c$$
+$$2 = ln(1) + c$$
+$$c = 2$$
+$$f(x) = ln|x| + 2$$
+
+##  2)
+### a & b)
+$$s''(t) = - 4$$
+$$s'(t) = v(t) = -4t + 20$$
+$$s(t) = -2t^2 + c_1 t + c_2$$
+$$s(t) = -2t^2 + 20 t$$
+### c)
+$$v(t) = 0 = -4t + 20$$
+$$t = 5s$$
+
+$$s(5) = 50m$$
+
+### d)
+$$s(t) = 20 = -2t^2 + 20t$$
+![[Pasted image 20260216184155.png]]
+$$t =- \sqrt{15} + 5$$
+$$v(-\sqrt{15} + 5) = 15,5$$
+![[Pasted image 20260216184424.png]]
