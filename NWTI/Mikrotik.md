@@ -56,3 +56,13 @@ add dst-address=fda0::/64 gateway=fd00::1
 
 /ipv6/nd/set disabled=no numbers=0
 ```
+
+# OSPFv3 (Für IPv6)
+```routeros
+/routing/ospf/instance
+add name=ospf_instance redistribute=connected, ospf router-id=1.1.1.1 version=3
+/routing/ospf/area
+add area-id=0.0.0.0 name=backbone instance=ospf_instance
+/routing/ospf/interface-template
+add area=backbone interfaces=ether1, ether2 cost 10
+```

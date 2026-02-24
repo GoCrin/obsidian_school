@@ -67,3 +67,5 @@ List<String> l = new LinkedList<>();
 ## Verkettete Liste
 
 Eine verkettete Liste ist eine dynamische Datenstruktur, in der Datenelemente geordnet gespeichert sind
+
+![[Pasted image 20260218121350.png]]

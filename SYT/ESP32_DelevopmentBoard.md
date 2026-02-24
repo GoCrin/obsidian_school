@@ -639,3 +639,87 @@ Verwendete Protokoll heißt 1-Wire, weil eine Datenleitung. Ist auf einem Bus, g
 
 ![[Pasted image 20260212082044.png]]
 Dadurch dass das gerät auf einem Bus ist hat es eine Adresse, diese ist 8 Byte lang
+
+```cpp
+  /*********
+  Rui Santos
+  Complete project details at https://RandomNerdTutorials.com  
+*********/
+
+#include <OneWire.h>
+#include <DallasTemperature.h>
+#include <Arduino.h>
+#include <WiFi.h>
+#include <WebServer.h>
+#include <HTTPClient.h>
+#include <bits/stdc++.h>
+using namespace std;
+
+// Wifi
+#define SSID "HTLIoT"
+#define PSK "hollabrunn" //Preshared key
+
+WebServer webserver(80);
+HTTPClient client;
+
+// GPIO where the DS18B20 is connected to
+const int oneWireBus = 4;     
+
+// Setup a oneWire instance to communicate with any OneWire devices
+OneWire oneWire(oneWireBus);
+
+// Pass our oneWire reference to Dallas Temperature sensor 
+DallasTemperature sensors(&oneWire);
+
+void getTemp();
+
+void setup() {
+  // Start the Serial Monitor
+  Serial.begin(9600);
+  // Start the DS18B20 sensor
+  sensors.begin();
+
+  //WiFi
+  Serial.print("Begin connecting to Wifi\n");
+	WiFi.setHostname("ESP-IT-07");
+	WiFi.begin(SSID,PSK);
+	while (!WiFi.isConnected()) {
+		delay(200);
+	}
+	Serial.printf("[DEBUG] IP-address: %s\n", "");
+  Serial.println(WiFi.localIP());
+	Serial.print("Starting Webserver\n");
+	webserver.on("/", getTemp); //wenn /turn/on aufgerufen wird für Funktion "turnOn" aus
+	webserver.begin();
+}
+
+void loop() {
+  webserver.handleClient();
+  Serial.println(WiFi.localIP());
+	delay(200);
+}
+
+void getTemp() {
+  sensors.requestTemperatures(); 
+  float temperatureC = sensors.getTempCByIndex(0);
+  float temperatureF = sensors.getTempFByIndex(0);
+  Serial.print(temperatureC);
+  Serial.println("ºC");
+  Serial.print(temperatureF);
+  Serial.println("ºF");
+
+  //"{\"temperature\":" + to_string(temperatureC) + "}"
+  String output = "{\"temperature\":";
+  output.concat(String(temperatureC));
+  output.concat("}");
+
+  webserver.send(200, "text/json", output);
+}
+```
+
+# Timer
+
+Durch Interrupts.
+
+![[Pasted image 20260219081131.png]]
+
