@@ -723,3 +723,232 @@ Durch Interrupts.
 
 ![[Pasted image 20260219081131.png]]
 
+[ntp client tut](https://randomnerdtutorials.com/esp32-date-time-ntp-client-server-arduino/)
+[display tut](https://randomnerdtutorials.com/esp32-ssd1306-oled-display-arduino-ide/)
+
+```cpp
+//#include <OneWire.h>
+//#include <DallasTemperature.h>
+#include <Arduino.h>
+#include <WiFi.h>
+//#include <WebServer.h>
+#include <HTTPClient.h>
+#include <bits/stdc++.h>
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+#include "time.h"
+using namespace std;
+
+// About
+#define PROGRAM_NAME "main.cpp"
+#define PROGRAM_VERSION "Alpha 0.4"
+
+//Timer stuff
+#define ROUND_PIN 26
+#define START_STOP_PIN 27
+#define RESET_PIN 25
+
+hw_timer_t *timer = NULL;
+
+int milliseconds = 0;
+int seconds      = 0;
+int minutes      = 0;
+int hours        = 0;
+
+bool shouldPauseTimer = false;
+bool shouldResetTimer = false;
+bool last_round_state = false;
+bool last_start_stop_state = false;
+bool last_reset_state = false;
+
+int timer_start_timestamp = 0;
+int timer_start_mill_secs = 0;
+int timer_rounds[255];
+
+
+// Wifi
+#define SSID "HTLIoT"
+#define PSK "hollabrunn" //Preshared key
+
+// ntp time
+const char* ntpServer = "time.metrologie.at";
+const long  gmtOffset_sec = 3600;
+const int   daylightOffset_sec = 0;
+
+//WebServer webserver(80);
+//HTTPClient client;
+
+// screen
+#define OLED_Address 0x3C 
+#define Screen_width 128
+#define Screen_height 64
+#define OLED_RESET -1 
+
+Adafruit_SSD1306 display(Screen_width, Screen_height, &Wire, OLED_RESET);
+
+void getIndexPage();
+
+void onTimer() {
+  if (shouldPauseTimer) {
+    return;
+  }
+
+  milliseconds++;
+  if (milliseconds >= 1000) {
+    milliseconds = 0;
+    seconds++;
+  }
+  if (seconds >= 60) {
+    seconds = 0;
+    minutes++;
+  }
+  if (minutes >= 60) {
+    minutes = 0;
+    hours++;
+  }
+}
+
+void setup() {
+  // Start the Serial Monitor
+  Serial.begin(9600);
+
+  // Initialize I2C
+  Wire.begin();
+
+  // Initialize OLED
+  if (!display.begin(SSD1306_SWITCHCAPVCC, OLED_Address)) {
+    Serial.println("OLED init failed");
+    while (true);
+  }
+
+  display.clearDisplay();
+  display.setTextColor(SSD1306_WHITE);
+  display.setTextSize(1);
+
+  // Timer Controlls
+  pinMode(ROUND_PIN,      INPUT_PULLDOWN);
+  pinMode(START_STOP_PIN, INPUT_PULLDOWN);
+  pinMode(RESET_PIN,      INPUT_PULLDOWN);
+
+  last_round_state      = digitalRead(ROUND_PIN);
+  last_start_stop_state = digitalRead(START_STOP_PIN);
+  last_reset_state      = digitalRead(RESET_PIN);
+
+  //Timer
+  timer = timerBegin(0,80,true);
+	timerAttachInterrupt(timer, &onTimer, true);
+	timerAlarmWrite(timer, 1000, true); //1.000.000 entspricht 1s
+	timerAlarmEnable(timer);
+
+  //init rounds
+  for (int i = 0; i < sizeof(timer_rounds) / sizeof(timer_rounds[0]); i++) {
+    timer_rounds[i] = -1;
+  }
+
+  //WiFi
+  Serial.print("Begin connecting to Wifi\n");
+	WiFi.setHostname("ESP-IT-07");
+	WiFi.begin(SSID,PSK);
+	while (!WiFi.isConnected()) {
+		delay(200);
+	}
+
+  configTime(gmtOffset_sec, daylightOffset_sec, ntpServer);
+
+  struct tm timeinfo;
+  while (!getLocalTime(&timeinfo)) {
+    Serial.print(".");
+    delay(500);
+  }
+
+  WiFi.disconnect(true);
+  WiFi.mode(WIFI_OFF);
+}
+
+void loop() {
+  struct tm timeinfo;
+  if(!getLocalTime(&timeinfo)){
+    Serial.println("Failed to obtain time");
+  }
+
+  if(digitalRead(ROUND_PIN) != last_round_state) {
+    last_round_state = !last_round_state;
+    Serial.printf("%d:%d:%d:%d\n", hours, minutes, seconds, milliseconds);
+  }
+  if(digitalRead(START_STOP_PIN) != last_start_stop_state) {
+    last_start_stop_state = !last_start_stop_state;
+    shouldPauseTimer = !shouldPauseTimer;
+    // REset
+  }
+  if(digitalRead(RESET_PIN) != last_reset_state) {
+    last_reset_state = !last_reset_state;
+    shouldResetTimer = !shouldResetTimer;
+    // REset
+  }
+
+  /*if(last_start_stop_state) {
+    timer_start_timestamp = timestamp * 1000 + mill_secs;
+  }*/
+
+  if (shouldResetTimer) {
+    milliseconds = 0;
+    seconds = 0;
+    minutes = 0;
+    hours = 0;
+  }
+
+  display.clearDisplay();
+
+  display.setCursor(0, 0);
+  display.print(PROGRAM_NAME);
+  display.print(": ");
+  display.println(PROGRAM_VERSION);
+
+  display.setCursor(0, 20);
+
+  display.println(&timeinfo, "%H:%M:%S");
+
+  display.setCursor(0, 35);
+
+  display.print(hours);
+  display.print(":");
+  display.print(minutes);
+  display.print(":");
+  display.print(seconds);
+  display.print(":");
+  display.println(milliseconds);
+
+  display.setCursor(0, 50);
+
+  if (shouldPauseTimer) {
+    display.print("P");
+  } else {
+    display.print(" ");
+  }
+  if (shouldResetTimer) {
+    display.print("R");
+  } else {
+    display.print(" ");
+  }
+
+  display.display();
+
+  shouldResetTimer = false;
+
+  //webserver.handleClient();
+  //Serial.println(WiFi.localIP());
+	delay(200);
+}
+```
+
+# Tasmoto
+
+klone dieses [Repo](https://github.com/arendst/Tasmota). Danach füge den Ordner in VsCode hinzu in dem man `File` -> `Add Folder to Workspace` drückt und den geklonten Ordner auswählst.
+![[Pasted image 20260305092148.png]]
+
+in der unteren Leiste wähle dieses Symbol aus:
+![[Pasted image 20260305092332.png]]
+Es wird eine Suche geöffnet. In dieser sucht und wählt man `tasmota32`
+![[Pasted image 20260305092507.png]]
+Jetzt wird das 

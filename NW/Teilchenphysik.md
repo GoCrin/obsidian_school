@@ -81,3 +81,27 @@ Strahlung:
 * $\alpha$: He⁴ ... ultra Stabil (4 ist massen Zahl)
 * $\beta$: e⁻
 * $\gamma$: Photonen
+
+## Alpha  Zerfall
+
+![[Pasted image 20260224120353.png]]
+$$\ ^{238}_{92}U -> \ ^{234}_{90}Th + \ ^{4}_{2}He$$
+
+## Beta Zerfall
+
+wenn zu viele n, dann ist der Kern instabil. Natur will \#n $\tilde=$ \#p
+-> bei zu vielen n: 
+n -> p durch Quark umwandlung
+d -> u
+
+Um Ladung auszugleichen entsteht $e^-$
+
+$$\ ^{14}_{6}C -> \ ^{14}_{7}N + e^-  + \nu^-_e$$
+C14-Methode zur Altersbestimmung
+Funktioniert über die Schwache Wechselwirkung (W-Bosonen)
+## Gamma Zerfall $\gamma$
+
+Nach $\alpha$ oder $\beta$-Zerfall oder statistisch sind Kerne manchmal erregt.
+$$\ ^{137}_{56}Ba^* -> \ ^{137}_{56}Ba + \gamma$$
+Hier ist das $\gamma$ ein Photon.
+Funktioniert über EM-WW

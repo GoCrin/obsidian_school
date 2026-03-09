@@ -560,3 +560,48 @@ $$s(t) = 20 = -2t^2 + 20t$$
 $$t =- \sqrt{15} + 5$$
 $$v(-\sqrt{15} + 5) = 15,5$$
 ![[Pasted image 20260216184424.png]]
+
+# 16. Hausübung, am 2.3.2026
+## 3.52
+* a: Ja
+* b: Nein
+* c: Nein
+* d: Nein
+
+## 3.53
+
+A: Sie besteht aus 2 Termen, der Lösung der homogenen Gl. und eine partikuläre Lösung der inhomogenen Gl.
+
+# 3.56)b
+$$y' + x* y = 2x$$
+$$\frac{dy}{dx} = -x*y$$
+$$\int \frac{1}{y}\,dy = - \int x\,dx$$
+$$ln|y| = -\frac{1}{2}x^2 + c_1$$
+$$y = e^{-0,5x^2} * c$$
+$$y = K(x) * e^{-0,5x^2}$$
+$$y' = K'(x) * e^{-0,5x^2} - K(x) * x * e^{-0,5x^2}$$
+$$K'(x) * e^{-0,5x^2} - K(x) * x * e^{-0,5x^2} + K(x) * e^{-0,5x^2} * x = 2x$$
+$$K'(x) * e^{-0,5x^2} = 2x$$
+$$K'(x) = 2xe^{0,5x^2}$$
+![[Pasted image 20260309114219.png]]
+$$K = 2e^{x^2/2} + C$$
+$$y = (2e^{x^2/2} + C) * e^{-0,5x^2}$$
+$$y = 2 + C e^{-x^2/2}$$
+![[Pasted image 20260309115036.png]]
+
+## 3.57)b
+$$2x y' + y = 6x$$
+$$y' = - \frac{y}{2x}$$
+$$\int \frac{1}{y}\,dy = - \frac{1}{2} \int \frac{1}{x} \,dx$$
+$$ln|y| = - \frac{1}{2} ln|x| + c_1$$
+$$y = \frac{1}{\sqrt{x}} * c_2$$
+$$y = K(x) * \frac{1}{\sqrt{x}}$$
+$$y' = K'(x) * \frac{1}{\sqrt{x}} + K(x) * (-\frac{1}{2}) * \frac{1}{\sqrt{x^3}}$$
+$$2x * (K'(x) * \frac{1}{\sqrt{x}} - \frac{1}{2} K(x) * \frac{1}{\sqrt{x^3}}) + K(x) * \frac{1}{\sqrt{x}} = 6x$$
+$$2x K'(x) * \frac{1}{\sqrt{x}} - K(x) * \frac{1}{\sqrt{x}} + K(x) * \frac{1}{\sqrt{x}} = 6x$$
+$$K'(x) = 3 * \sqrt{x}$$
+$$K(x) = 2 \sqrt{x^3} + C$$
+$$y = (2 \sqrt{x^3} + C) * \frac{1}{\sqrt{x}}$$
+$$5 = (2 \sqrt{2^3} + C) * \frac{1}{\sqrt{2}}$$
+$$C = \sqrt{2}$$
+$$y = (2 \sqrt{x^3} + \sqrt{2}) * \frac{1}{\sqrt{x}}$$

@@ -1,5 +1,5 @@
 GIL
-```
+```python
 import os
 import threading
 import queue

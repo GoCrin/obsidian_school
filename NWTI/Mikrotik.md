@@ -66,3 +66,23 @@ add area-id=0.0.0.0 name=backbone instance=ospf_instance
 /routing/ospf/interface-template
 add area=backbone interfaces=ether1, ether2 cost 10
 ```
+
+```routeros
+# Assign address on ether1 (link to upstream router)
+/ipv6 address add address=fd50::1/64 interface=ether1 advertise=no
+
+# Assign address on ether2 (client network)
+/ipv6 address add address=fd16::1/64 interface=ether2 advertise=yes
+
+/ipv6 nd set [find interface=ether2] advertise-dns=yes advertise-mac-address=yes hop-limit=64 interface=ether2 managed-address-configuration=no other-configuration=no ra-interval=20s-3m ra-lifetime=30m
+    
+/routing ospf instance add name=ospf-v3 version=3 router-id=6.9.69.21
+
+/routing ospf area add name=backbone area-id=0.0.0.0 instance=ospf-v3
+
+# ether1 - link to upstream router (point-to-point or broadcast)
+/routing ospf interface-template add interfaces=ether1 area=backbone type=ptp
+
+# ether2 - client network (broadcast, passive - no need to form adjacency with clients)
+/routing ospf interface-template add interfaces=ether2 area=backbone type=broadcast passive=yes
+```
