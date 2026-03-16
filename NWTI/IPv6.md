@@ -51,3 +51,10 @@ Bei multicasts muss udp verwendet werden, da ein Verbindungsaufbau (wie bei tcp)
 Bei IPv6 gibt es keine Broadcasts, dafür aber viele Mutlicast Adressen.
 
 Interface ID: letzten Byte -> wie viele Geräte / Hosts im Netzwerk sein können
+
+# Neighbor Discovery Protocol
+Ist der "ARP-Ersatz" für IPv6. Da es keinen Broadcast gibt, muss ein Multicast verwendet. Für dieses Protokoll gibt es die "Solicited-node multicast addresses". Vom Prinzip ist es wie ARP, außer dem ersatz von Broadcasts.
+
+# Privacy Extensions
+
+Anders als bei `EUI-64` wird die Interface ID zufällig generiert. Danach wird mit `DAD` überprüft, ob die Adresse eindeutig ist.

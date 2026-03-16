@@ -74,3 +74,7 @@ Eine verkettete Liste ist eine dynamische Datenstruktur, in der Datenelemente ge
 
 ![[Pasted image 20260225121143.png]]
 
+## Hashmap
+Bsp: Hashfunktion: h = wert % 5
+
+![[Pasted image 20260311115520.png|482]]

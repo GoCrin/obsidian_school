@@ -942,13 +942,28 @@ void loop() {
 }
 ```
 
-# Tasmoto
+# Tasmota
+Ist besonders gut, wenn man ein WLAN-Gerät kauft, welches "schlechte" Firmware hat. Hier kann diese Firmware überschrieben werden um, z.B. nicht an die Cloudlösungen des Herstellers gebunden zu sein.
 
 klone dieses [Repo](https://github.com/arendst/Tasmota). Danach füge den Ordner in VsCode hinzu in dem man `File` -> `Add Folder to Workspace` drückt und den geklonten Ordner auswählst.
-![[Pasted image 20260305092148.png]]
+![[Pasted image 20260305092148.png|245]]
 
 in der unteren Leiste wähle dieses Symbol aus:
 ![[Pasted image 20260305092332.png]]
 Es wird eine Suche geöffnet. In dieser sucht und wählt man `tasmota32`
 ![[Pasted image 20260305092507.png]]
-Jetzt wird das 
+Jetzt wird das Projekt kompiliert. und auf den ESP32 gespielt. Wenn ein kompiliertes Projekt heruntergeladen wurde, kann man den Schritten dieses [Tutorials](https://docs.espressif.com/projects/esptool/en/latest/esp32/) folgen.
+Nach dem das Programm auf dem ESP32 ist wird dieser ein WLAN öffnen. Mit diesem muss man sich verbinden. Man selbst bekommt eine IP-Adresse wie: `x.x.x.2` in einem browser gibt nun die Adresse des Boards ein: `x.x.x.1`. Es wird eine Oberfläche erscheinen.
+
+Unter `Tools -> Console` um die LED ein und aus zu schalten.
+```
+LedPower1 1
+LedPower1 0
+```
+
+Solche Befehle können auch über Webrequests gegeben werden
+```
+http://172.18.40.72/cm?cmnd=LedPower%20Toggle
+http://172.18.40.72/cm?cmnd=LedPower%201
+http://172.18.40.72/cm?cmnd=LedPower%200
+```

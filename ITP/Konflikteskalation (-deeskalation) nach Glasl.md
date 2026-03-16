@@ -32,3 +32,7 @@ Deeskalation: Schiedsgerichtsverfahren (7-8), Machteingriff von "oben" (Vorgeset
 
 ---
 Quelle: [Projekte leicht gemacht (24.2.2026)](https://projekte-leicht-gemacht.de/blog/softskills/kommunikation/konflikte/konflikteskalation-nach-glasl/)
+
+Andere wichtige Links:
+* [eisbergmodell](https://projekte-leicht-gemacht.de/blog/softskills/kommunikation/das-eisbergmodell/)
+* [Verhandlungen harvard konzept](https://projekte-leicht-gemacht.de/blog/softskills/kommunikation/harvard-konzept/)

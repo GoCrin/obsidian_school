@@ -61,145 +61,335 @@ $$ a = - \frac{1}{2000} $$
 
 # 2. Hausübung am 17 September 2025
 
-\bigskip
-
 4.59)
 
 ges
-\begin{itemize}
-  \item \( f_1 \)
-  \item \( f_1 \)
-\end{itemize}
+* $f_1$
+* $f_1$
 
-\$$ f_1'(0)= 0 \$$
-\$$ f_1'(0,5)= 0,5 \$$
-\$$ f_1(0)= 1 \$$
+$$ f_1'(0)= 0 $$
+$$ f_1'(0,5)= 0,5 $$
+$$ f_1(0)= 1 $$
 
-\bigskip
+$$b = 0 $$
+$$c = 1 $$
+$$0,5 = a (0,5)^2 + 0,5b + c $$
+$$0,5 = a 0,25 + 1 $$
+$$a = -2 $$
+$$f_1(x) = -2x^2 + 1 $$
 
-\$$ b = 0 \$$
-\$$ c = 1 \$$
-\$$ 0,5 = a (0,5)^2 + 0,5b + c \$$
-\$$ 0,5 = a 0,25 + 1 \$$
-\$$ a = -2 \$$
-\$$ f_1(x) = -2x^2 + 1 \$$
+$$ f_2'(1)= 0 $$
+$$ f_2'(0,5)= 0,5 $$
+$$ f_2(1)= 0 $$
 
-\bigskip
+$$ 0 = 2a + b $$
+$$ 0,5 = (0,5)^2 a + 0,5 b + c $$
+$$ 0 = a + b + c $$
 
-\$$ f_2'(1)= 0 \$$
-\$$ f_2'(0,5)= 0,5 \$$
-\$$ f_2(1)= 0 \$$
+$a = 2$, $b = -4$, $c = 2$
 
-\bigskip
 
-\$$ 0 = 2a + b \$$
-\$$ 0,5 = (0,5)^2 a + 0,5 b + c \$$
-\$$ 0 = a + b + c \$$
+$$ f_2(x) = 2 x^2 -4 x + 2 $$
 
-\bigskip
+bigskip
+bigskip
 
-\( a = 2 \), \( b = -4 \), \( c = 2 \)
+## 1)
 
-\bigskip
+geg: $\int \frac{\frac{3}{7} sin x}{2} \,dx$
 
-\$$ f_2(x) = 2 x^2 -4 x + 2 \$$
+$$ \frac{3}{14} \int sin x \,dx $$
+$$ - \frac{3}{14} cos x + c $$
 
-\bigskip
-\bigskip
+## 2)
 
-1)
+geg: $\int \frac{2 - t}{t^2} \,dt$
 
-geg: \( \int \frac{\frac{3}{7} sin x}{2} \,dx \)
+Verwendet wird dieser "Trick": $\int u * v' = u * v - \int u' * v$
 
-\$$ \frac{3}{14} \int sin x \,dx \$$
-\$$ - \frac{3}{14} cos x + c \$$
+$$ (2 - t) * (- \frac{1}{t}) - \int t^{-1} \,dt $$
+$$ - \frac{2}{t} - ln|t| + c $$
 
-\bigskip
+## 3)
 
-2)
+geg: $\int (\frac{x}{2} - 2)^2 \,dx$
 
-geg: \( \int \frac{2 - t}{t^2} \,dt \)
+$$ \int \frac{x^2}{4} - 4 \frac{x}{2} + 4 \,dx $$
+$$ \frac{1}{4} \int x^2 - 2 \int x \,dx + 4 $$
+$$ \frac{1}{12} x^3 - x^2 + c $$
 
-Verwendet wird dieser "Trick": \( \int u * v' = u * v - \int u' * v \)
+## 4)
 
-\$$ (2 - t) * (- \frac{1}{t}) - \int t^{-1} \,dt \$$
-\$$ - \frac{2}{t} - ln|t| + c \$$
+geg: $\int ( 2a - x )^2 \,dx$
 
-\bigskip
+$$ 4a^2 - 4a \int x + \int x^2 \,dx $$
+$$ \frac{1}{3} x^3 - 2ax^2 + c $$
 
-3)
+## 5)
 
-geg: \( \int (\frac{x}{2} - 2)^2 \,dx \)
+geg: $\int \frac{a - 2}{b^2 + c * t} \,dt$
 
-\$$ \int \frac{x^2}{4} - 4 \frac{x}{2} + 4 \,dx \$$
-\$$ \frac{1}{4} \int x^2 - 2 \int x \,dx + 4 \$$
-\$$ \frac{1}{12} x^3 - x^2 + c \$$
-
-\bigskip
-
-4)
-
-geg: \( \int ( 2a - x )^2 \,dx \)
-
-\$$ 4a^2 - 4a \int x + \int x^2 \,dx \$$
-\$$ \frac{1}{3} x^3 - 2ax^2 + c \$$
-
-\bigskip
-
-5)
-
-geg: \( \int \frac{a - 2}{b^2 + c * t} \,dt \)
-
-\$$ (a - 2) \int (b^2 + c * t)^{-1} \,dt \$$
+$$ (a - 2) \int (b^2 + c * t)^{-1} \,dt $$
 
 Einsatz von "Trick": Integration durch Substitution
 
-\( u = b^2 + c * t \) -$>$ \( \frac{du}{dt} = c \) -$>$ \( dt = \frac{du}{c} \)
+$u = b^2 + c * t$ -> $\frac{du}{dt} = c$ -> $dt = \frac{du}{c}$
 
-\$$ (a - 2) \int u^{-1} \frac{1}{c} \,du \$$
-\$$ \frac{1}{c} (a - 2) ln|u| + c \$$
-\$$ \frac{1}{c} (a - 2) ln|b^2 + c * t| + c \$$
+$$ (a - 2) \int u^{-1} \frac{1}{c} \,du $$
+$$ \frac{1}{c} (a - 2) ln|u| + c $$
+$$ \frac{1}{c} (a - 2) ln|b^2 + c * t| + c $$
 
-\bigskip
+## 6)
 
-6)
+geg: $\int 2 x^2 * \sqrt[5]{x^3 - 1} \,dx$
 
-geg: \( \int 2 x^2 * \sqrt$$5$${x^3 - 1} \,dx \)
+$u = x^3 - 1$ -> $\frac{du}{dx} = 3 x^2$ -> $dx = - \frac{du}{3 x^2}$
 
-\( u = x^3 - 1 \) -$>$ \( \frac{du}{dx} = 3 x^2 \) -$>$ \( dx = - \frac{du}{3 x^2} \)
+$$ 2 \int x^2 u^{1/5} \frac{1}{3 x^2} \,du $$
+$$ \frac{2}{3} \int u^{1/5} \,du $$
+$$ \frac{2}{3} \frac{u^{6/5}}{\frac{6}{5}} + c $$
+$$ \frac{10}{18} (x^3 - 1)^{\frac{6}{5}} + c $$
 
-\$$ 2 \int x^2 u^{1/5} \frac{1}{3 x^2} \,du \$$
-\$$ \frac{2}{3} \int u^{1/5} \,du \$$
-\$$ \frac{2}{3} \frac{u^{6/5}}{\frac{6}{5}} + c \$$
-\$$ \frac{10}{18} (x^3 - 1)^{\frac{6}{5}} + c \$$
+## 7)
 
-\bigskip
+geg: $\int 3 - 2e^{k * t} \,dt$
 
-7)
+$u = -kt$
 
-geg: \( \int 3 - 2e^{k * t} \,dt \)
+$$ 3 - 2 \int e^u (-\frac{1}{k}) \,du  $$
+$$ 3 + \frac{2}{k} e^u + c $$
+$$ \frac{2}{k} e^{-kt} + c $$
 
-\( u = -kt \)
+## 8)
 
-\$$ 3 - 2 \int e^u (-\frac{1}{k}) \,du  \$$
-\$$ 3 + \frac{2}{k} e^u + c \$$
-\$$ \frac{2}{k} e^{-kt} + c \$$
+geg: $\int 2 sin(2x) * e^{cos(2x)} \,dx$
 
-\bigskip
+$u = cos(2x)$ -> $\frac{du}{dx} = -2 sin(2x)$ -> $dx = - \frac{du}{2 sin(2x)}$
 
-8)
+$$ 2 \int e^u * sin(2x) * \frac{1}{2 sin(2x)} \,du $$
+$$ \int e^u \,du $$
+$$ e^u + c $$
+$$ e^{cos(2x)} + c $$
+# 3. Hausübung, am 25.9.2025
 
-geg: \( \int 2 sin(2x) * e^{cos(2x)} \,dx \)
+## 1)
 
-\( u = cos(2x) \) -$>$ \( \frac{du}{dx} = -2 sin(2x) \) -$>$ \( dx = - \frac{du}{2 sin(2x)} \)
+geg:
+$\int x^{-4} * x^3 \,dx$
 
-\$$ 2 \int e^u * sin(2x) * \frac{1}{2 sin(2x)} \,du \$$
-\$$ \int e^u \,du \$$
-\$$ e^u + c \$$
-\$$ e^{cos(2x)} + c \$$
+$$ \int x^{-1} \,dx $$
+$$ ln|x| + c $$
+
+## 2)
+
+geg:
+$\int 3 \,dt$
+
+$$ 3 + c $$
 
 
-\end{document}
+## 3)
+
+geg:
+$\int u * \sqrt{u} \,du$
+
+$$ \frac{2}{5} * \sqrt{u^5} + c $$
+
+## 4)
+
+geg:
+$\int \sqrt{\frac{1}{x}} \,dx$
+
+
+$$ 2 \sqrt{x} + c $$
+
+
+## 5)
+
+geg:
+$\int \frac{1}{cos^2t} \,dt$
+
+
+Ich weiß nicht wie man das berechnet. Lösung laut Geogebra:
+
+$$ tan(x) + c $$
+
+## 6)
+
+geg:
+
+$\int \,dx$
+
+$$ 1 + c $$
+
+## 7)
+
+geg:
+$\int t * e^{-s * t} \,dt$
+
+$$ t * ( - \frac{1}{s}) * e^{-st} - \int - \frac{1}{s} * e^{-st} \,dt $$
+$$ - \frac{t}{s} * e^{-st} - \frac{1}{s} * e^{-st} + c $$
+$$ - \frac{1}{s} * e^{-st} * (t + 1) + c $$
+
+## 8)
+
+geg:
+$\sqrt{1 - s} \,ds$
+
+$$ -1 \int (u)^{\frac{1}{2}} \,du $$
+$$ -1 * \frac{u^{\frac{3}{2}}}{\frac{3}{2}} + c $$
+$$ - \frac{3}{2} \sqrt{u^3} + c $$
+$$ - \frac{3}{2} \sqrt{(1 - s)^3} + c $$
+# 4. Hausübung am 6.10.2025
+
+## 1)
+
+geg:
+$\int \frac{x^2 - x + 1}{2x} \,dx$
+
+
+
+$$ \frac{1}{2}  \int \frac{x^2 - x + 1}{x} \,dx $$
+$$ \frac{1}{2}  \int (x^2 - x + 1) * x^{-1} \,dx $$
+$$ \frac{1}{2} * (\int \frac{x^2}{x} \,dx - \int \frac{x}{x} \,dx + \int \frac{1}{x} \,dx) $$
+$$ \frac{1}{2} * (\frac{1}{2} * x^2 + ln|x|) + c $$
+## 2)
+
+geg:
+$\int t * e^{-s*t} \,dt$
+
+
+$$ t * (- \frac{1}{s}) * e^{-s*t} - \int 1 * (- \frac{1}{s}) * e^{-s*t} \,dt $$
+$$ - \frac{t}{s} * e^{-s*t} - \frac{1}{s^2} * e^{-s*t} + c$$
+$$ - \frac{1}{s} * e^{-s*t} * (t + \frac{1}{s}) + c $$
+
+
+
+## 3)
+
+geg:
+$\int e^{-x+2} \,du$
+
+
+
+$$ x + c $$
+
+
+
+## 4)
+
+geg:
+$\int \frac{2 * e^x}{1 + e^x} \,dx$
+
+
+
+$$ 2 * \int e^x * \frac{1}{e^x} * u^{-1} \,du $$
+$$ 2 * ln|u| + c $$
+$$ 2 * ln|1 + e^x| + c $$
+
+
+
+## 5)
+
+geg:
+$\int (3 + 2x)^4 \,dx$
+
+
+
+$$ \frac{1}{2} * \int u^4 \,du $$
+$$ \frac{1}{10} * u^5 +c $$
+$$ \frac{1}{10} * (3 + 2x)^5 + c $$
+
+# 5. Hausübung, am 8.10.2025
+
+
+
+## 1)
+geg:
+\(\int \frac{x * (2 - x^3)}{\sqrt[4]{(5x^5 - 25x^2 + 9)^3}} \,dx\)
+
+
+
+$$\int \frac{x * (2 - x^3)}{25x^4 - 50x} * \frac{1}{\sqrt[4]{u^3}} \,du $$
+$$\int \frac{(2 - x^3)}{25 * (x^3 - 2x) * (-1) * (-1)} * \frac{1}{\sqrt[4]{u^3}} \,du $$
+$$ - \frac{1}{25} * \int u^{- \frac{3}{4}} \,du $$
+$$ - \frac{1}{25} * 4 * u^{\frac{1}{4}} + c $$
+$$ - \frac{4}{25} * \sqrt[4]{5x^5 - 25x^2 + 9} $$
+
+
+
+## 2)
+geg:
+$\int \frac{4 \,dx}{\sqrt[3]{ax + b}} \,dx$
+
+
+
+Substitution nicht weiter verfolgbar da x nicht wegfällt (Angabe Fehler?)
+
+
+
+## 3)
+geg:
+$\int sin^2(x) * cos(x) \,dx$
+
+
+
+$$ \int u^2 \,du $$
+$$ \frac{1}{3} * sin^3(x) + c $$
+
+
+
+## 4)
+geg:
+$\int e^x sin^2 x \,dx$
+
+
+
+Verwendung von mir Unbekannten Integrationsformeln
+
+$$\int e^{x}\sin^{2}(x)\,dx = \frac{e^{x}}{10},\bigl(5 - \cos(2x) - 2\sin(2x)\bigr) + c$$
+
+# 6. Hausübung, am 14.10.2025
+
+
+
+## 1)
+geg:
+\(\int ln(x) \,dx\)
+
+
+
+$$ x * ln(x) - x + c $$
+
+
+
+## 6.8)a
+
+\(f(x) = 0,5 * x + 2\), davon Ober- und Untersumme im Integral a=0 bis b=2, mit n=4
+
+
+
+Untersumme:
+
+$$ \sum_{i = 0}^{n - 1} f(i) * \Delta x = 5,5 $$
+
+Obersumme:
+
+$$ \sum_{i = 1}^{n} f(i) * \Delta x = 6,5 $$
+
+Beide scheinen Flasch, da das Bestimmte Integral 5 ist.
+
+
+
+## 6.24)b
+geg:
+$\int_{-1}^{1} 2 + e^x \,dx$
+
+
+
+$$F(a) = F(-1) = -1,63 $$
+$$F(b) = F(1) = 4,72$$
+$$F(b) - F(a) = 6,35$$
 
 # 7. Hausübung, am 21.10.2025
 ## 7.61
