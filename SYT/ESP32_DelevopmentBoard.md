@@ -395,7 +395,7 @@ void mqtt_callback(char* topic, byte* payload, unsigned int length) {
 
 Jeder Slave hat eine 7bit (10bit) Adresse
 
-I2C
+Verwendetes Protokoll heißt **I²C** (kurz für Inter-Integrated Circuit)
 
 Wir wollen:
 * Am Anfang `Hello` anzeigen
@@ -522,9 +522,9 @@ void loop() {
 
 # Temperatursensor
 
-DS18B20
+**DS18B20**
 Externe hardware für Mikrocontroller
-Verwendete Protokoll heißt 1-Wire, weil eine Datenleitung. Ist auf einem Bus, geht auf weite Distanzen. Hat normalerweise 3 Kontakte (Datenleitung, Versorgung & Masse) geht aber auch mit 2 Kontakten wo Datenleitung auch für die Stromversorgung verwendet werden kann.
+Verwendete Protokoll heißt **1-Wire**, weil eine Datenleitung. Ist auf einem Bus, geht auf weite Distanzen. Hat normalerweise 3 Kontakte (Datenleitung, Versorgung & Masse) geht aber auch mit 2 Kontakten wo Datenleitung auch für die Stromversorgung verwendet werden kann.
 
 [Datenblatt von DS18B20](https://www.analog.com/media/en/technical-documentation/data-sheets/DS18B20.pdf)
 [Nerdtut. für den Sensor](https://randomnerdtutorials.com/esp32-ds18b20-temperature-arduino-ide/)

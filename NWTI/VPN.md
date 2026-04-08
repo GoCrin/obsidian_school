@@ -17,3 +17,13 @@ VPN Anbieter selber spielen
 (Links sind nicht Teil des Stoffes :) )
 https://www.wireguard.com/install/
 https://github.com/WeeJeWel/wg-easy
+
+## Übung VPN-Gate
+
+[vpngate](https://www.vpngate.net/en/)
+
+```shell
+sudo pacman -S openvpn
+```
+
+[settings download](https://www.vpngate.net/common/openvpn_download.aspx?sid=1773915001148&udp=1&host=vpn855853386.opengw.net&port=1543&hid=25537948&/vpngate_vpn855853386.opengw.net_udp_1543.ovpn)
