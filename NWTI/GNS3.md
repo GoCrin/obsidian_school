@@ -12,6 +12,3 @@ MikroTikChR7.16
 ```
 /ip/address/add interface=ether1 address=10.0.0.1/24
 ```
-
-```
-```

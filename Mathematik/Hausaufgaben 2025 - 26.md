@@ -795,3 +795,126 @@ $$y = (2 \sqrt{x^3} + C) * \frac{1}{\sqrt{x}}$$
 $$5 = (2 \sqrt{2^3} + C) * \frac{1}{\sqrt{2}}$$
 $$C = \sqrt{2}$$
 $$y = (2 \sqrt{x^3} + \sqrt{2}) * \frac{1}{\sqrt{x}}$$
+# 17. Hü, am 9.3.2026
+## 3.57 b
+$$2xy' + y - 6x = 0; y(2) = 5$$
+$$y' + \frac{1}{2x}y = 3$$
+$$y' + a(x)y = b(x); a(x) = \frac{1}{2x}; b(x) = 3$$
+$$y' + \frac{1}{2x}y = 0$$
+$$\frac{y'}{y} = -\frac{1}{2x}$$
+$$ln|y| = - \frac{1}{2}$$
+
+# 20. Hausübung, am 13.4.2026
+
+## 3.60) b
+$$y' + 2y = e^{-2x}$$
+$$y' + 2y = 0$$
+$$y_h= Ce^{-2x}$$
+$$y_p ​= A * x * e^{−2x}$$
+$$y_p' = Ae^{−2x} − 2Axe^{−2x}$$	$$y_p' + 2y_p ​= Ae^{−2x} − 2Axe^{−2x} + 2Axe^{−2x} = Ae^{−2x} = e^{−2x}$$
+$$y_p = x * e^{-2x}$$
+$$y = (C + x) e^{-2x}$$
+## 3.49
+**Zeitkonstante:** $\tau = R \cdot C = 0{,}5,\text{s}$
+
+**DGL:**
+
+$$\dot{u}_C + \frac{1}{\tau},u_C = \frac{1}{\tau},u(t)$$
+
+---
+
+### a) $u(t) = 5,\text{V}$
+
+$$u_C(t) = 5,\text{V} \cdot \left(1 - e^{-2t}\right)$$
+
+> Der Kondensator lädt sich exponentiell auf $5,\text{V}$ auf. Nach $5\tau = 2{,}5,\text{s}$ ist er praktisch vollständig geladen.
+
+---
+
+### b) $u(t) = 4,\frac{\text{V}}{\text{s}} \cdot t$
+
+$$u_C(t) = 4,\frac{\text{V}}{\text{s}} \cdot \left(t - 0{,}5,\text{s} + 0{,}5,\text{s} \cdot e^{-2t}\right)$$
+
+> Der Kondensator folgt der linear ansteigenden Eingangsspannung mit einer konstanten Verzögerung von $\tau = 0{,}5,\text{s}$. Im eingeschwungenen Zustand beträgt der Spannungsversatz $a\tau = 2,\text{V}$.
+
+---
+
+### c) $u(t) = 26,\text{V} \cdot \sin(3,\text{s}^{-1} \cdot t)$
+
+$$u_C(t) = 14{,}42,\text{V} \cdot \sin(3t - 56{,}3°) + 12,\text{V} \cdot e^{-2t}$$
+
+> Die Lösung besteht aus zwei Anteilen. Der Einschwingterm $12,\text{V}\cdot e^{-2t}$ klingt mit $\tau = 0{,}5,\text{s}$ ab. Im eingeschwungenen Zustand verhält sich das RC-Glied als Tiefpass: die Amplitude wird von $26,\text{V}$ auf $14{,}42,\text{V}$ gedämpft und die Phase um $56{,}3°$ verzögert.
+
+
+# 21. Hü, am 19.4.26
+## 3.72 a
+
+$$\frac{dV}{dt} = 0,04 - 0,1 * V(t)$$
+### 1. Lösung Trennung der Variablen
+$$\frac{1}{0,04 - 0,1 * V(t)} dV = dt$$
+$$-10ln|5V(t) - 2|= t + c_1$$
+$$ln|5V(t) - 2| = -0,1t + c_2$$
+$$5V(t)= e^{-0,1t} * C - 2$$
+### 2. Lösung Lange
+
+$$\frac{dV}{dt} + 0,1 * V(t) = 0,04$$
+
+**homogene Lsg**
+
+$$\frac{dV}{dt} + 0,1 * V(t) = 0$$
+$$\lambda C e^{\lambda t} = - 0,1 C e^{\lambda t}$$
+$$C e^{\lambda t} * (\lambda + 0,1) = 0$$
+$$\lambda = -0,1$$
+$$V_h = C e^{-0,1t}$$
+
+**Partikuläre Lsg**
+
+$$V_p = a$$
+$$0,1a = 0,04$$
+$$a = 0,4$$
+$$V_p = 0,4$$
+
+**Allg Lsg**
+
+$$V(t) = V_h(t) + V_p(t)$$
+$$V(t) = C e^{-0,1t} + 0,4$$
+**spezielle Lsg**
+
+$$1,5 = C + 0,4$$
+$$C = 1,1$$
+$$V(t)_s = 1,1e^{-0,1t} + 0,4$$
+## b
+
+$$1 = 1,1e^{-0,1t_1} + 0,4$$
+$$\frac{6}{11} = e^{-0,1t_1}$$
+$$ln \frac{6}{11} = -0,1t_1$$
+$$t_1 = 6,06$$
+
+Nach 6 Minuten.
+
+## B_603 b
+
+### 1
+
+$$\frac{dm}{dt} = - \lambda m$$
+### 2
+$$m(t) = Ce^{\beta x}$$
+$$\beta C e^{\beta x} =a - \lambda Ce^{\beta x}$$
+$$Ce^{\beta x} * (\beta + \lambda) = 0$$
+$$\beta = - \lambda$$
+$$$$
+### 3
+$$m(0) = 1000 - 998 = 2$$
+## B_049 a
+$$\frac{dN}{dt} = k*N$$
+$$\int \frac{1}{N} \,dN = k \int \,dt$$
+$$ln|N| = k * t + c$$
+$$N(t) = C e^{kt}$$
+$$N(0) = 50 = C$$
+$$N(100) = 750 = 50 * e^{k * 100}$$
+$$k = 0,027$$
+$$N(180) = 6545$$
+Schneller mehr Bakterien...
+## B_049 c
+um die 60
+$$0 < B < 1000$$

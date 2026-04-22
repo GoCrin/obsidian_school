@@ -86,3 +86,17 @@ add area=backbone interfaces=ether1, ether2 cost 10
 # ether2 - client network (broadcast, passive - no need to form adjacency with clients)
 /routing ospf interface-template add interfaces=ether2 area=backbone type=broadcast passive=yes
 ```
+
+# Wireguard
+
+```
+/interface/wireguard/add
+/ip/address/add address=1.0.0.2
+/interface/wireguard/peers/add allowed-address=192.168.20.0/24 endpoint-port=32903 interface=wg1 public-key="..."
+```
+
+```
+
+```
+
+wg1 interface braucht auch eine private ip Addresse z.B `192.168.30.1/30`

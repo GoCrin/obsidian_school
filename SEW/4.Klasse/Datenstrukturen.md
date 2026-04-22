@@ -42,7 +42,7 @@ capitalCities.put("England", "London");
 ```
 
 ### Queue
-Realisierung von FIFO (First in - First out) und  LIFO (Last in - First out) Speichern.
+Realisierung von FIFO (First in - First out) und LIFO (Last in - First out) Speichern.
 
 # Konzepte
 
@@ -66,11 +66,13 @@ List<String> l = new LinkedList<>();
 
 ## Verkettete Liste
 
-Eine verkettete Liste ist eine dynamische Datenstruktur, in der Datenelemente geordnet gespeichert sind
+Eine verkettete Liste ist eine dynamische Datenstruktur, in der Datenelemente geordnet gespeichert sind.
+
+**ACHTUNG FOLGENDE GRAFIK FALSCH**
 
 ![[Pasted image 20260218121350.png]]
 
-## Binäre Baum
+## Binärer Baum
 
 ![[Pasted image 20260225121143.png]]
 

@@ -53,3 +53,13 @@ Abfrageparameter (`http://localhost/items/?skip=0&limit=10`) sind Funktionsparam
 async def read_item_by_name(name):
     return fetch_nameday_by_name(name)
 ```
+
+## Data Faker
+```bash
+pip install faker
+```
+
+```python
+from faker import Faker  
+fake = Faker()
+```
