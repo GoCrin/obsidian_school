@@ -392,6 +392,7 @@ void mqtt_callback(char* topic, byte* payload, unsigned int length) {
 # OLED Display
 
 ![[Pasted image 20260115094953.png]]
+[OLED Display tutorial](https://randomnerdtutorials.com/esp32-ssd1306-oled-display-arduino-ide/)
 
 Jeder Slave hat eine 7bit (10bit) Adresse
 

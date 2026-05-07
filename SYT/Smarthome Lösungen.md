@@ -9,7 +9,9 @@ Es gibt viele Möglichkeiten Home assistant zu [installieren](https://www.home-a
 sudo docker run -it --network host homeassistant/home-assistant
 ```
 
+# Verbindung zu ESP via MQTT
 
+4xhits2526
 
 ---
 

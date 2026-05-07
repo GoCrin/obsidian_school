@@ -902,7 +902,7 @@ $$m(t) = Ce^{\beta x}$$
 $$\beta C e^{\beta x} =a - \lambda Ce^{\beta x}$$
 $$Ce^{\beta x} * (\beta + \lambda) = 0$$
 $$\beta = - \lambda$$
-$$$$
+
 ### 3
 $$m(0) = 1000 - 998 = 2$$
 ## B_049 a
@@ -918,3 +918,153 @@ Schneller mehr Bakterien...
 ## B_049 c
 um die 60
 $$0 < B < 1000$$
+
+# 22. Hü, am 22.4.26
+
+## 3.65
+### a
+Sie muss negativ sein, da nur so zum Zeitpunkt $t = 0$, $k * (20 - 100) = k * -80$ positiv sein kann und dieser Wert positiv sein muss, um eine Temperaturzunahme zu zeigen.
+
+### b
+Sie zeigt, dass die Temperaturänderung der Kugel proportional zu der Differenz von der aktuellen Temperatur und der Umgebungstemperatur ist.
+
+### c
+$$\frac{dT}{dt} - k * T(t) = - k * T_U$$
+
+**homogene Lsg**
+
+$$\frac{dT}{dt} - k * T(t) = 0$$
+$$\boxed{T_h = Ce^{kt}}$$
+
+**Partikuläre Lsg**
+$$T_p = a$$
+$$-k * a = -k * T_U$$
+$$a = T_U$$
+$$\boxed{T_p = T_U}$$
+
+**Allgemeine Lsg**
+$$T_a = T_h + T_p$$
+$$\boxed{T_a = Ce^{kt} + T_U}$$
+
+**Spezielle Lsg**
+$$20 = C + T_U$$
+$$C = -80$$
+
+$$39 = -80*e^{10k} + 100$$
+$$\frac{61}{80} = e^{10k}$$
+$$k = \frac{ln(\frac{61}{80})}{10} = -0,02712$$
+$$\boxed{ T(t) = -80 * e^{-0,027t} + 100 }$$
+
+### d
+$$\boxed{ T(20) = -80 * e^{-0,027 * 20} + 100\ \tilde=\ 53,5°C}$$
+
+### e
+$$\boxed{t = \frac{ln(\frac{1}{8})}{-0,027}\ \tilde{=}\ 76,69s = 1'17''}$$
+
+### f
+Ja es ist ein beschränkter Wachstumsvorgang (der sich 100° asymptotisch annähert)? Ich **verstehe** die Aufgabenstellung **nicht**.
+
+## B_661 b
+### 1)
+$$\frac{dm}{dt} = a - k * m$$
+$$\int\frac{1}{a-k*m}\,dm = \int\,dt$$
+$$-\frac{ln|k*m - a|}{k} = t + c_1$$
+$$ln|k*m - a| = -k*t + c_2$$
+$$k*m-a = e^{-k*t}*c_3$$
+$$m = \frac{e^{-k*t}*c_3 + a}{k}$$
+
+### 2)
+$$m(t) = \frac{a}{k} * (1- e^{-k*t})$$
+$$m'(t) = a*e^{-k*t}$$
+$$a*e^{-k*t} = a - k * \frac{a}{k} * (1- e^{-k*t})$$
+$$e^{-k*t} = 1 - 1 + e^{-k * t}$$
+$$0 = 0$$
+
+### 3)
+Durchschnittliche Masseänderung in $mg$ zwischen zwei Zeitpunkten.
+
+## B_487 a
+
+### 1)
+$$\boxed{\frac{dE}{dx} = -k E}$$
+
+### 2)
+$$\int \frac{1}{E} \,dE = -k \int \,dx$$
+$$ln|E| = -kx+c_1$$
+$$\boxed{E = C e^{-kx}}$$
+
+### Aufgabe aus Hausaufgaben pdf
+
+$C$ muss positiv sein, damit die Funktion eine Abnahme beschreiben kann.
+$$E(0) = C$$
+$$lim_{x\rightarrow\infty}E(x) = 0$$
+
+![[Pasted image 20260423190624.png]]
+
+# 23. Hü, 4.4.2026
+## B_447 c)
+### 1)
+$$\boxed{\frac{dT}{dt} = k \cdot (T_u - T)}$$
+
+### 2)
+$$T' + k \cdot T = k \cdot T_u$$
+
+**homogene Lsg**
+
+$$T' + k \cdot T = 0$$
+$$T_h = C e^{\lambda t}$$
+$$T'_h = \lambda C e^{\lambda t}$$
+$$\lambda C e^{\lambda t} + k C e^{\lambda t} = 0$$
+$$\lambda = - k$$
+$$\boxed{T_h = C e^{-k t}}$$
+
+**partikuläre Lsg**
+$$T_p = a$$
+$$T_p = 0$$
+$$k \cdot a = k \cdot T_u$$
+$$a = T_u$$
+$$\boxed{T_p = T_u}$$
+
+**allgemeine Lsg**
+$$\boxed{T_a(t) = C e^{-k \cdot t} + 20}$$
+
+**spezielle Lsg**
+$$10 = C + 20$$
+$$C = -10$$
+$$12 = -10 e^{-k \cdot 20} + 20$$
+$$0,8 = e^{-k \cdot 20}$$
+$$-k \cdot 20 = ln(0,8)$$
+$$k = - \frac{ln(0,8)}{20} = 0,011$$
+$$\boxed{T_s(t) = -10 e^{-0,011 t} + 20}$$
+
+### 3)
+$$15 = -10 e^{-0,011 t_{15}} + 20$$
+$$0,5 = e^{-0,011 t_{15}}$$
+$$\boxed{t_{15} = - \frac{ln(0,5)}{0,011} = 62,13}$$
+## B_262 b)
+### 1)
+$$10 = u_0$$
+$$5 = 10 \cdot e^{-k \cdot 20}$$
+$$k = - \frac{ln(0,5)}{20} = 0,035$$
+$$u(t) = 10 \cdot e^{-0,035 \cdot t}$$
+
+### 2)
+![[Pasted image 20260504193831.png|234]]
+Da die Änderungsrate negativ sein muss, muss der rechte Term negativ sein. $u$ muss im rechten Term enthalten sein, da die Entladegeschwindigkeit von der aktuellen Spannung abhängig ist.
+
+## B_077 b)
+### 1)
+$$\int\frac{1}{T_u - T} \,dT = k\int \,dt$$
+$u = T_u - T$; $\frac{du}{dT} = -1$; $dT = - du$
+$$ln|u| = - k \cdot t + c_1$$
+$$T_u - T = C e^{-k \cdot t}$$
+$$T = T_u - C e^{-k \cdot t}$$
+$$80 = 15 - C$$
+$$C = -65$$
+$$\boxed{T(t) = 15 + 65 \cdot e^{- 0,8 \cdot t}}$$
+## B_077 c)
+### 1)
+$$T = 40 \cdot e^{-k \cdot t} - 5$$
+$$\boxed{T_u = -5°C}$$
+### 2)
+$$\boxed{T_0 = 35°C}$$

@@ -100,3 +100,25 @@ add area=backbone interfaces=ether1, ether2 cost 10
 ```
 
 wg1 interface braucht auch eine private ip Addresse z.B `192.168.30.1/30`
+
+# VLAN
+
+```
+/interfrace bridge port
+add bridge=br interface=ether1 pvid=20
+
+/interfrac/bridge/port/set pvid=20 numbers=[/interfrace/bridge/port/find where interface=ether2]
+
+/interface/bridge/vlan/
+add bridge=br tagged=ether1 vlan-ids=10
+add bridge=br tagged=ether1 untagged= vlan-ids=10
+
+foreach i in=[/interfrace/ethernet/find] do={
+/interface/bridge/port/add bridge=br interface=[/interface/ethernet/get value-name=name number=$i]
+}
+
+```
+
+# Subkommandos
+
+In Mikrotik kann man mit eckigen Klammern `[]` in einem Befehl 
