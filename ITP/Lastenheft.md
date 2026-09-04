@@ -27,7 +27,7 @@ swimmlen diagramm
 Kundenvertrag ((durch Prokurist) unterschrieben, deshalb kann geklagt werden 
 
 
-![[Pasted image 20260410123556.png]]
+![[Pasted image 20260410123556.png|645]]
 
 ![[Pasted image 20260410125234.png]]
 

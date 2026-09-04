@@ -1,0 +1,1 @@
+User will `192.168.20.13` pingen. Seine eigene IP-Adresse bekommt er duch die Routingtabelle seines Rechners. Seine

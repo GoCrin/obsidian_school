@@ -20,7 +20,7 @@ Licht hat Impuls: $p = m * v$
 (Statt $E_kin$ geht auch $v$)
 Energieverlust des Photons -> Frequenzabnahme -> Wellenlängen zu nahe ($\Delta \lambda = \lambda' - \lambda > 0$)
 
-# De  Broglie - Welle Teilchen Dualismus
+# De Broglie - Welle Teilchen Dualismus
 
 ## Tennisball
 

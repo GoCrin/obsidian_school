@@ -103,11 +103,16 @@ wg1 interface braucht auch eine private ip Addresse z.B `192.168.30.1/30`
 
 # VLAN
 
+Bei VLAN-Config immer **Port 5 unkonfiguriert lassen!** 
+
 ```
 /interfrace bridge port
 add bridge=br interface=ether1 pvid=20
 
+# Dynamisches suchen der Nummer mit "find"
 /interfrac/bridge/port/set pvid=20 numbers=[/interfrace/bridge/port/find where interface=ether2]
+
+
 
 /interface/bridge/vlan/
 add bridge=br tagged=ether1 vlan-ids=10
@@ -116,8 +121,24 @@ add bridge=br tagged=ether1 untagged= vlan-ids=10
 foreach i in=[/interfrace/ethernet/find] do={
 /interface/bridge/port/add bridge=br interface=[/interface/ethernet/get value-name=name number=$i]
 }
+```
 
 ```
+/interface bridge  
+add name=br vlan-filtering=yes  
+/port  
+set 0 name=serial0  
+/interface bridge port  
+add bridge=br interface=ether1 pvid=20  
+add bridge=br interface=ether2 pvid=10  
+add bridge=br interface=ether3  
+/interface bridge vlan  
+add bridge=br tagged=ether3 untagged=ether1 vlan-ids=20  
+add bridge=br tagged=ether3 untagged=ether2 vlan-ids=10  
+/system note  
+set show-at-login=no
+```
+
 
 # Subkommandos
 

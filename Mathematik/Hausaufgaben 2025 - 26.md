@@ -1068,3 +1068,219 @@ $$T = 40 \cdot e^{-k \cdot t} - 5$$
 $$\boxed{T_u = -5°C}$$
 ### 2)
 $$\boxed{T_0 = 35°C}$$
+
+# 24. Hü, am 11.05.26
+
+## SRDP Server Down...
+
+## 10.11
+
+| Merkmal            | Ausprägung |
+| ------------------ | ---------- |
+| Staatsbürgerschaft | Österreich |
+| Alter              | 17 Jahre   |
+| Schulstufe         | 8          |
+| Körpergröße        | 167cm      |
+
+## 10.12
+
+
+| Merkmal                            | Typ      | Begründung                                                                            |
+| ---------------------------------- | -------- | ------------------------------------------------------------------------------------- |
+| Güteklasse eines Hotels            | ordinal  | Wird wahrscheinlich keine Zahl sein, ist aber gemacht um Hotels vergleichen zu können |
+| Temperatur                         | metrisch | Eine Zahl                                                                             |
+| Beruf                              | nominal  | Es gibt kein eindeutigen weg Berufe zu ordnen                                         |
+| Schulbildung                       | ordinal  | Kann man sortieren                                                                    |
+| Fahrpreis                          | metrisch | Eine Zahl                                                                             |
+| Fahrzeit                           | metrisch | Eine Zahl                                                                             |
+| Tabellenplatz eines Fußballvereins | metrisch | Wahrscheinlich in Form einer Zahl                                                     |
+| Geschlecht einer Person            | nominal  | Ohne sexistisch zu sein, kann man es nicht Ordnen                                     |
+| Einkommen                          | metrisch | Eine Zahl                                                                             |
+
+# 25. Hü, 18.05.26
+## 1)
+![[Pasted image 20260518205325.png]]
+
+
+| Name            | Wert                                                             |
+| --------------- | ---------------------------------------------------------------- |
+| Merkmal         | metrisch                                                         |
+| Darstellung     | Liniendiagramm                                                   |
+| Grundgesamtheit | offizielle Schlachtungen von Rindern in Österreich im Jahr 2025. |
+| Lagemaß         | Absolute Zahlenwerte                                             |
+
+
+## 10.31
+$$\bar{x} = \frac{a}{b} = 12$$
+$$\overline{x_1} = \frac{a + 13}{b + 2} = 10$$
+$$a = 12 b$$
+$$\frac{12b + 13}{b + 2} = 10$$
+$$10b + 20 = 12b + 13$$
+$$2b = 7$$
+$$b = 3,5$$
+Falsch?
+
+## 10.32
+$$\frac{30 \cdot 49,4 + 20 \cdot 50,2 + 40 \cdot 50,1}{90} = 49,\dot{8}$$
+
+## 10.34
+### a)
+Wenn alle Werte gleich sind ist der Mittelwert auch dieser Wert.
+
+### b) 
+Ja
+
+### c)
+Ja
+
+## 10.35
+Sortierte Liste:
+```
+[ 17, 19, 19, 20, 21, 21, 21, 22, 23, 25 ]
+```
+
+### a)
+$n = 10$
+$$\bar{x} =\frac{1}{n} \cdot \sum_{i = 1}^n{x_i} = 20,8$$
+$$\tilde{x} = \frac{2 \cdot 21}{2} = 21$$
+### b)
+Neue Liste:
+```
+[ 0, 17, 19, 19, 20, 21, 21, 21, 22, 25 ]
+```
+
+$$\bar{x} = 18,3$$
+$$\tilde{x} = \frac{20 + 21}{2} = 20,5$$
+## 10.36
+
+$$\overline{x_A} = 498,75$$
+$$\overline{x_B} = 500,125$$
+Beide Werte unterscheiden sich kaum (Abweichung von $0,27$%)
+
+# 26. Hü 3.6.2026
+
+## 10.37
+3 2 3 1 6 5 4 3 6 2 6 1 3 5 6 1 4 2 4 2
+
+| Gewürfelte Zahl | Absolute Menge |
+| --------------- | -------------- |
+| 1               | 3              |
+| 2               | 4              |
+| 3               | 4              |
+| 4               | 3              |
+| 5               | 2              |
+| 6               | 4              |
+![[Pasted image 20260608184547.png]]
+$$\bar{x} = (3+8+12+12+10+24)/20=3,45$$
+$$\tilde x = q_2 = \frac{3+3}{2} = 3$$
+$$q_1 = 2$$
+$$q_3 = 5$$
+(s von einer Stichprobe)
+$$s = 1,76$$
+$$s^2 = 3,1$$
+$$R = 6 - 1 = 5$$
+$$d = q_3 - q_1= 5 - 2 = 3$$
+![[Pasted image 20260608191029.png]]
+
+## 10.39 a)
+$$s=1,10$$
+$$s^2 = 1,22$$
+$$v = 0,027$$
+$$R = 3,1$$
+## 10.43
+### a)
+etwa 52 Minuten
+
+### b)
+35 bis 90 Minuten
+
+### c)
+45, was heißt, dass er 75% der Einsätze länger als 45 Minuten gedauert haben.
+
+### d)
+Weil der Herr Arbeitszeitbetrug begeht, somit nicht die dem Box-Plot zu Grunde liegenden Daten zeigen kann / will, und in einem Box-Plot keinen Absoluten Häufigkeiten angezeigt werden.
+
+## 10.44
+### a)
+Manche PKWs erfüllen nicht die Mindestprofiltiefe und sollten schleunigst von dem Straßenverkehr entfernt werden.
+
+### b)
+Die Profiltiefen der Reifen über dem Durchschnitt von etwa 4,2 mm sind stärker verteilt als die der Unterdurchschnittlichen Reifen.
+
+## 10.45
+### a)
+75
+### b)
+25
+### c)
+25
+### d)
+0
+### e)
+0
+
+## 10.46
+
+| h       | mi   | h1   | mi \* hi |
+| ------- | ---- | ---- | -------- |
+| 2 - 2,5 | 2,25 | 11   | 24,75    |
+| 2,5 - 3 | 2,75 | 136  | 371,00   |
+| 3 - 3,5 | 3,25 | 329  | 1069,25  |
+| 3,5 - 4 | 3,75 | 382  | 1432,50  |
+| 4 - 4,5 | 4,25 | 141  | 599,25   |
+| 4,5 - 5 | 4,75 | 54   | 256,50   |
+| 5 - 5,5 | 5,25 | 11   | 57,75    |
+| GESAMT: |      | 1064 | 3814,00  |
+
+## 8.6
+Ich würde diese möglichen Ausgänge Wählen
+
+| Wurf 1 | Wurf 2 |
+| ------ | ------ |
+| 1      | 1      |
+| 1      | 2      |
+| 1      | 3      |
+| 1      | 4      |
+| 1      | 5      |
+| 1      | 6      |
+| 2      | 1      |
+| 2      | 2      |
+| 2      | 3      |
+| 2      | 4      |
+| 2      | 5      |
+| 2      | 6      |
+| 3      | 1      |
+| 3      | 2      |
+| 3      | 3      |
+| 3      | 4      |
+| 3      | 5      |
+| 3      | 6      |
+| 4      | 1      |
+| 4      | 2      |
+| 4      | 3      |
+| 4      | 4      |
+| 4      | 5      |
+| 4      | 6      |
+| 5      | 1      |
+| 5      | 2      |
+| 5      | 3      |
+| 5      | 4      |
+| 5      | 5      |
+| 5      | 6      |
+| 6      | 1      |
+| 6      | 2      |
+| 6      | 3      |
+| 6      | 4      |
+| 6      | 5      |
+| 6      | 6      |
+Hier kommt ein Wurf mit Augensumme $5$, $4$ mal vor
+$$P(AS = 5) = \frac{4}{36} = 0,\dot 1 \approx 11 \%$$
+## 8.7
+### a)
+$$P(min\ 1\cdot 6) = \frac{6}{36} + \frac{6}{36} - \frac{1}{36} = \frac{11}{36} = 0,30\dot 5 \approx 30,6\%$$
+### b)
+Siehe Beispiel **8.6**
+### c)
+$$P(<=5) = \frac{10}{36} = 0,2 \dot 7 \approx 27,8\%$$
+## 8.9
+$$P(tie) = 1 \cdot \frac{1}{3} \approx 33\%$$

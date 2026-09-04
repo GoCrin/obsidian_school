@@ -49,7 +49,7 @@ Meist wird die VID 1 als default gesetzt um zu zeigen, dass man den Port nicht k
 ## Portbased
 
 Administrator muss festlegen, an welchem Switch Port welche VID ist.
-aggress liste → auf welchem port ein frame mit einer gewissen VID den switch wieder verlassen darf.
+Egressliste → auf welchem port ein frame mit einer gewissen VID den switch wieder verlassen darf.
 Es gibt 2 aggress listen, eine tagged- und eine untagged-liste, diese sind dazu da um festzulegen, wo der VLAN-Header mitgeschickt werden darf und wo nicht. 
 
 In der tagged aggress liste wird der VLAN-Header mitgeschickt und in der untagged aggress liste wird der Header vor dem schicken entfernt. 
@@ -57,3 +57,24 @@ In der tagged aggress liste wird der VLAN-Header mitgeschickt und in der untagge
 ## Dynamische
 
 In welches VLAN ein Frame kommt, ist nicht mehr von dem Port abhängig, sondern von anderen Parametern, wie welche Nutzer sich authentifiziert hat.
+
+# Warum trennen und wieder verbinden
+
+Wenn man alle Vlans wieder auf einem Router verbindet werden:
+
+- bleibt die broadcast domain trotzdem verringert
+- kann man (mit einer Firewall) filtern
+
+## 1. Variante
+
+Zwischen einem Router und einem Switch (mit 3 VLANS), 3 physische Verbindungen stecken. Erzeugt keine switching loops, da der Router keine Broadcasts weiterleitet (welche das Problem sind).
+
+## 2. Variante
+
+Zwischen Routing-Gerät und Switch ist genau eine Verbindung. Aus Sicht des Switches ist das verbundene Gerät nun kein Endgerät, also werden die VLAN-Informationen mit gesendet.
+
+### Klassischer Cisco Router
+
+### Cisco Layer 3 Switch
+
+### Mikrotik Router

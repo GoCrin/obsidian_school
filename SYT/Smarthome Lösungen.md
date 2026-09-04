@@ -13,6 +13,17 @@ sudo docker run -it --network host homeassistant/home-assistant
 
 4xhits2526
 
+admin user -> settings adcanced mode
+settings -> intergrations
+zertifikat validierung auf auto
+
+(mqtt options) discovery prefix:  4xhits2526/\<unique\>
+use a client cert: false
+
+tasmota: mqtt topic: 4xhits2526/\<unique\>
+
+button:
+
 ---
 
 Andere wichtige Links:

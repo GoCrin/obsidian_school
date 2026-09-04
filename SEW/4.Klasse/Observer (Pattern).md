@@ -6,3 +6,4 @@ Das gewünschte Verhalten des Observer Pattern kann man folgendermaßen erreiche
 * Ändert sich der Zustand eines Subjekts werden die Observer benachrichtigt (english: to notify) indem deren update-Methode aufgerufen wird
 
 ![[Pasted image 20260506121720.png|499]]
+![[Pasted image 20260513101424.png]]

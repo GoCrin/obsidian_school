@@ -1,3 +1,4 @@
+[plg](https://projekte-leicht-gemacht.de/blog/softskills/kommunikation/verbal-nonverbal-paraverbal/)
 # Verbal (Sprache)
 
 * Wortwahl

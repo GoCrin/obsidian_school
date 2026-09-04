@@ -1,8 +1,11 @@
 ## Liste der Befehle
 
-| Befehl | Beschreibung |
-| ------ | ------------ |
-| enable |              |
+| Befehl  | Beschreibung                          |
+| ------- | ------------------------------------- |
+| enable  |                                       |
+| exit    | geht eine Ebene nach oben.            |
+| end     | wechselt vom conf mode zum privileged |
+| disable | geht aus dem enable mode.             |
 
 ## Typische Abläufe
 
@@ -52,3 +55,33 @@ OPSF Routing-Einträge anzeigen
 ```
 sh ip route ospf
 ```
+
+# VLAN konfigurieren
+```
+enable
+configure terminal
+vtp mode server
+vtp domain 4bhits
+vtp version 3
+vtp password letmein
+hostname CiscoSwitch
+vlan 10
+do show vlan brief
+name Mitarbeiter
+vlan 20
+exit
+interface Gi0/0
+switchport trunk encapsulation dot1q
+switchport mode trunk
+interface Gi0/1
+switchport mode access
+switchport access vlan 10
+```
+
+Weißt dem Interface in einem Schritt die VLAN-ID 10 zu.
+```
+interface fa0/1.10
+```
+## VLAN Trunking Protocol
+
+# MERKTS euch config_backup

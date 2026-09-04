@@ -1,4 +1,4 @@
-Siehe geschicktes Skriptum & diese [Seite](https://www.cryptool.org/de/cto/rsa-step-by-step/).
+Siehe geschicktes Skriptum (Folien 6 bis 7) & diese [Seite](https://www.cryptool.org/de/cto/rsa-step-by-step/).
 
 ## gcd / ggt
 
