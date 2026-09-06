@@ -1,0 +1,1 @@
+Die Spaltennummer der Hauptgruppen gibt an wie viele Valenzelektronen das Element hat.
