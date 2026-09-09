@@ -79,4 +79,3 @@ $$\Delta E = E_{hoch} - E_{tief} = h \cdot f = \frac{h \cdot c}{\lambda}$$
 ## Pauli-Prinzip
 Keine zwei Elektronen in einem Atom dürfen in allen 4 Quantenzahlen übereinstimmen.
 In jedes Orbital passen maximal zwei Elektronen.
-

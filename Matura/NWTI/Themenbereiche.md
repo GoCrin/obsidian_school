@@ -1,0 +1,27 @@
+Stoff in der 5. in **fett**
+
+- Adressierungen, IPv4, IPv6
+	- Subnetting
+	- Routing
+		- statisch
+		- OSPF (Dijkstra)
+		- **BGP (Bellman-Ford)**
+		- 
+	- Protokoll (eg. IPv4 Header was steht da drin)
+- "Ethernet"
+	- Protokoll
+	- Switching
+		- Funktionsweise
+		- **STP (Krusteal)**
+		- 802.1Q
+	- WiFi
+		- Standards
+		- **CapsMan**
+- VPN
+	- Szenarien
+	- OpenVPN, IPsec/L2TP, WireGuard
+- TCP, UDP, DHCP, DNS
+	- Protokoll
+- **Firewall**
+	- ACLs
+	- Iptables

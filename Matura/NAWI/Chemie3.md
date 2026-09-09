@@ -158,7 +158,7 @@ Bei vereinfachter Annahme, dass 100 g Würze ≈ 100 mL entspricht (Dichte ≈ 1
 **Der fertige Bier hat einen Alkoholgehalt von ca. 3,9 Vol%.**
 
 Das entspricht einem realistischen Wert für ein Bier mit 12° Stammwürze und mittlerem Vergärungsgrad (typische Vollbiere liegen zwischen 4,5–5,5 Vol% bei höheren Vergärungsgraden von ca. 75–80%).
-# 5
+# 5 begin
 ![[Pasted image 20260903211345.png|223]]
 
 # Fossile Rohstoffe – Braunkohle: CO₂-Bilanz und Energieausbeute
