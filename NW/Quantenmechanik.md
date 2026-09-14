@@ -17,7 +17,7 @@ $E_{KIN_E} = 0$
 Compton schießt Licht auf Graphit und misst $\lambda$ davor & danach
 Licht hat Impuls: $p = m * v$
 ![[Pasted image 20251202151723.png]]
-(Statt $E_kin$ geht auch $v$)
+(Statt $E_{kin}$ geht auch $v$)
 Energieverlust des Photons -> Frequenzabnahme -> Wellenlängen zu nahe ($\Delta \lambda = \lambda' - \lambda > 0$)
 
 # De Broglie - Welle Teilchen Dualismus

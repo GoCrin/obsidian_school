@@ -303,13 +303,9 @@ Volumen Luft = Volumen O₂ ÷ 0,21 = 4,94 m³ ÷ 0,21 = **≈ 23,5 m³ Luft**
 
 CH₂=CH₂ + H₂O → CH₃–CH₂–OH
 
-*(kleine Korrektur zu deiner Version: das Produkt ist CH₃–CH₂–OH, nicht CH₂–CH₂–OH – am rechten Kohlenstoff müssen 3 H-Atome sitzen, da aus der Doppelbindung eine Einfachbindung wird)*
-
 **b) Biotechnologische Gewinnung durch alkoholische Gärung (Zucker + Hefe):**
 
 C₆H₁₂O₆ → 2 C₂H₅OH + 2 CO₂
-
-*(kleine Korrektur: auf der rechten Seite muss eine 2 vor C₂H₅OH stehen, damit die Gleichung stimmt – aus einem Molekül Glucose (6 C-Atome) entstehen 2 Moleküle Ethanol (je 2 C-Atome) + 2 Moleküle CO₂ (je 1 C-Atom) → insgesamt wieder 6 C-Atome)*
 
 ---
 

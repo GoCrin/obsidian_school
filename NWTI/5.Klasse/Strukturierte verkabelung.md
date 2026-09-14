@@ -3,3 +3,4 @@ Bei stern struktur
 - längen probleme 
 
 Deshalb Verteilung pro Etage / Gebäude / Raum  / ...
+
