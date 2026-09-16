@@ -1,3 +1,4 @@
+
 hash-only-1 in picoctf
 
 ls -> flaghasher
@@ -15,3 +16,17 @@ Dadurch, dass jeder Hash-Algorithmus bei selben input immer den selben output gi
 ## Salzen
 
 Um Rainbowtabels unbrauchbar zu machen "salzt" man den Input (z.B. Passwörter) bevor man ihn hasht. Dieses Salz ist nicht geheim.
+
+# Hash Funktionen
+
+- MD5, SHA-1
+- SHA-2 (SHA-256, SHA-512)
+- SHA-3
+
+# Kollisionen
+
+Mehrere unterschiedliche Eingangsdaten liefern dieselben Ausgangsdaten. Ist das der Fall darf die Funktion nicht mehr im Security-Bereich verwendet werden.
+
+# Avalanche Effekt
+
+Minimale Änderungen der Eingangsdaten, führen zu maximalen Änderungen der Ausgangsdaten.

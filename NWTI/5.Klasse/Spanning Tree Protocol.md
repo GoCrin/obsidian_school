@@ -12,13 +12,15 @@ Jeder Switch schickt eine BPDU mit seiner Bridge-ID und der kleinsten Bridge-ID 
 
 ---
 
+Route-Bridge election
+
 Günstigste Wege zur Route-Bridge werden berechnet.
 
 # Bridge-ID
 
 Switch mit kleinster Bridge-ID wird zur Route-Bridge.
 
-2 Byte: bridge priority
+2 Byte: bridge priority (muss $n \cdot 4096$ sein)
 6 Byte: Mac-Addresse
 
 ![[Pasted image 20260914100151.png]]
@@ -29,4 +31,4 @@ Bridge Protocol Data Unit
 
 # Switching loops
 
-Wenn zwischen Switches ein "Ring" ist, sorgen diese dafür, dass Frames unendlich lange im Kreis geschickt werden. Bei besonders ungünstigen Verkabelungen wächst die Anzahl an Frames exponenziell und verbraucht somit nach kurzer Zeit die gesamte Bandbreite.
+Wenn zwischen Switches ein "Ring" ist, sorgen diese dafür, dass Frames unendlich lange im Kreis geschickt werden. Bei besonders ungünstigen Verkabelungen wächst die Anzahl an Frames exponenziell und verbraucht somit nach kurzer Zeit die gesamte Bandbreite. Dieses Phänomen nennt man **Broadcaststorm**. 
