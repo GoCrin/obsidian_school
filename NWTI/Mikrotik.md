@@ -1,3 +1,5 @@
+# Reset
+
 # OSPF
 
 ```routeros
@@ -142,4 +144,4 @@ set show-at-login=no
 
 # Subkommandos
 
-In Mikrotik kann man mit eckigen Klammern `[]` in einem Befehl 
+In Mikrotik kann man mit eckigen Klammern `[]` in einem Befehl
