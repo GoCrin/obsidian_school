@@ -57,3 +57,57 @@ add bridge=br interface=ether1 path-cost=10
 
 /interface/bridge/monitor // viele zeigen weg, id von bridge
 ```
+
+
+```
+protocol-mode=none
+
+/interface/bridge
+	priority=0x1000
+	protocol-mode=
+		none
+		stp
+		rstp
+		mstp
+		
+	region-name
+	region-revision
+
+/interface/bridge/port
+	path-cost=50 (außerhalb der region)
+	internal-path-cost= (in der region)
+	
+
+/interface/bridge/msti 
+	identifier=1
+	bridge=
+	priority=0x..
+	vlan-mapping
+
+```
+
+
+```
+/interface/bridge
+add protocol-mode=mstp region-revision=1 region-name=test
+
+/interface ethernet
+/
+```
+
+# RSTP
+Rapid-STP ist schneller deshalb verwendets jeder, es ist aber nicht vlan aware. 
+
+# pvstp
+PER-VLAN Spanning Tree Plus, von cisco und ist vlan aware
+Macht für jedes Vlan einen eigenen Spannbaum. Zwei probleme sind:
+Bei vielen Vlans muss man viele Spannbäume berechnen -> hohe rechenlast
+Es ist nicht open "source"
+
+# MSTP
+Multiple Spanning Tree Protocol
+
+Vlan aware, und man kann Vlans gruppieren (heißt ein Spanning Tree pro Gruppe und nicht pro Vlan).
+Rechenlast ist nicht so hoch.
+Auch wenn alle Vlans überall hinführen ist es zu empfehlen dieses Protokoll zu verwenden, weil (keine begründung).
+Man kann das Netzwerk in Regionen teilen. Als erstes werden Spannbäume für die Regionen berechnet und dann wird ein Spannbaum berechnet der diese Regionen verbindet

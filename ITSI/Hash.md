@@ -17,6 +17,11 @@ Dadurch, dass jeder Hash-Algorithmus bei selben input immer den selben output gi
 
 Um Rainbowtabels unbrauchbar zu machen "salzt" man den Input (z.B. Passwörter) bevor man ihn hasht. Dieses Salz ist nicht geheim.
 
+Wird z.B. bei linux und vielen anderen so angegeben:
+```
+$6$SALTED HASH$
+```
+
 # Hash Funktionen
 
 - MD5, SHA-1
