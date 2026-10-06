@@ -95,6 +95,27 @@ add protocol-mode=mstp region-revision=1 region-name=test
 /
 ```
 
+```
+spanning-tree mst 1 priority 8192
+spanning-tree mst configuration
+
+name htl
+revision 1
+instance 1 vlan 10,20
+instance 2 vlan 30,40
+
+int gi0/0
+
+
+```
+
+Wie überprüft man das was in der Übung gefragt ist?
+
+Virtuelles router interface an der Route-Bridge konfigurieren, dieses mit Laptop aus jedem VLAN pingen. Auf jedem Switch den folgenden Befehlausführen um das Paket verfolgen zu können.
+```
+tool/sniffer/packet/print follow
+```
+
 # RSTP
 Rapid-STP ist schneller deshalb verwendets jeder, es ist aber nicht vlan aware. 
 

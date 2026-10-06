@@ -10,7 +10,7 @@ $c_0$ ... Kapazität einer Festplatte
 
 Arten wie man die Festplatten verbunden werden und redundant speichern.
 
-(JBOD schließt nur Festplatten zusammen, ohne Redundanz)
+(JBOD - Just a bunch of disks - schließt nur Festplatten zusammen, ohne Redundanz)
 
 ### Level 0 Striping
 
@@ -50,6 +50,8 @@ Es werden immer n -1 Stripes gespeichert, dann dies xor'ed auf die "letzte" Fest
 Also bei 4 Festplatten (A,B,C,D):
 Stripe 1 auf A, Stripe 2 auf B, Stripe 3 auf C und 1 xor 2 xor 3 auf D. Danach wird wieder rotiert.
 
+Da man nach Ausfall einer Festplatte bis zum Einsetzen des Ersatzes "verletzlich" ist, bietet es sich in einem professionellen Setting an einen Service-Vertrag mit dem Verkäufer des Servers zu haben. Oft ist es auch möglich eine Festplatte als Hotspare in das System einzubauen. Das bedeutet, das die Festplatte bis zum Ausfall einer anderen nicht verwendet wird, und danach sofort die Daten bekommt
+
 ### Level 6
 
 $$n \ge 4$$
@@ -66,3 +68,4 @@ Hardware war früher performanter, als Software RAID, aber heutzutage ist das ni
 
 Controller Mode: HBA
 Alles wird os überlassen, RAID ist aus
+

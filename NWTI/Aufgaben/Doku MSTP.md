@@ -61,3 +61,9 @@ add bridge=br tagged=ether1,ether2 untagged=wifi1 vlan-ids=30
 
 ![[Pasted image 20260923161632.png]]
 ![[Pasted image 20260923161640.png]]
+
+# MSTP in Aktion
+
+Hier sieht man einige STP-Frames.
+
+![[Pasted image 20260930150437.png]]

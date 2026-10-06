@@ -15,6 +15,8 @@ Dadurch, dass jeder Hash-Algorithmus bei selben input immer den selben output gi
 [crackstation](https://crackstation.net/)
 ## Salzen
 
+deterministischer output = selber input selber output
+
 Um Rainbowtabels unbrauchbar zu machen "salzt" man den Input (z.B. Passwörter) bevor man ihn hasht. Dieses Salz ist nicht geheim.
 
 Wird z.B. bei linux und vielen anderen so angegeben:
