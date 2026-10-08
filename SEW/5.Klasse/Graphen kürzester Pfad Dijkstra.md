@@ -1,3 +1,5 @@
+> Beim Test (wie bei <span style="font-variant:small-caps;">nwti</span>) bekommt man die leeren Tabellen und muss sie Schritt für Schritt mit Werten befüllen.
+
 [[Dijkstra-Algorythmus]]
 
 Ein kürzester Pfad ist ein Pfad zwischen zwei unterschiedlichen Knoten eines Graphen der die minimale Länge bezüglich der Kantengewichtsfunktion hat. Der Algorithmus von Dijkstra löst das Problem der kürzesten Pfade, indem er einen kürzesten Pfad zwischen dem gegebenen Startknoten und einem anderen Knoten in einen Kantengewichteten Graphen berechnet.
@@ -19,3 +21,7 @@ funktion Dijkstra (V, E, start) // Knoten, Kanten, Startknoten
 				distanz[v] := distanz[u] + gewicht(u, v) // Ja, aktualisieren
 				vorgänger[v] := u // Distanz und Vorgänger
 ```
+
+**Bemerkung:** Pseudocode ist eine detaillierte und dennoch lesbare Beschreibung dessen, was ein Computerprogramm oder ein Algorithmus machen soll. Pseudocode wird in einer formal gestalteten, natürlichen Sprache und nicht in einer Programmiersprache ausgedrückt.
+
+Unter [Algorithmen-Lernen.de](https://algorithmen-lernen.de/dijkstra) kann der Algorithmus geübt werden.

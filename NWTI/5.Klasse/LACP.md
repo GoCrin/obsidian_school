@@ -1,4 +1,9 @@
-Link Aggregation Control Protocol, definiert in 802.3ad
+---
+aliases:
+---
+Link Aggregation Control Protocol, definiert in **802.3ad**
+
+Schafft mehr Bandbreite und Redundanz. Alle Frames nach einer gewissen Hash-policy werden über den gleichen Link, wodurch ein einzelner Client nichts von der "gewonnenen" Bandbreite mitbekommen würde.
 
 Portchannel
 
@@ -7,6 +12,9 @@ Hash-policy:
 - Layer 3
 - Layer 2 + 3
 - (Ports \[Layer 4\])
+
+Entschieden wie die Frames auf die Links aufgeteilt werden wird mit: 
+Hash mod Anzahl der Links
 
 Als 1. dieses bonding von min. 2 ports machen und dann zu einer bridge hinzufügen
 ```
