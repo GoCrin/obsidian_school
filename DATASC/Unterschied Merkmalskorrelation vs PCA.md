@@ -15,8 +15,8 @@ AUS
 
 | Maps     | Zeit | Fuß / Öffi / Auto |
 | -------- | ---- | ----------------- |
-| Strecke1 |      |                   |
-| Strecke2 |      |                   |
+| Strecke1 |      | Öffi              |
+| Strecke2 |      | Fuß               |
 WIRD:
 
 

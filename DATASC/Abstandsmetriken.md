@@ -33,7 +33,3 @@ Das Ganze geht mit sehr vielen Dimensionen (n Dimensionen)
 
 Hinweis zu Cosinus-Distanz:
 $$dist_{cos}(a,b) = 1 - sin_{cos}(a,b)$$
-
-WWEwdad
-<span style="font-variant:small-caps;">Small caps</span>
-SMALL CAPS

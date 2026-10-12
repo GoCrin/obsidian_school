@@ -25,7 +25,7 @@ add address=10.0.0.5/24 interface=br network=10.0.0.0
 
 # Ergebnis Überprüfung
 
-Die Verbindung und die Geschwindigkeit dieser Verbindung wird mit dem Programm "iperf3" getestet. Das Ergebnis ist unerwarteter weiße, dass die Bandbreite weit unter 100 Mbit/s ist.
+Die Verbindung und die Geschwindigkeit dieser Verbindung wird zuerst mit 2 Teilnehmern im Netz durch das Programm "iperf3" getestet. Das Ergebnis ist unerwarteter weiße, dass die Bandbreite weit unter 100 Mbit/s ist.
 
 ```
 ❯ iperf3 -c 10.0.0.11  
